@@ -4,10 +4,12 @@ import mtr.mappings.Text;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
+import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -24,15 +26,22 @@ public class BlockRailwaySignPole extends BlockPoleCheckBase {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
 		final Direction facing = IBlock.getStatePropertySafe(state, FACING);
+		final BlockPoleCheckBase.EnumPoleVariant variant = IBlock.getStatePropertySafe(state, BlockPoleCheckBase.VARIANT);
+
+		int height = 16;
+		if(variant == BlockPoleCheckBase.EnumPoleVariant.EXTRA_HALF){
+			height = 24;
+		}
+
 		switch (IBlock.getStatePropertySafe(state, TYPE)) {
 			case 0:
-				return IBlock.getVoxelShapeByDirection(14, 0, 7, 15.25, 16, 9, facing);
+				return IBlock.getVoxelShapeByDirection(14, 0, 7, 15.25, height, 9, facing);
 			case 1:
-				return IBlock.getVoxelShapeByDirection(10, 0, 7, 11.25, 16, 9, facing);
+				return IBlock.getVoxelShapeByDirection(10, 0, 7, 11.25, height, 9, facing);
 			case 2:
-				return IBlock.getVoxelShapeByDirection(6, 0, 7, 7.25, 16, 9, facing);
+				return IBlock.getVoxelShapeByDirection(6, 0, 7, 7.25, height, 9, facing);
 			case 3:
-				return IBlock.getVoxelShapeByDirection(2, 0, 7, 3.25, 16, 9, facing);
+				return IBlock.getVoxelShapeByDirection(2, 0, 7, 3.25, height, 9, facing);
 			default:
 				return Shapes.block();
 		}
@@ -62,6 +71,6 @@ public class BlockRailwaySignPole extends BlockPoleCheckBase {
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING, TYPE);
+		builder.add(FACING, TYPE, BlockPoleCheckBase.VARIANT);
 	}
 }

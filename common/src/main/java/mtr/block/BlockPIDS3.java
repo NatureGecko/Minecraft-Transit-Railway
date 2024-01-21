@@ -3,8 +3,12 @@ package mtr.block;
 import mtr.BlockEntityTypes;
 import mtr.mappings.BlockEntityMapper;
 import net.minecraft.core.BlockPos;
+import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -13,8 +17,13 @@ public class BlockPIDS3 extends BlockPIDSBase {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
+		final EnumPIDSPoleVariant variant = IBlock.getStatePropertySafe(state, VARIANT);
+
+		int height = 16;
+		if(variant == EnumPIDSPoleVariant.EXTRA_HALF){ height = 24; }
+
 		VoxelShape shape1 = IBlock.getVoxelShapeByDirection(6, 0, 0, 10, 10, 16, IBlock.getStatePropertySafe(state, FACING));
-		VoxelShape shape2 = IBlock.getVoxelShapeByDirection(7.5, 10, 12.5, 8.5, 16, 13.5, IBlock.getStatePropertySafe(state, FACING));
+		VoxelShape shape2 = IBlock.getVoxelShapeByDirection(7.5, 10, 12.5, 8.5, height, 13.5, IBlock.getStatePropertySafe(state, FACING));
 		return Shapes.or(shape1, shape2);
 	}
 

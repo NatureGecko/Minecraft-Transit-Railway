@@ -11,20 +11,27 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.Half;
+import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.PushReaction;
@@ -40,6 +47,8 @@ public abstract class BlockPIDSBase extends BlockDirectionalMapper implements En
 	public BlockPIDSBase() {
 		super(Properties.of(Material.METAL, MaterialColor.COLOR_GRAY).requiresCorrectToolForDrops().strength(2).lightLevel(state -> 5));
 	}
+
+	public static final EnumProperty<EnumPIDSPoleVariant> VARIANT = EnumProperty.create("variant", EnumPIDSPoleVariant.class);
 
 	@Override
 	public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult) {
@@ -61,14 +70,32 @@ public abstract class BlockPIDSBase extends BlockDirectionalMapper implements En
 		if (IBlock.getStatePropertySafe(state, FACING) == direction && !newState.is(this)) {
 			return Blocks.AIR.defaultBlockState();
 		} else {
-			return state;
+			BlockState blockStateAbove = world.getBlockState(pos.above());
+			if(blockStateAbove.getBlock() instanceof SlabBlock && blockStateAbove.getValue(SlabBlock.TYPE) == SlabType.TOP){
+				return state.setValue(VARIANT,EnumPIDSPoleVariant.EXTRA_HALF);
+			}
+			if(blockStateAbove.getBlock() instanceof StairBlock && blockStateAbove.getValue(StairBlock.HALF) == Half.TOP){
+				return state.setValue(VARIANT,EnumPIDSPoleVariant.EXTRA_HALF);
+			}
+			return state.setValue(VARIANT,EnumPIDSPoleVariant.FULL);
 		}
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext ctx) {
 		final Direction direction = ctx.getHorizontalDirection().getOpposite();
-		return IBlock.isReplaceable(ctx, direction, 2) ? defaultBlockState().setValue(FACING, direction) : null;
+		boolean isLengthMatch = IBlock.isReplaceable(ctx, direction, 2);
+		if(isLengthMatch){
+			BlockState blockStateAbove = ctx.getLevel().getBlockState(ctx.getClickedPos().above());
+			if(blockStateAbove.getBlock() instanceof SlabBlock && blockStateAbove.getValue(SlabBlock.TYPE) == SlabType.TOP){
+				return defaultBlockState().setValue(FACING, direction).setValue(VARIANT,EnumPIDSPoleVariant.EXTRA_HALF);
+			}
+			if(blockStateAbove.getBlock() instanceof StairBlock && blockStateAbove.getValue(StairBlock.HALF) == Half.TOP){
+				return defaultBlockState().setValue(FACING, direction).setValue(VARIANT,EnumPIDSPoleVariant.EXTRA_HALF);
+			}
+			return defaultBlockState().setValue(FACING, direction);
+		}
+		return null;
 	}
 
 	@Override
@@ -102,7 +129,19 @@ public abstract class BlockPIDSBase extends BlockDirectionalMapper implements En
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING);
+		builder.add(FACING, VARIANT);
+	}
+
+	public enum EnumPIDSPoleVariant implements StringRepresentable {
+		FULL("full"),EXTRA_HALF("extra_half");
+		private final String name;
+		EnumPIDSPoleVariant(String variant) {
+			name = variant;
+		}
+		@Override
+		public String getSerializedName() {
+			return name;
+		}
 	}
 
 	public abstract static class TileEntityBlockPIDSBase extends BlockEntityClientSerializableMapper {

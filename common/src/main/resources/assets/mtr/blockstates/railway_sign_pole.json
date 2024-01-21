@@ -1,63 +1,123 @@
 {
 	"variants": {
-		"facing=north,type=0": {
+		"facing=north,type=0,variant=full": {
 			"model": "mtr:block/railway_sign_end_zero_pole"
 		},
-		"facing=east,type=0": {
+		"facing=east,type=0,variant=full": {
 			"model": "mtr:block/railway_sign_end_zero_pole",
 			"y": 90
 		},
-		"facing=west,type=0": {
+		"facing=west,type=0,variant=full": {
 			"model": "mtr:block/railway_sign_end_zero_pole",
 			"y": 270
 		},
-		"facing=south,type=0": {
+		"facing=south,type=0,variant=full": {
 			"model": "mtr:block/railway_sign_end_zero_pole",
 			"y": 180
 		},
-		"facing=north,type=1": {
+		"facing=north,type=1,variant=full": {
 			"model": "mtr:block/railway_sign_end_half_pole"
 		},
-		"facing=east,type=1": {
+		"facing=east,type=1,variant=full": {
 			"model": "mtr:block/railway_sign_end_half_pole",
 			"y": 90
 		},
-		"facing=west,type=1": {
+		"facing=west,type=1,variant=full": {
 			"model": "mtr:block/railway_sign_end_half_pole",
 			"y": 270
 		},
-		"facing=south,type=1": {
+		"facing=south,type=1,variant=full": {
 			"model": "mtr:block/railway_sign_end_half_pole",
 			"y": 180
 		},
-		"facing=north,type=2": {
+		"facing=north,type=2,variant=full": {
 			"model": "mtr:block/railway_sign_end_one_pole"
 		},
-		"facing=east,type=2": {
+		"facing=east,type=2,variant=full": {
 			"model": "mtr:block/railway_sign_end_one_pole",
 			"y": 90
 		},
-		"facing=west,type=2": {
+		"facing=west,type=2,variant=full": {
 			"model": "mtr:block/railway_sign_end_one_pole",
 			"y": 270
 		},
-		"facing=south,type=2": {
+		"facing=south,type=2,variant=full": {
 			"model": "mtr:block/railway_sign_end_one_pole",
 			"y": 180
 		},
-		"facing=north,type=3": {
+		"facing=north,type=3,variant=full": {
 			"model": "mtr:block/railway_sign_end_one_and_a_half_pole"
 		},
-		"facing=east,type=3": {
+		"facing=east,type=3,variant=full": {
 			"model": "mtr:block/railway_sign_end_one_and_a_half_pole",
 			"y": 90
 		},
-		"facing=west,type=3": {
+		"facing=west,type=3,variant=full": {
 			"model": "mtr:block/railway_sign_end_one_and_a_half_pole",
 			"y": 270
 		},
-		"facing=south,type=3": {
+		"facing=south,type=3,variant=full": {
 			"model": "mtr:block/railway_sign_end_one_and_a_half_pole",
+			"y": 180
+		},
+		"facing=north,type=0,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_zero_pole_extra_half"
+		},
+		"facing=east,type=0,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_zero_pole_extra_half",
+			"y": 90
+		},
+		"facing=west,type=0,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_zero_pole_extra_half",
+			"y": 270
+		},
+		"facing=south,type=0,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_zero_pole_extra_half",
+			"y": 180
+		},
+		"facing=north,type=1,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_half_pole_extra_half"
+		},
+		"facing=east,type=1,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_half_pole_extra_half",
+			"y": 90
+		},
+		"facing=west,type=1,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_half_pole_extra_half",
+			"y": 270
+		},
+		"facing=south,type=1,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_half_pole_extra_half",
+			"y": 180
+		},
+		"facing=north,type=2,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_one_pole_extra_half"
+		},
+		"facing=east,type=2,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_one_pole_extra_half",
+			"y": 90
+		},
+		"facing=west,type=2,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_one_pole_extra_half",
+			"y": 270
+		},
+		"facing=south,type=2,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_one_pole_extra_half",
+			"y": 180
+		},
+		"facing=north,type=3,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_one_and_a_half_pole_extra_half"
+		},
+		"facing=east,type=3,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_one_and_a_half_pole_extra_half",
+			"y": 90
+		},
+		"facing=west,type=3,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_one_and_a_half_pole_extra_half",
+			"y": 270
+		},
+		"facing=south,type=3,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_one_and_a_half_pole_extra_half",
 			"y": 180
 		}
 	}

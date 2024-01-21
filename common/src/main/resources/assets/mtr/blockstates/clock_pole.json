@@ -1,7 +1,10 @@
 {
 	"variants": {
-		"": {
+		"variant=full": {
 			"model": "mtr:block/clock_pole"
+		},
+		"variant=extra_half": {
+			"model": "mtr:block/clock_pole_extra_half"
 		}
 	}
 }

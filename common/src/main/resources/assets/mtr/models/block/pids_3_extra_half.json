@@ -1,0 +1,67 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"back": "mtr:block/black",
+		"middle": "block/gray_concrete",
+		"particle": "mtr:block/metal"
+	},
+	"elements": [
+		{
+			"name": "Main 1",
+			"from": [6, 0, 0],
+			"to": [6.75, 10, 16],
+			"faces": {
+				"east": {"uv": [0, 6, 16, 16], "texture": "#particle"},
+				"south": {"uv": [6, 6, 6.75, 16], "texture": "#particle", "cullface": "south"},
+				"west": {"uv": [0, 6, 16, 16], "texture": "#particle"},
+				"up": {"uv": [6, 0, 6.75, 16], "texture": "#particle"},
+				"down": {"uv": [6, 0, 6.75, 16], "texture": "#particle", "cullface": "down"}
+			}
+		},
+		{
+			"name": "Main 2",
+			"from": [9.25, 0, 0],
+			"to": [10, 10, 16],
+			"faces": {
+				"east": {"uv": [0, 6, 16, 16], "texture": "#particle"},
+				"south": {"uv": [9.25, 6, 10, 16], "texture": "#particle", "cullface": "south"},
+				"west": {"uv": [0, 6, 16, 16], "texture": "#particle"},
+				"up": {"uv": [9.25, 0, 10, 16], "texture": "#particle"},
+				"down": {"uv": [9.25, 0, 10, 16], "texture": "#particle", "cullface": "down"}
+			}
+		},
+		{
+			"name": "Middle",
+			"from": [6.75, 0.5, 0],
+			"to": [9.25, 9.5, 15],
+			"faces": {
+				"east": {"uv": [1, 6.5, 16, 15.5], "texture": "#middle"},
+				"south": {"uv": [6.75, 6.5, 9.25, 15.5], "texture": "#middle"},
+				"west": {"uv": [0, 6.5, 15, 15.5], "texture": "#middle"},
+				"up": {"uv": [6.75, 0, 9.25, 15], "texture": "#middle"},
+				"down": {"uv": [6.75, 1, 9.25, 16], "texture": "#middle"}
+			}
+		},
+		{
+			"name": "Pole",
+			"from": [7.5, 9.5, 12.5],
+			"to": [8.5, 24, 13.5],
+			"faces": {
+				"north": {"uv": [7.5, 0, 8.5, 14.5], "texture": "#particle"},
+				"east": {"uv": [2.5, 0, 3.5, 14.5], "texture": "#particle"},
+				"south": {"uv": [7.5, 0, 8.5, 14.5], "texture": "#particle"},
+				"west": {"uv": [12.5, 0, 13.5, 14.5], "texture": "#particle"},
+				"up": {"uv": [7.5, 12.5, 8.5, 13.5], "texture": "#particle", "cullface": "up"}
+			}
+		},
+		{
+			"name": "Background",
+			"from": [5.95, 0.7, 0],
+			"to": [10.05, 9.3, 15.25],
+			"faces": {
+				"east": {"uv": [0.75, 6.7, 16, 15.3], "texture": "#back"},
+				"west": {"uv": [0, 6.7, 15.25, 15.3], "texture": "#back"}
+			}
+		}
+	]
+}

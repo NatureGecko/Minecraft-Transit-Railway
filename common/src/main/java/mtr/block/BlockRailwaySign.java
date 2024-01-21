@@ -23,9 +23,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.Half;
+import net.minecraft.world.level.block.state.properties.SlabType;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.phys.AABB;
@@ -40,7 +44,6 @@ public class BlockRailwaySign extends BlockDirectionalMapper implements EntityBl
 
 	public final int length;
 	public final boolean isOdd;
-
 	public static final float SMALL_SIGN_PERCENTAGE = 0.75F;
 
 	public BlockRailwaySign(int length, boolean isOdd) {
@@ -70,14 +73,32 @@ public class BlockRailwaySign extends BlockDirectionalMapper implements EntityBl
 		if (isNext && !(newState.getBlock() instanceof BlockRailwaySign)) {
 			return Blocks.AIR.defaultBlockState();
 		} else {
-			return state;
+			BlockState blockAbovePole = world.getBlockState(pos.above());
+			if(blockAbovePole.getBlock() instanceof SlabBlock && blockAbovePole.getValue(SlabBlock.TYPE) == SlabType.TOP){
+				return state.setValue(BlockPoleCheckBase.VARIANT, BlockPoleCheckBase.EnumPoleVariant.EXTRA_HALF);
+			}
+			if(blockAbovePole.getBlock() instanceof StairBlock && blockAbovePole.getValue(StairBlock.HALF) == Half.TOP){
+				return state.setValue(BlockPoleCheckBase.VARIANT, BlockPoleCheckBase.EnumPoleVariant.EXTRA_HALF);
+			}
+			return state.setValue(BlockPoleCheckBase.VARIANT, BlockPoleCheckBase.EnumPoleVariant.FULL);
 		}
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext ctx) {
 		final Direction facing = ctx.getHorizontalDirection();
-		return IBlock.isReplaceable(ctx, facing.getClockWise(), getMiddleLength() + 2) ? defaultBlockState().setValue(FACING, facing) : null;
+		if(!IBlock.isReplaceable(ctx, facing.getClockWise(), getMiddleLength() + 2)){
+			return null;
+		}
+
+		BlockState blockAbove = ctx.getLevel().getBlockState(ctx.getClickedPos().above());
+		if(blockAbove.getBlock() instanceof SlabBlock && blockAbove.getValue(SlabBlock.TYPE) == SlabType.TOP){
+			return defaultBlockState().setValue(BlockPoleCheckBase.VARIANT, BlockPoleCheckBase.EnumPoleVariant.EXTRA_HALF).setValue(FACING, facing);
+		}
+		if(blockAbove.getBlock() instanceof StairBlock && blockAbove.getValue(StairBlock.HALF) == Half.TOP){
+			return defaultBlockState().setValue(BlockPoleCheckBase.VARIANT, BlockPoleCheckBase.EnumPoleVariant.EXTRA_HALF).setValue(FACING, facing);
+		}
+		return defaultBlockState().setValue(FACING, facing);
 	}
 
 	@Override
@@ -108,12 +129,19 @@ public class BlockRailwaySign extends BlockDirectionalMapper implements EntityBl
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
 		final Direction facing = IBlock.getStatePropertySafe(state, FACING);
+		final BlockPoleCheckBase.EnumPoleVariant poleVariant = IBlock.getStatePropertySafe(state, BlockPoleCheckBase.VARIANT);
+
+		int height = 16;
+		if(poleVariant == BlockPoleCheckBase.EnumPoleVariant.EXTRA_HALF){
+			height = 24;
+		}
+
 		if (state.is(mtr.Blocks.RAILWAY_SIGN_MIDDLE.get())) {
 			return IBlock.getVoxelShapeByDirection(0, 0, 7, 16, 12, 9, facing);
 		} else {
 			final int xStart = getXStart();
 			final VoxelShape main = IBlock.getVoxelShapeByDirection(xStart - 0.75, 0, 7, 16, 12, 9, facing);
-			final VoxelShape pole = IBlock.getVoxelShapeByDirection(xStart - 2, 0, 7, xStart - 0.75, 16, 9, facing);
+			final VoxelShape pole = IBlock.getVoxelShapeByDirection(xStart - 2, 0, 7, xStart - 0.75, height, 9, facing);
 			return Shapes.or(main, pole);
 		}
 	}
@@ -140,7 +168,7 @@ public class BlockRailwaySign extends BlockDirectionalMapper implements EntityBl
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(FACING);
+		builder.add(FACING, BlockPoleCheckBase.VARIANT);
 	}
 
 	public int getXStart() {
@@ -249,7 +277,6 @@ public class BlockRailwaySign extends BlockDirectionalMapper implements EntityBl
 			}
 		}
 	}
-
 	public enum SignType {
 		ARROW_LEFT("arrow", true, false),
 		ARROW_RIGHT("arrow", true, true),

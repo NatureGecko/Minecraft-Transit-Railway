@@ -1,18 +1,33 @@
 {
 	"variants": {
-		"facing=north": {
+		"facing=north,variant=full": {
 			"model": "mtr:block/railway_sign_end_one_and_a_half"
 		},
-		"facing=east": {
+		"facing=east,variant=full": {
 			"model": "mtr:block/railway_sign_end_one_and_a_half",
 			"y": 90
 		},
-		"facing=south": {
+		"facing=south,variant=full": {
 			"model": "mtr:block/railway_sign_end_one_and_a_half",
 			"y": 180
 		},
-		"facing=west": {
+		"facing=west,variant=full": {
 			"model": "mtr:block/railway_sign_end_one_and_a_half",
+			"y": 270
+		},
+		"facing=north,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_one_and_a_half_extra_half"
+		},
+		"facing=east,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_one_and_a_half_extra_half",
+			"y": 90
+		},
+		"facing=south,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_one_and_a_half_extra_half",
+			"y": 180
+		},
+		"facing=west,variant=extra_half": {
+			"model": "mtr:block/railway_sign_end_one_and_a_half_extra_half",
 			"y": 270
 		}
 	}

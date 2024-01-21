@@ -1,10 +1,17 @@
 {
 	"variants": {
-		"facing=false": {
+		"facing=false,variant=full": {
 			"model": "mtr:block/clock"
 		},
-		"facing=true": {
+		"facing=true,variant=full": {
 			"model": "mtr:block/clock",
+			"y": 90
+		},
+		"facing=false,variant=extra_half": {
+			"model": "mtr:block/clock_extra_half"
+		},
+		"facing=true,variant=extra_half": {
+			"model": "mtr:block/clock_extra_half",
 			"y": 90
 		}
 	}

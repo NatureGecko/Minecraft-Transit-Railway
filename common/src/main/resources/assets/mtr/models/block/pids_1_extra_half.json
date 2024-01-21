@@ -1,0 +1,84 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"back": "mtr:block/black",
+		"orange": "mtr:block/light_on",
+		"pids1": "mtr:block/pids_1",
+		"pids2": "mtr:block/pids_2",
+		"pids3": "mtr:block/pids_3",
+		"pids4": "mtr:block/pids_4",
+		"pids5": "mtr:block/pids_5",
+		"particle": "mtr:block/metal"
+	},
+	"elements": [
+		{
+			"name": "Main",
+			"from": [6, 0, 0],
+			"to": [10, 11, 16],
+			"faces": {
+				"east": {"uv": [0, 5, 16, 16], "texture": "#particle"},
+				"south": {"uv": [6, 5, 10, 16], "texture": "#particle", "cullface": "south"},
+				"west": {"uv": [0, 5, 16, 16], "texture": "#particle"},
+				"up": {"uv": [6, 0, 10, 16], "texture": "#particle"},
+				"down": {"uv": [6, 0, 10, 16], "texture": "#particle", "cullface": "down"}
+			}
+		},
+		{
+			"name": "Pole",
+			"from": [7.5, 11, 12.5],
+			"to": [8.5, 24, 13.5],
+			"faces": {
+				"north": {"uv": [7.5, 0, 8.5, 13], "texture": "#particle"},
+				"east": {"uv": [2.5, 0, 3.5, 13], "texture": "#particle"},
+				"south": {"uv": [7.5, 0, 8.5, 13], "texture": "#particle"},
+				"west": {"uv": [12.5, 0, 13.5, 13], "texture": "#particle"},
+				"up": {"uv": [7.5, 12.5, 8.5, 13.5], "texture": "#particle", "cullface": "up"}
+			}
+		},
+		{
+			"name": "Background",
+			"from": [5.95, 0.5, 0],
+			"to": [10.05, 10.5, 15.5],
+			"faces": {
+				"east": {"uv": [0.5, 5.5, 16, 15.5], "texture": "#back"},
+				"west": {"uv": [0, 5.5, 15.5, 15.5], "texture": "#back"}
+			}
+		},
+		{
+			"from": [5.9, 3.90625, 0],
+			"to": [10.1, 4, 15],
+			"shade": false,
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#orange"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#orange"}
+			}
+		},
+		{
+			"from": [5.9, 4, 9],
+			"to": [10.1, 10, 15],
+			"shade": false,
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#pids1"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#pids5"}
+			}
+		},
+		{
+			"from": [5.9, 4, 3],
+			"to": [10.1, 10, 9],
+			"shade": false,
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#pids2"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#pids4"}
+			}
+		},
+		{
+			"from": [5.9, 4, 0],
+			"to": [10.1, 10, 3],
+			"shade": false,
+			"faces": {
+				"east": {"uv": [0, 0, 8, 16], "texture": "#pids3"},
+				"west": {"uv": [8, 0, 16, 16], "texture": "#pids3"}
+			}
+		}
+	]
+}
