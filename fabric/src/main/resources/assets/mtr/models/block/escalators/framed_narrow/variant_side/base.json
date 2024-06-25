@@ -1,0 +1,70 @@
+{
+    "multipart": [
+        {
+            "when": {
+                "facing": "north",
+                "orientation": "landing_bottom",
+                "variant": "full_metal"
+            },
+            "apply": {
+                "model": "mtr:block/escalators/framed_narrow/variant/full_metal_landing",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "orientation": "flat",
+                "variant": "full_metal"
+            },
+            "apply": {
+                "model": "mtr:block/escalators/framed_narrow/variant/full_metal_flat",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "orientation": "transition_bottom",
+                "variant": "full_metal"
+            },
+            "apply": {
+                "model": "mtr:block/escalators/framed_narrow/variant/full_metal_transition_bottom",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "orientation": "slope",
+                "variant": "full_metal"
+            },
+            "apply": {
+                "model": "mtr:block/escalators/framed_narrow/variant/full_metal_slope",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "orientation": "transition_top",
+                "variant": "full_metal"
+            },
+            "apply": {
+                "model": "mtr:block/escalators/framed_narrow/variant/full_metal_transition_top",
+                "y": 90
+            }
+        },
+        {
+            "when": {
+                "facing": "north",
+                "orientation": "landing_top",
+                "variant": "full_metal"
+            },
+            "apply": {
+                "model": "mtr:block/escalators/framed_narrow/variant/full_metal_landing",
+                "y": 270
+            }
+        }
+    ]
+}

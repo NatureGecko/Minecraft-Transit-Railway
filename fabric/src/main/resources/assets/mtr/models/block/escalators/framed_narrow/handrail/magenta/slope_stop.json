@@ -1,0 +1,6 @@
+{
+	"parent": "mtr:block/escalators/framed_narrow/handrail/0_slope",
+	"textures": {
+		"handrail": "mtr:block/escalators/framed_narrow/handrail/magenta_stop"
+	}
+}

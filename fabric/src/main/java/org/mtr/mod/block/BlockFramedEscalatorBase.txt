@@ -1,0 +1,14 @@
+package org.mtr.mod.block;
+
+import org.mtr.mapping.holder.*;
+import org.mtr.mapping.mapper.BlockExtension;
+import org.mtr.mapping.mapper.BlockHelper;
+import org.mtr.mapping.mapper.DirectionHelper;
+import org.mtr.mod.Items;
+
+import javax.annotation.Nonnull;
+
+public abstract class BlockFramedEscalatorBase extends BlockExtension implements IBlock, DirectionHelper {
+
+}
+

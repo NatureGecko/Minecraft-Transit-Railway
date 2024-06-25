@@ -8,10 +8,20 @@ import org.mtr.mapping.registry.CreativeModeTabHolder;
 public final class CreativeModeTabs {
 
 	static {
-		CORE = Init.REGISTRY.createCreativeModeTabHolder(new Identifier(Init.MOD_ID, "core"), () -> new ItemStack(new ItemConvertible(Items.RAILWAY_DASHBOARD.get().data)));
-		RAILWAY_FACILITIES = Init.REGISTRY.createCreativeModeTabHolder(new Identifier(Init.MOD_ID, "railway_facilities"), () -> new ItemStack(new ItemConvertible(Blocks.TICKET_PROCESSOR.get().data)));
-		STATION_BUILDING_BLOCKS = Init.REGISTRY.createCreativeModeTabHolder(new Identifier(Init.MOD_ID, "station_building_blocks"), () -> new ItemStack(new ItemConvertible(Blocks.LOGO.get().data)));
-		ESCALATORS_LIFTS = Init.REGISTRY.createCreativeModeTabHolder(new Identifier(Init.MOD_ID, "escalators_lifts"), () -> new ItemStack(new ItemConvertible(Items.ESCALATOR.get().data)));
+		CORE = Init.REGISTRY.createCreativeModeTabHolder(new Identifier(Init.MOD_ID, "core"),
+				() -> new ItemStack(new ItemConvertible(Items.RAILWAY_DASHBOARD.get().data)));
+		RAILWAY_FACILITIES = Init.REGISTRY.createCreativeModeTabHolder(
+				new Identifier(Init.MOD_ID, "railway_facilities"),
+				() -> new ItemStack(new ItemConvertible(Blocks.TICKET_PROCESSOR.get().data)));
+		STATION_BUILDING_BLOCKS = Init.REGISTRY.createCreativeModeTabHolder(
+				new Identifier(Init.MOD_ID, "station_building_blocks"),
+				() -> new ItemStack(new ItemConvertible(Blocks.LOGO.get().data)));
+		ESCALATORS_LIFTS = Init.REGISTRY.createCreativeModeTabHolder(new Identifier(Init.MOD_ID, "escalators_lifts"),
+				() -> new ItemStack(new ItemConvertible(Items.ESCALATOR.get().data)));
+		// !TODO : STATION_CLOCK -> Something...
+		// STATION_DECORACTION = init.REGISTRY.createCreativeModeTabHolder(
+		// new Identifier(Init.MOD_ID, "station_decoration"),
+		// () -> new ItemStack(new ItemConvertible(Blocks.STATION_CLOCK.get().data)));
 	}
 
 	public static final CreativeModeTabHolder CORE;

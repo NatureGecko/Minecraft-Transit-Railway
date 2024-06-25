@@ -3,6 +3,7 @@ package org.mtr.mod;
 import org.mtr.core.data.TransportMode;
 import org.mtr.mapping.holder.Identifier;
 import org.mtr.mapping.holder.Item;
+import org.mtr.mapping.holder.MapColor;
 import org.mtr.mapping.mapper.ItemExtension;
 import org.mtr.mapping.mapper.PlaceableOnWaterItemExtension;
 import org.mtr.mapping.registry.ItemRegistryObject;
@@ -41,6 +42,40 @@ public final class Items {
 		LIFT_DOOR_1 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "lift_door_1"), itemSettings -> new Item(new ItemPSDAPGBase(ItemPSDAPGBase.EnumPSDAPGItem.PSD_APG_DOOR, ItemPSDAPGBase.EnumPSDAPGType.LIFT_DOOR_1, itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
 		LIFT_DOOR_ODD_1 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "lift_door_odd_1"), itemSettings -> new Item(new ItemPSDAPGBase(ItemPSDAPGBase.EnumPSDAPGItem.PSD_APG_DOOR, ItemPSDAPGBase.EnumPSDAPGType.LIFT_DOOR_ODD_1, itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
 		LIFT_REFRESHER = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "lift_refresher"), itemSettings -> new Item(new ItemLiftRefresher(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+
+		// Framed Escalator : Base
+		FRAMED_ESCALATOR_NARROW = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "framed_escalator_narrow"), itemSettings -> new Item(new ItemFramedEscalatorNarrow(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+		FRAMED_ESCALATOR = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "framed_escalator"), itemSettings -> new Item(new ItemFramedEscalator(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+		FRAMED_TRAVELATOR = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "framed_travelator"), itemSettings -> new Item(new ItemFramedTravelator(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+
+		// Framed Escalator : Steps
+		ESCALATOR_STEP_TYPE_1 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "escalator_step_type_1"), itemSettings -> new Item(new ItemEscalatorStep(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+		ESCALATOR_STEP_TYPE_2 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "escalator_step_type_2"), itemSettings -> new Item(new ItemEscalatorStep(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+		ESCALATOR_STEP_TYPE_3 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "escalator_step_type_3"), itemSettings -> new Item(new ItemEscalatorStep(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+		ESCALATOR_STEP_TYPE_4 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "escalator_step_type_4"), itemSettings -> new Item(new ItemEscalatorStep(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+		TRAVELATOR_STEP_TYPE_1 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "travelator_step_type_1"), itemSettings -> new Item(new ItemTravelatorStep(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+		TRAVELATOR_STEP_TYPE_2 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "travelator_step_type_2"), itemSettings -> new Item(new ItemTravelatorStep(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+		TRAVELATOR_STEP_TYPE_3 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "travelator_step_type_3"), itemSettings -> new Item(new ItemTravelatorStep(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+		TRAVELATOR_STEP_TYPE_4 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "travelator_step_type_4"), itemSettings -> new Item(new ItemTravelatorStep(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+		TRAVELATOR_STEP_TYPE_5 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "travelator_step_type_5"), itemSettings -> new Item(new ItemTravelatorStep(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+
+		// Framed Escalator : Moving Handrail
+		MOVING_HANDRAIL_WHITE = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "moving_handrail_white"), itemSettings -> new Item(new ItemMovingHandrail(itemSettings, MapColor.getWhiteMapped())), CreativeModeTabs.ESCALATORS_LIFTS);
+		MOVING_HANDRAIL_ORANGE = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "moving_handrail_orange"), itemSettings -> new Item(new ItemMovingHandrail(itemSettings, MapColor.getOrangeMapped())), CreativeModeTabs.ESCALATORS_LIFTS);
+		MOVING_HANDRAIL_MAGENTA = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "moving_handrail_magenta"), itemSettings -> new Item(new ItemMovingHandrail(itemSettings, MapColor.getMagentaMapped())), CreativeModeTabs.ESCALATORS_LIFTS);
+		MOVING_HANDRAIL_LIGHT_BLUE = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "moving_handrail_light_blue"), itemSettings -> new Item(new ItemMovingHandrail(itemSettings, MapColor.getLightBlueMapped())), CreativeModeTabs.ESCALATORS_LIFTS);
+		MOVING_HANDRAIL_YELLOW = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "moving_handrail_yellow"), itemSettings -> new Item(new ItemMovingHandrail(itemSettings, MapColor.getYellowMapped())), CreativeModeTabs.ESCALATORS_LIFTS);
+		MOVING_HANDRAIL_LIME = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "moving_handrail_lime"), itemSettings -> new Item(new ItemMovingHandrail(itemSettings, MapColor.getLimeMapped())), CreativeModeTabs.ESCALATORS_LIFTS);
+		MOVING_HANDRAIL_PINK = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "moving_handrail_pink"), itemSettings -> new Item(new ItemMovingHandrail(itemSettings, MapColor.getPinkMapped())), CreativeModeTabs.ESCALATORS_LIFTS);
+		MOVING_HANDRAIL_GRAY = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "moving_handrail_gray"), itemSettings -> new Item(new ItemMovingHandrail(itemSettings, MapColor.getGrayMapped())), CreativeModeTabs.ESCALATORS_LIFTS);
+		MOVING_HANDRAIL_LIGHT_GRAY = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "moving_handrail_light_gray"), itemSettings -> new Item(new ItemMovingHandrail(itemSettings, MapColor.getLightGrayMapped())), CreativeModeTabs.ESCALATORS_LIFTS);
+		MOVING_HANDRAIL_CYAN = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "moving_handrail_cyan"), itemSettings -> new Item(new ItemMovingHandrail(itemSettings, MapColor.getCyanMapped())), CreativeModeTabs.ESCALATORS_LIFTS);
+		MOVING_HANDRAIL_PURPLE = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "moving_handrail_purple"), itemSettings -> new Item(new ItemMovingHandrail(itemSettings, MapColor.getPurpleMapped())), CreativeModeTabs.ESCALATORS_LIFTS);
+		MOVING_HANDRAIL_BLUE = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "moving_handrail_blue"), itemSettings -> new Item(new ItemMovingHandrail(itemSettings, MapColor.getBlueMapped())), CreativeModeTabs.ESCALATORS_LIFTS);
+		MOVING_HANDRAIL_BROWN = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "moving_handrail_brown"), itemSettings -> new Item(new ItemMovingHandrail(itemSettings, MapColor.getBrownMapped())), CreativeModeTabs.ESCALATORS_LIFTS);
+		MOVING_HANDRAIL_GREEN = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "moving_handrail_green"), itemSettings -> new Item(new ItemMovingHandrail(itemSettings, MapColor.getGreenMapped())), CreativeModeTabs.ESCALATORS_LIFTS);
+		MOVING_HANDRAIL_RED = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "moving_handrail_red"), itemSettings -> new Item(new ItemMovingHandrail(itemSettings, MapColor.getRedMapped())), CreativeModeTabs.ESCALATORS_LIFTS);
+		MOVING_HANDRAIL_BLACK = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "moving_handrail_black"), itemSettings -> new Item(new ItemMovingHandrail(itemSettings, MapColor.getBlackMapped())), CreativeModeTabs.ESCALATORS_LIFTS);
 
 		// Rail connectors and remover
 		RAIL_CONNECTOR_20 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "rail_connector_20"), itemSettings -> new Item(new ItemRailModifier(true, false, true, false, RailType.WOODEN, itemSettings)), CreativeModeTabs.CORE);
@@ -147,6 +182,38 @@ public final class Items {
 	public static final ItemRegistryObject CABLE_CAR_DASHBOARD;
 	public static final ItemRegistryObject DRIVER_KEY;
 	public static final ItemRegistryObject ESCALATOR;
+
+	public static final ItemRegistryObject FRAMED_ESCALATOR;
+	public static final ItemRegistryObject FRAMED_ESCALATOR_NARROW;
+	public static final ItemRegistryObject FRAMED_TRAVELATOR;
+
+	public static final ItemRegistryObject ESCALATOR_STEP_TYPE_1;
+	public static final ItemRegistryObject ESCALATOR_STEP_TYPE_2;
+	public static final ItemRegistryObject ESCALATOR_STEP_TYPE_3;
+	public static final ItemRegistryObject ESCALATOR_STEP_TYPE_4;
+	public static final ItemRegistryObject TRAVELATOR_STEP_TYPE_1;
+	public static final ItemRegistryObject TRAVELATOR_STEP_TYPE_2;
+	public static final ItemRegistryObject TRAVELATOR_STEP_TYPE_3;
+	public static final ItemRegistryObject TRAVELATOR_STEP_TYPE_4;
+	public static final ItemRegistryObject TRAVELATOR_STEP_TYPE_5;
+
+	public static final ItemRegistryObject MOVING_HANDRAIL_WHITE;
+	public static final ItemRegistryObject MOVING_HANDRAIL_ORANGE;
+	public static final ItemRegistryObject MOVING_HANDRAIL_MAGENTA;
+	public static final ItemRegistryObject MOVING_HANDRAIL_LIGHT_BLUE;
+	public static final ItemRegistryObject MOVING_HANDRAIL_YELLOW;
+	public static final ItemRegistryObject MOVING_HANDRAIL_LIME;
+	public static final ItemRegistryObject MOVING_HANDRAIL_PINK;
+	public static final ItemRegistryObject MOVING_HANDRAIL_GRAY;
+	public static final ItemRegistryObject MOVING_HANDRAIL_LIGHT_GRAY;
+	public static final ItemRegistryObject MOVING_HANDRAIL_CYAN;
+	public static final ItemRegistryObject MOVING_HANDRAIL_PURPLE;
+	public static final ItemRegistryObject MOVING_HANDRAIL_BLUE;
+	public static final ItemRegistryObject MOVING_HANDRAIL_BROWN;
+	public static final ItemRegistryObject MOVING_HANDRAIL_GREEN;
+	public static final ItemRegistryObject MOVING_HANDRAIL_RED;
+	public static final ItemRegistryObject MOVING_HANDRAIL_BLACK;
+
 	public static final ItemRegistryObject LIFT_BUTTONS_LINK_CONNECTOR;
 	public static final ItemRegistryObject LIFT_BUTTONS_LINK_REMOVER;
 	public static final ItemRegistryObject LIFT_DOOR_1;

@@ -1,0 +1,52 @@
+{
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"base": "mtr:block/escalators/framed_narrow/variant/full_metal",
+		"particle": "block/air"
+	},
+	"elements": [
+		{
+			"name": "handrail_upper_r",
+			"from": [0, 13, 0.5],
+			"to": [16, 14, 1.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 1]},
+			"faces": {
+				"north": {"uv": [16, 15.25, 12, 15.5], "texture": "#base"},
+				"south": {"uv": [16, 15.25, 12, 15.5], "texture": "#base"}
+			}
+		},
+		{
+			"name": "handrail_upper_l",
+			"from": [0, 13, 14.5],
+			"to": [16, 14, 15.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 15]},
+			"faces": {
+				"north": {"uv": [16, 15.25, 12, 15.5], "texture": "#base"},
+				"south": {"uv": [16, 15.25, 12, 15.5], "texture": "#base"}
+			}
+		},
+		{
+			"name": "handrail_lower_l",
+			"from": [0, 0, 14],
+			"to": [16, 13, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 15]},
+			"faces": {
+				"north": {"uv": [4, 9, 0, 12], "texture": "#base"},
+				"south": {"uv": [4, 9, 0, 12], "texture": "#base"},
+				"up": {"uv": [0, 8.5, 4, 8], "texture": "#base"}
+			}
+		},
+		{
+			"name": "handrail_lower_r",
+			"from": [0, 0, 0],
+			"to": [16, 13, 2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 1]},
+			"faces": {
+				"north": {"uv": [4, 9, 0, 12], "texture": "#base"},
+				"south": {"uv": [4, 9, 0, 12], "texture": "#base"},
+				"up": {"uv": [0, 8.5, 4, 8], "texture": "#base"}
+			}
+		}
+	]
+}

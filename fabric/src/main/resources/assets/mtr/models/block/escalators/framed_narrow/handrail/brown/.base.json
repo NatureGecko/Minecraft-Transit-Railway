@@ -1,0 +1,868 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "landing_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_bottom_forward",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "landing_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_bottom_backward",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "landing_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_bottom_stop",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "landing_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_bottom_forward",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "landing_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_bottom_backward",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "landing_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_bottom_stop",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "landing_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_bottom_forward",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "landing_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_bottom_backward",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "landing_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_bottom_stop",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "landing_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_bottom_forward",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "landing_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_bottom_backward",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "landing_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_bottom_stop",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "flat"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/flat_forward",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "flat"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/flat_backward",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "flat"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/flat_stop",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "flat"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/flat_forward",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "flat"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/flat_backward",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "flat"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/flat_stop",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "flat"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/flat_forward",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "flat"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/flat_backward",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "flat"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/flat_stop",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "flat"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/flat_forward",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "flat"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/flat_backward",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "flat"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/flat_stop",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "transition_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_bottom_forward",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "transition_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_bottom_backward",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "transition_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_bottom_stop",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "transition_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_bottom_forward",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "transition_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_bottom_backward",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "transition_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_bottom_stop",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "transition_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_bottom_forward",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "transition_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_bottom_backward",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "transition_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_bottom_stop",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "transition_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_bottom_forward",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "transition_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_bottom_backward",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "transition_bottom"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_bottom_stop",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "slope"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/slope_forward",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "slope"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/slope_backward",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "slope"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/slope_stop",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "slope"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/slope_forward",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "slope"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/slope_backward",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "slope"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/slope_stop",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "slope"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/slope_forward",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "slope"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/slope_backward",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "slope"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/slope_stop",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "slope"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/slope_forward",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "slope"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/slope_backward",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "slope"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/slope_stop",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "transition_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_top_forward",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "transition_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_top_backward",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "transition_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_top_stop",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "transition_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_top_forward",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "transition_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_top_backward",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "transition_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_top_stop",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "transition_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_top_forward",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "transition_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_top_backward",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "transition_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_top_stop",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "transition_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_top_forward",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "transition_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_top_backward",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "transition_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/transition_top_stop",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "landing_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_top_forward",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "landing_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_top_backward",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "north",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "landing_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_top_stop",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "landing_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_top_forward",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "landing_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_top_backward",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "south",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "landing_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_top_stop",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "landing_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_top_forward",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "landing_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_top_backward",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "east",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "landing_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_top_stop",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "forward",
+        "orientation": "landing_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_top_forward",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "backward",
+        "orientation": "landing_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_top_backward",
+        "y": 0
+      }
+    },
+    {
+      "when": {
+        "facing": "west",
+        "handrail_color": "brown",
+        "heading": "stop",
+        "orientation": "landing_top"
+      },
+      "apply": {
+        "model": "mtr:block/escalators/framed_narrow/handrail/brown/landing_top_stop",
+        "y": 0
+      }
+    }
+  ]
+}

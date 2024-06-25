@@ -1,0 +1,6 @@
+{
+	"parent": "mtr:block/escalators/framed_narrow/handrail/0_landing_top",
+	"textures": {
+		"handrail": "mtr:block/escalators/framed_narrow/handrail/black_backward"
+	}
+}

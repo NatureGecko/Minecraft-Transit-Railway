@@ -1,0 +1,184 @@
+{
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"base": "mtr:block/escalators/framed_narrow/variant/full_metal",
+		"particle": "block/air"
+	},
+	"elements": [
+		{
+			"name": "handrail_upper_r1",
+			"from": [0, 13, 0.5],
+			"to": [4, 14, 1.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 14, 8]},
+			"faces": {
+				"north": {"uv": [15, 15.25, 16, 15.5], "texture": "#base"},
+				"south": {"uv": [16, 15.25, 15, 15.5], "texture": "#base"}
+			}
+		},
+		{
+			"name": "handrail_upper_l1",
+			"from": [0, 13, 14.5],
+			"to": [4, 14, 15.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 14, 8]},
+			"faces": {
+				"north": {"uv": [15, 15.25, 16, 15.5], "texture": "#base"},
+				"south": {"uv": [16, 15.25, 15, 15.5], "texture": "#base"}
+			}
+		},
+		{
+			"name": "handrail_upper_r2",
+			"from": [4, 13, 0.51],
+			"to": [11.8, 14, 1.49],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [4, 14, 8]},
+			"faces": {
+				"north": {"uv": [13.5, 15.25, 15, 15.5], "texture": "#base"},
+				"south": {"uv": [15, 15.25, 13.5, 15.5], "texture": "#base"}
+			}
+		},
+		{
+			"name": "handrail_upper_l2",
+			"from": [4, 13, 14.51],
+			"to": [11.8, 14, 15.49],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [4, 14, 8]},
+			"faces": {
+				"north": {"uv": [13.5, 15.25, 15, 15.5], "texture": "#base"},
+				"south": {"uv": [15, 15.25, 13.5, 15.5], "texture": "#base"}
+			}
+		},
+		{
+			"name": "handrail_upper_r3",
+			"from": [11.1, 10.2, 0.5],
+			"to": [20.3, 11.2, 1.5],
+			"rotation": {"angle": -45, "axis": "z", "origin": [11.1, 11.2, 8]},
+			"faces": {
+				"north": {"uv": [12, 15.25, 13.5, 15.5], "texture": "#base"},
+				"south": {"uv": [13.5, 15.25, 12, 15.5], "texture": "#base"}
+			}
+		},
+		{
+			"name": "handrail_upper_l3",
+			"from": [11.1, 10.2, 14.5],
+			"to": [20.3, 11.2, 15.5],
+			"rotation": {"angle": -45, "axis": "z", "origin": [11.1, 11.2, 8]},
+			"faces": {
+				"north": {"uv": [12, 15.25, 13.5, 15.5], "texture": "#base"},
+				"south": {"uv": [13.5, 15.25, 12, 15.5], "texture": "#base"}
+			}
+		},
+		{
+			"name": "handrail_lower_r1",
+			"from": [0, 0, -0.075],
+			"to": [3.8, 13, 2.025],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 1]},
+			"faces": {
+				"north": {"uv": [1, 9, 0, 12], "texture": "#base"},
+				"east": {"uv": [0, 9, 1, 12], "texture": "#base"},
+				"south": {"uv": [0, 9, 1, 12], "texture": "#base"},
+				"west": {"uv": [0, 9, 0.5, 12], "texture": "#base"},
+				"up": {"uv": [0, 8.5, 1, 8], "texture": "#base"}
+			}
+		},
+		{
+			"name": "handrail_lower_r2",
+			"from": [2.97056, -5.00685, -0.04],
+			"to": [11.47056, 9.19315, 1.96],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [4, 9.5, 2.625, 12], "texture": "#base"},
+				"south": {"uv": [2.625, 9, 4, 12], "texture": "#base"},
+				"up": {"uv": [2.625, 8.75, 4, 8], "texture": "#base"}
+			}
+		},
+		{
+			"name": "handrail_lower_r3",
+			"from": [-0.90444, -1.55685, 0.01],
+			"to": [6.94556, 10.39315, 1.91],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [2.375, 9, 0.375, 12], "texture": "#base"},
+				"south": {"uv": [0.375, 9, 2.375, 12], "texture": "#base"},
+				"up": {"uv": [1, 8.75, 2.375, 8], "texture": "#base"}
+			}
+		},
+		{
+			"name": "guide_r1",
+			"from": [-5, -16, 0.025],
+			"to": [9, 0, 2.075],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [1.125, 12, 3.125, 16], "texture": "#base"},
+				"south": {"uv": [1.125, 12, 3.125, 16], "texture": "#base"},
+				"up": {"uv": [3.5, 12, 4, 16], "rotation": 90, "texture": "#base"}
+			}
+		},
+		{
+			"name": "handrail_lower_l3",
+			"from": [-0.90444, -1.55685, 14.09],
+			"to": [6.94556, 10.39315, 15.99],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [2.375, 9, 0.375, 12], "texture": "#base"},
+				"south": {"uv": [0.375, 9, 2.375, 12], "texture": "#base"},
+				"up": {"uv": [1, 8, 2.375, 8.75], "texture": "#base"}
+			}
+		},
+		{
+			"name": "handrail_lower_l2",
+			"from": [2.97056, -5.00685, 14.04],
+			"to": [11.47056, 9.19315, 16.04],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [4, 9, 2.625, 12], "texture": "#base"},
+				"south": {"uv": [2.625, 9.5, 4, 12], "texture": "#base"},
+				"up": {"uv": [2.625, 8, 4, 8.75], "texture": "#base"}
+			}
+		},
+		{
+			"name": "handrail_lower_l1",
+			"from": [0, 0, 13.975],
+			"to": [3.8, 13, 16.075],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 15]},
+			"faces": {
+				"north": {"uv": [1, 9, 0, 12], "texture": "#base"},
+				"east": {"uv": [1, 9, 0, 12], "texture": "#base"},
+				"south": {"uv": [0, 9, 1, 12], "texture": "#base"},
+				"west": {"uv": [0.5, 9, 0, 12], "texture": "#base"},
+				"up": {"uv": [0, 8, 1, 8.5], "texture": "#base"}
+			}
+		},
+		{
+			"name": "guide_l1",
+			"from": [-5, -16, 13.925],
+			"to": [9, 0, 15.975],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [3.125, 12, 1.125, 16], "texture": "#base"},
+				"south": {"uv": [3.125, 12, 1.125, 16], "texture": "#base"},
+				"up": {"uv": [3.5, 12, 4, 16], "rotation": 90, "texture": "#base"}
+			}
+		},
+		{
+			"name": "strip_r",
+			"from": [0.1, -16, -0.1],
+			"to": [0.6, 13.025, 2.1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2.6, 0.1, 7.8]},
+			"faces": {
+				"north": {"uv": [0, 0, 0.125, 8], "texture": "#base"},
+				"south": {"uv": [0, 0, 0.125, 8], "texture": "#base"},
+				"up": {"uv": [0, 0, 0.125, 0.5], "texture": "#base"}
+			}
+		},
+		{
+			"name": "strip_l",
+			"from": [0.1, -16, 13.875],
+			"to": [0.6, 13.05, 16.1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2.6, 0.1, 8.2]},
+			"faces": {
+				"north": {"uv": [0.125, 0, 0, 8], "texture": "#base"},
+				"south": {"uv": [0.125, 0, 0, 8], "texture": "#base"},
+				"up": {"uv": [0, 0.5, 0.125, 0], "texture": "#base"}
+			}
+		}
+	]
+}

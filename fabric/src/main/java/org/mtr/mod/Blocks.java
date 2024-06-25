@@ -49,6 +49,14 @@ public final class Blocks {
 		LIFT_DOOR_EVEN_1 = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "lift_door_1"), () -> new Block(new BlockLiftDoor()));
 		LIFT_DOOR_ODD_1 = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "lift_door_odd_1"), () -> new Block(new BlockLiftDoorOdd()));
 
+		// Framed Escalator and travelator
+		FRAMED_ESCALATOR_SIDE = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_escalator_side"), () -> new Block(new BlockFramedEscalatorNarrowSide()));
+		FRAMED_ESCALATOR_STEP = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_escalator_step"), () -> new Block(new BlockFramedEscalatorNarrowStep())); 
+		FRAMED_TRAVELATOR_SIDE = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_travelator_side"), () -> new Block(new BlockEscalatorSide()));
+		FRAMED_TRAVELATOR_STEP = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_travelator_step"), () -> new Block(new BlockEscalatorSide())); 
+		FRAMED_ESCALATOR_NARROW_SIDE = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_escalator_narrow_side"), () -> new Block(new BlockFramedEscalatorNarrowSide()));
+		FRAMED_ESCALATOR_NARROW_STEP = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_escalator_narrow_step"), () -> new Block(new BlockFramedEscalatorNarrowStep())); 
+
 		// PIDS projectors
 		PIDS_1 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "pids_1"), () -> new Block(new BlockPIDSHorizontal1()), CreativeModeTabs.RAILWAY_FACILITIES);
 		PIDS_2 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "pids_2"), () -> new Block(new BlockPIDSHorizontal2()), CreativeModeTabs.RAILWAY_FACILITIES);
@@ -247,6 +255,15 @@ public final class Blocks {
 	public static final BlockRegistryObject CLOCK_POLE;
 	public static final BlockRegistryObject ESCALATOR_SIDE;
 	public static final BlockRegistryObject ESCALATOR_STEP;
+
+	// Framed Escalator and travelator
+	public static final BlockRegistryObject FRAMED_ESCALATOR_SIDE;
+	public static final BlockRegistryObject FRAMED_ESCALATOR_STEP;
+	public static final BlockRegistryObject FRAMED_TRAVELATOR_SIDE;
+	public static final BlockRegistryObject FRAMED_TRAVELATOR_STEP;
+	public static final BlockRegistryObject FRAMED_ESCALATOR_NARROW_SIDE;
+	public static final BlockRegistryObject FRAMED_ESCALATOR_NARROW_STEP;
+
 	public static final BlockRegistryObject GLASS_FENCE_CIO;
 	public static final BlockRegistryObject GLASS_FENCE_CKT;
 	public static final BlockRegistryObject GLASS_FENCE_HEO;

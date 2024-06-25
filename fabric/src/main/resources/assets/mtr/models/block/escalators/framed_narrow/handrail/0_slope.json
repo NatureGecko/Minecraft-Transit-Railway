@@ -1,0 +1,33 @@
+{
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/air"
+	},
+	"elements": [
+		{
+			"name": "handrail_l2",
+			"from": [-8.86053, 4.22183, 0.3],
+			"to": [13.78947, 5.22183, 2.3],
+			"rotation": {"angle": -45, "axis": "z", "origin": [16, 0, 8]},
+			"faces": {
+				"north": {"uv": [12, 0, 14, 16], "rotation": 90, "texture": "#handrail"},
+				"south": {"uv": [6, 0, 8, 16], "rotation": 270, "texture": "#handrail"},
+				"up": {"uv": [8, 0, 12, 16], "rotation": 270, "texture": "#handrail"},
+				"down": {"uv": [2, 0, 6, 16], "rotation": 270, "texture": "#handrail"}
+			}
+		},
+		{
+			"name": "handrail_r2",
+			"from": [-8.86053, 4.22183, 13.7],
+			"to": [13.78947, 5.22183, 15.7],
+			"rotation": {"angle": -45, "axis": "z", "origin": [16, 0, 8]},
+			"faces": {
+				"north": {"uv": [12, 0, 14, 16], "rotation": 90, "texture": "#handrail"},
+				"south": {"uv": [6, 0, 8, 16], "rotation": 270, "texture": "#handrail"},
+				"up": {"uv": [8, 0, 12, 16], "rotation": 270, "texture": "#handrail"},
+				"down": {"uv": [2, 0, 6, 16], "rotation": 270, "texture": "#handrail"}
+			}
+		}
+	]
+}

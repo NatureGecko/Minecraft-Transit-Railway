@@ -1,0 +1,31 @@
+{
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/air"
+	},
+	"elements": [
+		{
+			"name": "handrail_r",
+			"from": [0, 14, 0.3],
+			"to": [16, 15, 2.3],
+			"faces": {
+				"north": {"uv": [12, 0, 14, 16], "rotation": 90, "texture": "#handrail"},
+				"south": {"uv": [6, 0, 8, 16], "rotation": 270, "texture": "#handrail"},
+				"up": {"uv": [8, 0, 12, 16], "rotation": 270, "texture": "#handrail", "cullface": "up"},
+				"down": {"uv": [2, 0, 6, 16], "rotation": 270, "texture": "#handrail"}
+			}
+		},
+		{
+			"name": "handrail_l",
+			"from": [0, 14, 13.7],
+			"to": [16, 15, 15.7],
+			"faces": {
+				"north": {"uv": [12, 0, 14, 16], "rotation": 90, "texture": "#handrail"},
+				"south": {"uv": [6, 0, 8, 16], "rotation": 270, "texture": "#handrail"},
+				"up": {"uv": [8, 0, 12, 16], "rotation": 270, "texture": "#handrail", "cullface": "up"},
+				"down": {"uv": [2, 0, 6, 16], "rotation": 270, "texture": "#handrail"}
+			}
+		}
+	]
+}
