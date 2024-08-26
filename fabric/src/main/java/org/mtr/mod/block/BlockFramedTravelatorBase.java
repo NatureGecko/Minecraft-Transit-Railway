@@ -54,11 +54,11 @@ public abstract class BlockFramedTravelatorBase extends BlockExtension implement
     }
 
     // * asItem2
-    @Nonnull
-    @Override
-    public Item asItem2() {
-        return Items.FRAMED_TRAVELATOR.get();
-    }
+    // @Nonnull
+    // @Override
+    // public Item asItem2() {
+    //     // return Items.FRAMED_TRAVELATOR.get();
+    // }
 
     // * getPickStack2
     @Nonnull

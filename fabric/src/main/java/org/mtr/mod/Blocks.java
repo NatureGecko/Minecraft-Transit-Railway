@@ -50,12 +50,50 @@ public final class Blocks {
 		LIFT_DOOR_ODD_1 = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "lift_door_odd_1"), () -> new Block(new BlockLiftDoorOdd()));
 
 		// Framed Escalator and travelator
-		FRAMED_ESCALATOR_SIDE = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_escalator_side"), () -> new Block(new BlockFramedEscalatorNarrowSide()));
-		FRAMED_ESCALATOR_STEP = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_escalator_step"), () -> new Block(new BlockFramedEscalatorNarrowStep())); 
-		FRAMED_TRAVELATOR_SIDE = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_travelator_side"), () -> new Block(new BlockEscalatorSide()));
-		FRAMED_TRAVELATOR_STEP = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_travelator_step"), () -> new Block(new BlockEscalatorSide())); 
-		FRAMED_ESCALATOR_NARROW_SIDE = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_escalator_narrow_side"), () -> new Block(new BlockFramedEscalatorNarrowSide()));
-		FRAMED_ESCALATOR_NARROW_STEP = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_escalator_narrow_step"), () -> new Block(new BlockFramedEscalatorNarrowStep())); 
+		// ESCALATOR_NARROW_SIDE_VN = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_vn"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_BLACK_FM = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_black_fm"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_BLACK_GL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_black_gl"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_BLUE_FM = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_blue_fm"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_BLUE_GL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_blue_gl"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_GREEN_FM = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_green_fm"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_GREEN_GL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_green_gl"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_RED_FM = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_red_fm"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_RED_GL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_red_gl"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_YELLOW_FM = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_yellow_fm"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_YELLOW_GL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_yellow_gl"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_BROWN_FM = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_brown_fm"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_BROWN_GL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_brown_gl"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_CYAN_FM = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_cyan_fm"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_CYAN_GL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_cyan_gl"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_GRAY_FM = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_gray_fm"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_GRAY_GL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_gray_gl"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_LIGHT_BLUE_FM = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_light_blue_fm"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_LIGHT_BLUE_GL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_light_blue_gl"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_LIME_FM = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_lime_fm"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_LIME_GL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_lime_gl"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_MAGENTA_FM = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_magenta_fm"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_MAGENTA_GL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_magenta_gl"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_ORANGE_FM = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_orange_fm"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_ORANGE_GL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_orange_gl"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_PURPLE_FM = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_purple_fm"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_PURPLE_GL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_purple_gl"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_WHITE_FM = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_white_fm"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_WHITE_GL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_white_gl"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_PINK_FM = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_pink_fm"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_SIDE_PINK_GL = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_pink_gl"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+		
+		// ESCALATOR_NARROW_BASE_GY = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_base_gy"), () -> new Block(new BlockEscalatorNarrowStep()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_BASE_G = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_base_g"), () -> new Block(new BlockEscalatorNarrowStep()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_BASE_BY = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_base_by"), () -> new Block(new BlockEscalatorNarrowStep()), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ESCALATOR_NARROW_BASE_VN = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_base_vn"), () -> new Block(new BlockEscalatorNarrowStep()), CreativeModeTabs.ESCALATORS_LIFTS);
+
+
+		// FRAMED_ESCALATOR_SIDE = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_escalator_side"), () -> new Block(new BlockFramedEscalatorNarrowSide()));
+		// FRAMED_ESCALATOR_STEP = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_escalator_step"), () -> new Block(new BlockFramedEscalatorNarrowStep())); 
+		// FRAMED_TRAVELATOR_SIDE = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_travelator_side"), () -> new Block(new BlockEscalatorSide()));
+		// FRAMED_TRAVELATOR_STEP = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_travelator_step"), () -> new Block(new BlockEscalatorSide())); 
+		// FRAMED_ESCALATOR_NARROW_SIDE = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_escalator_narrow_side"), () -> new Block(new BlockFramedEscalatorNarrowSide()));
+		// FRAMED_ESCALATOR_NARROW_STEP = Init.REGISTRY.registerBlock(new Identifier(Init.MOD_ID, "framed_escalator_narrow_step"), () -> new Block(new BlockFramedEscalatorNarrowStep())); 
 
 		// PIDS projectors
 		PIDS_1 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "pids_1"), () -> new Block(new BlockPIDSHorizontal1()), CreativeModeTabs.RAILWAY_FACILITIES);
@@ -195,6 +233,7 @@ public final class Blocks {
 		TICKET_BARRIER_ENTRANCE_1 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "ticket_barrier_entrance_1"), () -> new Block(new BlockTicketBarrier(true)), CreativeModeTabs.RAILWAY_FACILITIES);
 		TICKET_BARRIER_EXIT_1 = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "ticket_barrier_exit_1"), () -> new Block(new BlockTicketBarrier(false)), CreativeModeTabs.RAILWAY_FACILITIES);
 		TICKET_MACHINE = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "ticket_machine"), () -> new Block(new BlockTicketMachine(BlockHelper.createBlockSettings(true, blockState -> 5))), CreativeModeTabs.RAILWAY_FACILITIES);
+		TICKET_MACHINE_WALL_MOUNTED = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "ticket_machine_wall_mounted"), () -> new Block(new BlockTicketMachine(BlockHelper.createBlockSettings(true, blockState -> 5))), CreativeModeTabs.RAILWAY_FACILITIES);
 		TICKET_PROCESSOR = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "ticket_processor"), () -> new Block(new BlockTicketProcessor(true, true, true)), CreativeModeTabs.RAILWAY_FACILITIES);
 		TICKET_PROCESSOR_ENTRANCE = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "ticket_processor_entrance"), () -> new Block(new BlockTicketProcessor(true, true, false)), CreativeModeTabs.RAILWAY_FACILITIES);
 		TICKET_PROCESSOR_EXIT = Init.REGISTRY.registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "ticket_processor_exit"), () -> new Block(new BlockTicketProcessor(true, false, true)), CreativeModeTabs.RAILWAY_FACILITIES);
@@ -256,13 +295,126 @@ public final class Blocks {
 	public static final BlockRegistryObject ESCALATOR_SIDE;
 	public static final BlockRegistryObject ESCALATOR_STEP;
 
-	// Framed Escalator and travelator
-	public static final BlockRegistryObject FRAMED_ESCALATOR_SIDE;
-	public static final BlockRegistryObject FRAMED_ESCALATOR_STEP;
-	public static final BlockRegistryObject FRAMED_TRAVELATOR_SIDE;
-	public static final BlockRegistryObject FRAMED_TRAVELATOR_STEP;
-	public static final BlockRegistryObject FRAMED_ESCALATOR_NARROW_SIDE;
-	public static final BlockRegistryObject FRAMED_ESCALATOR_NARROW_STEP;
+	// Escalator ( NARROW SIDE )  FM : Full Metal  GL : GLass VN : Vintage
+	// Vinage Escalator : Can only have black handrail.
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_VN;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_BLACK_FM;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_BLACK_GL;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_BLUE_FM;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_BLUE_GL;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_BROWN_FM;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_BROWN_GL;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_CYAN_FM;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_CYAN_GL;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_GRAY_FM;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_GRAY_GL;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_GREEN_FM;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_GREEN_GL;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_LIGHT_BLUE_FM;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_LIGHT_BLUE_GL;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_LIME_FM;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_LIME_GL;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_MAGENTA_FM;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_MAGENTA_GL;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_ORANGE_FM;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_ORANGE_GL;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_PINK_FM;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_PINK_GL;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_PURPLE_FM;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_PURPLE_GL;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_RED_FM;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_RED_GL;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_WHITE_FM;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_WHITE_GL;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_YELLOW_FM;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_YELLOW_GL;
+
+	// Escalator ( NARROW BASE )  GY : Gray Yellow  G : Only Gray  BY : Black  VN : Vintage
+	// public static final BlockRegistryObject ESCALATOR_NARROW_BASE_GY;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_BASE_G;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_BASE_BY;
+	// public static final BlockRegistryObject ESCALATOR_NARROW_BASE_VN;
+
+	// Escalator ( STANDARD SIDE )  FM : Full Metal  GL : GLass VN : Vintage
+	// Vinage Escalator : Can only have black handrail.
+	// public static final BlockRegistryObject ESCALATOR_SIDE_VN;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_BLACK_FM;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_BLACK_GL;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_BLUE_FM;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_BLUE_GL;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_BROWN_FM;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_BROWN_GL;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_CYAN_FM;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_CYAN_GL;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_GRAY_FM;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_GRAY_GL;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_GREEN_FM;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_GREEN_GL;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_LIGHT_BLUE_FM;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_LIGHT_BLUE_GL;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_LIME_FM;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_LIME_GL;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_MAGENTA_FM;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_MAGENTA_GL;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_ORANGE_FM;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_ORANGE_GL;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_PINK_FM;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_PINK_GL;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_PURPLE_FM;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_PURPLE_GL;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_RED_FM;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_RED_GL;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_WHITE_FM;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_WHITE_GL;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_YELLOW_FM;
+	// public static final BlockRegistryObject ESCALATOR_SIDE_YELLOW_GL;
+
+	// Escalator ( STANDARD BASE )  GY : Gray Yellow  G : Only Gray  BY : Black  VN : Vintage
+	// public static final BlockRegistryObject ESCALATOR_BASE_GY;
+	// public static final BlockRegistryObject ESCALATOR_BASE_G;
+	// public static final BlockRegistryObject ESCALATOR_BASE_BY;
+	// public static final BlockRegistryObject ESCALATOR_BASE_VN;
+
+	// Moving Walkway ( SIDE ) FM : Full Metal  GL : GLass VN : Vintage
+	// Vinage Moving Walkway : Can only have black handrail.
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_VN;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_BLACK_FM;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_BLACK_GL;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_BLUE_FM;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_BLUE_GL;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_BROWN_FM;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_BROWN_GL;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_CYAN_FM;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_CYAN_GL;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_GRAY_FM;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_GRAY_GL;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_GREEN_FM;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_GREEN_GL;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_LIGHT_BLUE_FM;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_LIGHT_BLUE_GL;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_LIME_FM;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_LIME_GL;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_MAGENTA_FM;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_MAGENTA_GL;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_ORANGE_FM;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_ORANGE_GL;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_PINK_FM;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_PINK_GL;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_PURPLE_FM;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_PURPLE_GL;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_RED_FM;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_RED_GL;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_WHITE_FM;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_WHITE_GL;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_YELLOW_FM;
+	// public static final BlockRegistryObject MOVING_WALKWAY_SIDE_YELLOW_GL;
+
+	// Moving Walkway ( BASE ) GY : Gray Yellow  G : Only Gray  BY : Black  DBYS : Double Black with Yellow SIde DG : Double Gray
+	// public static final BlockRegistryObject MOVING_WALKWAY_BASE_GY;
+	// public static final BlockRegistryObject MOVING_WALKWAY_BASE_G;
+	// public static final BlockRegistryObject MOVING_WALKWAY_BASE_BY;
+	// public static final BlockRegistryObject MOVING_WALKWAY_BASE_DBYS;
+	// public static final BlockRegistryObject MOVING_WALKWAY_BASE_DG;
 
 	public static final BlockRegistryObject GLASS_FENCE_CIO;
 	public static final BlockRegistryObject GLASS_FENCE_CKT;
@@ -420,6 +572,7 @@ public final class Blocks {
 	public static final BlockRegistryObject TICKET_BARRIER_ENTRANCE_1;
 	public static final BlockRegistryObject TICKET_BARRIER_EXIT_1;
 	public static final BlockRegistryObject TICKET_MACHINE;
+	public static final BlockRegistryObject TICKET_MACHINE_WALL_MOUNTED;
 	public static final BlockRegistryObject TICKET_PROCESSOR;
 	public static final BlockRegistryObject TICKET_PROCESSOR_ENQUIRY;
 	public static final BlockRegistryObject TICKET_PROCESSOR_ENTRANCE;

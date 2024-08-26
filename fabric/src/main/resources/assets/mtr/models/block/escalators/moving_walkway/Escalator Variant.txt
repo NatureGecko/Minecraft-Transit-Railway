@@ -1,0 +1,13 @@
+## Base
+Base - Are the step, frame and lower part of an escalator.
+
+base-by : Metal base with black-yellow step. Modern Escalator.
+base-g  : Metal base with gray step.
+base-by : Gray yellow step.
+base-vn : Vintage Escalator with wooden step.
+
+## SIde
+Side - are the side or escalator handrail.
+side-fm : Full-Metal
+side-gl : Glass
+side-vn : Wooden side, only has a black handrail.

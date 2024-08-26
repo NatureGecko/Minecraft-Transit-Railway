@@ -43,11 +43,6 @@ public final class Items {
 		LIFT_DOOR_ODD_1 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "lift_door_odd_1"), itemSettings -> new Item(new ItemPSDAPGBase(ItemPSDAPGBase.EnumPSDAPGItem.PSD_APG_DOOR, ItemPSDAPGBase.EnumPSDAPGType.LIFT_DOOR_ODD_1, itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
 		LIFT_REFRESHER = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "lift_refresher"), itemSettings -> new Item(new ItemLiftRefresher(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
 
-		// Framed Escalator : Base
-		FRAMED_ESCALATOR_NARROW = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "framed_escalator_narrow"), itemSettings -> new Item(new ItemFramedEscalatorNarrow(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
-		FRAMED_ESCALATOR = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "framed_escalator"), itemSettings -> new Item(new ItemFramedEscalator(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
-		FRAMED_TRAVELATOR = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "framed_travelator"), itemSettings -> new Item(new ItemFramedTravelator(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
-
 		// Framed Escalator : Steps
 		ESCALATOR_STEP_TYPE_1 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "escalator_step_type_1"), itemSettings -> new Item(new ItemEscalatorStep(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
 		ESCALATOR_STEP_TYPE_2 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "escalator_step_type_2"), itemSettings -> new Item(new ItemEscalatorStep(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
@@ -166,6 +161,14 @@ public final class Items {
 		TUNNEL_WALL_CREATOR_6_5 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "tunnel_wall_creator_6_5"), itemSettings -> new Item(new ItemTunnelWallCreator(6, 5, itemSettings)), CreativeModeTabs.CORE);
 		TUNNEL_WALL_CREATOR_6_7 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "tunnel_wall_creator_6_7"), itemSettings -> new Item(new ItemTunnelWallCreator(6, 7, itemSettings)), CreativeModeTabs.CORE);
 		TUNNEL_WALL_CREATOR_6_9 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "tunnel_wall_creator_6_9"), itemSettings -> new Item(new ItemTunnelWallCreator(6, 9, itemSettings)), CreativeModeTabs.CORE);
+		
+		// Framed Escalator : Base
+		// FRAMED_ESCALATOR_NARROW = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "framed_escalator_narrow"), itemSettings -> new Item(new ItemEscalatorSide(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+		// FRAMED_ESCALATOR = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "framed_escalator"), itemSettings -> new Item(new ItemFramedEscalator(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+		// FRAMED_TRAVELATOR = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "framed_travelator"), itemSettings -> new Item(new ItemFramedTravelator(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+
+		// ITEM_ESCALATOR_NARROW_SIDE_BLACK_FM = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "item_escalator_narrow_side_black_fm"), itemSettings -> new Item(new ItemEscalatorNarrowSide(Blocks.ESCALATOR_NARROW_SIDE_BLACK_FM, itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+		// ITEM_ESCALATOR_NARROW_SIDE_BLACK_GL = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "item_escalator_narrow_side_black_gl"), itemSettings -> new Item(new ItemEscalatorNarrowSide(Blocks.ESCALATOR_NARROW_SIDE_BLACK_GL, itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
 	}
 
 	public static final ItemRegistryObject BRUSH;
@@ -183,9 +186,9 @@ public final class Items {
 	public static final ItemRegistryObject DRIVER_KEY;
 	public static final ItemRegistryObject ESCALATOR;
 
-	public static final ItemRegistryObject FRAMED_ESCALATOR;
-	public static final ItemRegistryObject FRAMED_ESCALATOR_NARROW;
-	public static final ItemRegistryObject FRAMED_TRAVELATOR;
+	// public static final ItemRegistryObject FRAMED_ESCALATOR;
+	// public static final ItemRegistryObject FRAMED_ESCALATOR_NARROW;
+	// public static final ItemRegistryObject FRAMED_TRAVELATOR;
 
 	public static final ItemRegistryObject ESCALATOR_STEP_TYPE_1;
 	public static final ItemRegistryObject ESCALATOR_STEP_TYPE_2;
@@ -304,6 +307,128 @@ public final class Items {
 	public static final ItemRegistryObject TUNNEL_WALL_CREATOR_6_5;
 	public static final ItemRegistryObject TUNNEL_WALL_CREATOR_6_7;
 	public static final ItemRegistryObject TUNNEL_WALL_CREATOR_6_9;
+
+	
+	// Escalator ( NARROW SIDE )  FM : Full Metal  GL : GLass VN : Vintage
+	// Vinage Escalator : Can only have black handrail.
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_VN;
+	// public static final ItemRegistryObject ITEM_ESCALATOR_NARROW_SIDE_BLACK_FM;
+	// public static final ItemRegistryObject ITEM_ESCALATOR_NARROW_SIDE_BLACK_GL;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_BLUE_FM;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_BLUE_GL;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_BROWN_FM;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_BROWN_GL;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_CYAN_FM;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_CYAN_GL;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_GRAY_FM;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_GRAY_GL;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_GREEN_FM;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_GREEN_GL;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_LIGHT_BLUE_FM;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_LIGHT_BLUE_GL;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_LIME_FM;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_LIME_GL;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_MAGENTA_FM;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_MAGENTA_GL;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_ORANGE_FM;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_ORANGE_GL;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_PINK_FM;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_PINK_GL;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_PURPLE_FM;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_PURPLE_GL;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_RED_FM;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_RED_GL;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_WHITE_FM;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_WHITE_GL;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_YELLOW_FM;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_SIDE_YELLOW_GL;
+
+	// Escalator ( NARROW BASE )  GY : Gray Yellow  G : Only Gray  BY : Black  VN : Vintage
+	// public static final ItemRegistryObject ESCALATOR_NARROW_BASE_GY;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_BASE_G;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_BASE_BY;
+	// public static final ItemRegistryObject ESCALATOR_NARROW_BASE_VN;
+
+	// Escalator ( STANDARD SIDE )  FM : Full Metal  GL : GLass VN : Vintage
+	// Vinage Escalator : Can only have black handrail.
+	// public static final ItemRegistryObject ESCALATOR_SIDE_VN;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_BLACK_FM;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_BLACK_GL;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_BLUE_FM;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_BLUE_GL;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_BROWN_FM;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_BROWN_GL;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_CYAN_FM;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_CYAN_GL;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_GRAY_FM;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_GRAY_GL;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_GREEN_FM;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_GREEN_GL;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_LIGHT_BLUE_FM;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_LIGHT_BLUE_GL;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_LIME_FM;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_LIME_GL;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_MAGENTA_FM;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_MAGENTA_GL;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_ORANGE_FM;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_ORANGE_GL;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_PINK_FM;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_PINK_GL;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_PURPLE_FM;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_PURPLE_GL;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_RED_FM;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_RED_GL;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_WHITE_FM;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_WHITE_GL;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_YELLOW_FM;
+	// public static final ItemRegistryObject ESCALATOR_SIDE_YELLOW_GL;
+
+	// Escalator ( STANDARD BASE )  GY : Gray Yellow  G : Only Gray  BY : Black  VN : Vintage
+	// public static final ItemRegistryObject ESCALATOR_BASE_GY;
+	// public static final ItemRegistryObject ESCALATOR_BASE_G;
+	// public static final ItemRegistryObject ESCALATOR_BASE_BY;
+	// public static final ItemRegistryObject ESCALATOR_BASE_VN;
+
+	// Moving Walkway ( SIDE ) FM : Full Metal  GL : GLass VN : Vintage
+	// Vinage Moving Walkway : Can only have black handrail.
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_VN;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_BLACK_FM;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_BLACK_GL;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_BLUE_FM;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_BLUE_GL;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_BROWN_FM;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_BROWN_GL;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_CYAN_FM;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_CYAN_GL;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_GRAY_FM;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_GRAY_GL;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_GREEN_FM;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_GREEN_GL;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_LIGHT_BLUE_FM;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_LIGHT_BLUE_GL;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_LIME_FM;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_LIME_GL;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_MAGENTA_FM;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_MAGENTA_GL;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_ORANGE_FM;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_ORANGE_GL;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_PINK_FM;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_PINK_GL;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_PURPLE_FM;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_PURPLE_GL;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_RED_FM;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_RED_GL;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_WHITE_FM;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_WHITE_GL;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_YELLOW_FM;
+	// public static final ItemRegistryObject MOVING_WALKWAY_SIDE_YELLOW_GL;
+
+	// Moving Walkway ( BASE ) GY : Gray Yellow  G : Only Gray  BY : Black  DBYS : Double Black with Yellow SIde DG : Double Gray
+	// public static final ItemRegistryObject MOVING_WALKWAY_BASE_GY;
+	// public static final ItemRegistryObject MOVING_WALKWAY_BASE_G;
+	// public static final ItemRegistryObject MOVING_WALKWAY_BASE_BY;
+	// public static final ItemRegistryObject MOVING_WALKWAY_BASE_DBYS;
+	// public static final ItemRegistryObject MOVING_WALKWAY_BASE_DG;
 
 	public static void init() {
 		Init.LOGGER.info("Registering Minecraft Transit Railway items");

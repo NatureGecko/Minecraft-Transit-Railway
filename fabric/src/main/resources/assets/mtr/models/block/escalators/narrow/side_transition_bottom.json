@@ -1,0 +1,166 @@
+{
+	"credit": "MTR : 4.0.0 Colorful Station Update",
+	"parent": "minecraft:block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"side_base": "mtr:block/escalators/framed_narrow/variant/full_metal",
+		"handrail": "mtr:block/escalators/framed_narrow/handrail/black_stop",
+		"particle": "mtr:block/metal"
+	},
+	"elements": [
+		{
+			"name": "handrail_l1",
+			"from": [8, 14, 13.7],
+			"to": [16, 15, 15.7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 14, 8]},
+			"faces": {
+				"north": {"uv": [12, 0, 14, 8], "rotation": 90, "texture": "#handrail"},
+				"south": {"uv": [6, 0, 8, 8], "rotation": 270, "texture": "#handrail"},
+				"up": {"uv": [8, 0, 12, 8], "rotation": 270, "texture": "#handrail"},
+				"down": {"uv": [2, 0, 6, 8], "rotation": 270, "texture": "#handrail"}
+			}
+		},
+		{
+			"name": "handrail_l2",
+			"from": [-1.3, 14, 13.701],
+			"to": [8, 15, 15.699],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 14, 8]},
+			"faces": {
+				"north": {"uv": [12, 8, 14, 16], "rotation": 90, "texture": "#handrail"},
+				"south": {"uv": [6, 8, 8, 16], "rotation": 270, "texture": "#handrail"},
+				"up": {"uv": [8, 8, 12, 16], "rotation": 270, "texture": "#handrail"},
+				"down": {"uv": [2, 8, 6, 16], "rotation": 270, "texture": "#handrail"}
+			}
+		},
+		{
+			"name": "handrail_r1",
+			"from": [8, 14, 0.3],
+			"to": [16, 15, 2.3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 14, 8]},
+			"faces": {
+				"north": {"uv": [12, 0, 14, 8], "rotation": 90, "texture": "#handrail"},
+				"south": {"uv": [6, 0, 8, 8], "rotation": 270, "texture": "#handrail"},
+				"up": {"uv": [8, 0, 12, 8], "rotation": 270, "texture": "#handrail"},
+				"down": {"uv": [2, 0, 6, 8], "rotation": 270, "texture": "#handrail"}
+			}
+		},
+		{
+			"name": "handrail_r2",
+			"from": [-1.3, 14, 0.301],
+			"to": [8, 15, 2.299],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 14, 8]},
+			"faces": {
+				"north": {"uv": [12, 8, 14, 16], "rotation": 90, "texture": "#handrail"},
+				"south": {"uv": [6, 8, 8, 16], "rotation": 270, "texture": "#handrail"},
+				"up": {"uv": [8, 8, 12, 16], "rotation": 270, "texture": "#handrail"},
+				"down": {"uv": [2, 8, 6, 16], "rotation": 270, "texture": "#handrail"}
+			}
+		},
+		{
+			"name": "guide_r1",
+			"from": [8, 0, -0.07],
+			"to": [16, 13, 2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 1]},
+			"faces": {
+				"north": {"uv": [4, 8.125, 2, 12], "texture": "#side_base"},
+				"south": {"uv": [2, 8, 4, 12], "texture": "#side_base"},
+				"up": {"uv": [3.875, 8.75, 1.875, 8], "texture": "#side_base"}
+			}
+		},
+		{
+			"name": "guide_r2",
+			"from": [-11.2, 0, -0.05],
+			"to": [8, 9.2, 1.95],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 0, 1]},
+			"faces": {
+				"north": {"uv": [0.125, 9, 4, 12], "texture": "#side_base"},
+				"south": {"uv": [4, 9, 0.125, 12], "texture": "#side_base"},
+				"up": {"uv": [0, 8.75, 4, 8], "texture": "#side_base"}
+			}
+		},
+		{
+			"name": "guide_l1",
+			"from": [8, 0, 14],
+			"to": [16, 13, 16.07],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 15]},
+			"faces": {
+				"north": {"uv": [4, 8, 2, 12], "texture": "#side_base"},
+				"south": {"uv": [2, 8.125, 4, 12], "texture": "#side_base"},
+				"up": {"uv": [3.875, 8, 1.875, 8.75], "texture": "#side_base"}
+			}
+		},
+		{
+			"name": "guide_l2",
+			"from": [-11.2, 0, 14.05],
+			"to": [8, 9.2, 16.05],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 0, 15]},
+			"faces": {
+				"north": {"uv": [0.125, 9, 4, 12], "texture": "#side_base"},
+				"south": {"uv": [4, 9, 0.125, 12], "texture": "#side_base"},
+				"up": {"uv": [0, 8, 4, 8.75], "texture": "#side_base"}
+			}
+		},
+		{
+			"name": "guiderail_r2",
+			"from": [-2, 13, 0.501],
+			"to": [8, 14, 1.499],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 13, 1]},
+			"faces": {
+				"north": {"uv": [14.125, 15.25, 12, 15.5], "texture": "#side_base"},
+				"south": {"uv": [12, 15.25, 14.125, 15.5], "texture": "#side_base"}
+			}
+		},
+		{
+			"name": "guiderail_r1",
+			"from": [8, 13, 0.5],
+			"to": [16, 14, 1.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 13, 1]},
+			"faces": {
+				"north": {"uv": [16, 15.25, 14, 15.5], "texture": "#side_base"},
+				"south": {"uv": [14, 15.25, 16, 15.5], "texture": "#side_base"}
+			}
+		},
+		{
+			"name": "guiderail_l1",
+			"from": [8, 13, 14.5],
+			"to": [16, 14, 15.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 13, 15]},
+			"faces": {
+				"north": {"uv": [16, 15.25, 14, 15.5], "texture": "#side_base"},
+				"south": {"uv": [14, 15.25, 16, 15.5], "texture": "#side_base"}
+			}
+		},
+		{
+			"name": "guiderail_l2",
+			"from": [-2, 13, 14.501],
+			"to": [8, 14, 15.499],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 13, 15]},
+			"faces": {
+				"north": {"uv": [14.125, 15.25, 12, 15.5], "texture": "#side_base"},
+				"south": {"uv": [12, 15.25, 14.125, 15.5], "texture": "#side_base"}
+			}
+		},
+		{
+			"name": "strip_r",
+			"from": [9.5, -0.1, -0.1],
+			"to": [10, 13.1, 2.025],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 0.125, 8], "texture": "#side_base"},
+				"south": {"uv": [0, 0, 0.125, 8], "texture": "#side_base"},
+				"up": {"uv": [0, 0, 0.125, 0.5], "texture": "#side_base"}
+			}
+		},
+		{
+			"name": "strip_l",
+			"from": [9.5, -0.1, 13.975],
+			"to": [10, 13.1, 16.1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0.125, 0, 0, 8], "texture": "#side_base"},
+				"south": {"uv": [0.125, 0, 0, 8], "texture": "#side_base"},
+				"up": {"uv": [0, 0.5, 0.125, 0], "texture": "#side_base"}
+			}
+		}
+	]
+}
