@@ -1,5 +1,5 @@
 {
-	"parent": "mtr:block/escalator_belt/bases/wooden_transition_top_left",
+	"parent": "mtr:block/escalator_belt/bases/wooden_side_transition_top_left",
 	"ambientocclusion": false,
 	"textures": {
 		"handrail": "mtr:block/escalator_handrails/handrail_black_stop",
