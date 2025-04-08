@@ -1,0 +1,8 @@
+{
+	"parent": "mtr:block/escalator_wide/bases/glass_side_landing_top_right",
+	"ambientocclusion": false,
+	"textures": {
+		"handrail": "mtr:block/escalator_wide/handrail_magenta_forward",
+		"body": "mtr:block/escalator_wide/body_glass"
+	}
+}

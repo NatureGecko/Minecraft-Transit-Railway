@@ -1,0 +1,8 @@
+{
+	"parent": "mtr:block/escalator_narrow/bases/glass_side_transition_top",
+	"ambientocclusion": false,
+	"textures": {
+		"handrail": "mtr:block/escalator_narrow/handrail_cyan_stop",
+		"body": "mtr:block/escalator_narrow/body_glass"
+	}
+}

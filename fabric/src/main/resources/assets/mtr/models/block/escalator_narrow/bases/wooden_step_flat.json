@@ -1,0 +1,69 @@
+{
+	"credit": "MTR - Escalator Update, Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "mtr:block/escalator_narrow/particle"
+	},
+	"elements": [
+		{
+			"name": "step",
+			"from": [0, 16, 3],
+			"to": [16, 16, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 16, 2]},
+			"faces": {
+				"up": {"uv": [0.4, 12.8, 2.8, 16], "rotation": 270, "texture": "#step"}
+			}
+		},
+		{
+			"name": "base_r",
+			"from": [0, 0, 0],
+			"to": [16, 16, 0],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 16, 0]},
+			"faces": {
+				"north": {"uv": [7.75, 4.5, 11.75, 8.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base_b",
+			"from": [0, 0, 0],
+			"to": [16, 0, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 16, 0]},
+			"faces": {
+				"north": {"uv": [0, 12, 4, 16], "texture": "#body"},
+				"south": {"uv": [0, 12, 4, 16], "texture": "#body"},
+				"down": {"uv": [7.75, 4.5, 11.75, 8.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base_l",
+			"from": [0, 0, 16],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 16, 0]},
+			"faces": {
+				"south": {"uv": [7.75, 4.5, 11.75, 8.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base_tl",
+			"from": [0, 16, 13],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 32, 16]},
+			"faces": {
+				"north": {"uv": [4, 12, 0, 16], "texture": "#body"},
+				"south": {"uv": [4, 12, 0, 16], "texture": "#body"},
+				"up": {"uv": [7.75, 9.25, 11.75, 8.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base_tr",
+			"from": [0, 16, 0],
+			"to": [16, 16, 3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 32, 0]},
+			"faces": {
+				"north": {"uv": [0, 12, 4, 16], "texture": "#body"},
+				"south": {"uv": [0, 12, 4, 16], "texture": "#body"},
+				"up": {"uv": [7.75, 8.5, 11.75, 9.25], "texture": "#body"}
+			}
+		}
+	]
+}

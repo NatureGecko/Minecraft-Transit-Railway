@@ -1,0 +1,8 @@
+{
+	"parent": "mtr:block/escalator_wide/bases/wooden_step_flat_right",
+	"ambientocclusion": false,
+	"textures": {
+		"step": "mtr:block/escalator_wide/step_down_4",
+		"body": "mtr:block/escalator_wide/body_wooden"
+	}
+}

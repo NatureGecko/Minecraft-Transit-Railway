@@ -1,0 +1,66 @@
+{
+	"credit": "MTR - Escalator Update, Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "mtr:block/escalator_wide/particle"
+	},
+	"elements": [
+		{
+			"name": "guiderail base",
+			"from": [-11.3, 0, 11],
+			"to": [11.375, 3, 16],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 0, 0]},
+			"faces": {
+				"north": {"uv": [4, 5.5, 0, 6.25], "texture": "#body"},
+				"south": {"uv": [0, 3.75, 4, 4.5], "texture": "#body"},
+				"up": {"uv": [0, 4.5, 4, 5.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "guiderail upper",
+			"from": [-11.3, 11, 11.5],
+			"to": [11.4, 12, 13.5],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 0, 0]},
+			"faces": {
+				"north": {"uv": [16, 3.5, 12, 4], "texture": "#body"},
+				"south": {"uv": [12, 4, 16, 4.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "guiderail lower",
+			"from": [-11.3, 10, 11],
+			"to": [11.4, 11, 12],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 0, 0]},
+			"faces": {
+				"north": {"uv": [16, 1.25, 12, 1.75], "texture": "#body"},
+				"up": {"uv": [12, 1.25, 16, 1], "texture": "#body"},
+				"down": {"uv": [12, 2.75, 16, 3], "texture": "#body"}
+			}
+		},
+		{
+			"name": "guiderail wall",
+			"from": [-11.3, 3, 12],
+			"to": [11.4, 11, 16],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 0, 0]},
+			"faces": {
+				"north": {"uv": [8.25, 11, 4.25, 13], "texture": "#body"},
+				"east": {"uv": [8.25, 14, 9.25, 16], "texture": "#body"},
+				"south": {"uv": [4.25, 14, 8.25, 16], "texture": "#body"},
+				"west": {"uv": [9.25, 11, 8.25, 13], "texture": "#body"},
+				"up": {"uv": [12, 3, 16, 1.75], "texture": "#body"}
+			}
+		},
+		{
+			"name": "handrail",
+			"from": [-11.3, 12, 11.25],
+			"to": [11.4, 13, 14.25],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 0, 0]},
+			"faces": {
+				"north": {"uv": [12, 0, 14, 16], "rotation": 90, "texture": "#handrail"},
+				"south": {"uv": [6, 0, 8, 16], "rotation": 270, "texture": "#handrail"},
+				"up": {"uv": [8, 0, 12, 16], "rotation": 270, "texture": "#handrail"},
+				"down": {"uv": [2, 0, 6, 16], "rotation": 270, "texture": "#handrail"}
+			}
+		}
+	]
+}

@@ -1,0 +1,59 @@
+{
+	"credit": "MTR - Escalator Update, Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "mtr:block/escalator_wide/particle"
+	},
+	"elements": [
+		{
+			"name": "base",
+			"from": [0, 0, 11],
+			"to": [16, 3, 16.025],
+			"faces": {
+				"north": {"uv": [13, 4, 9, 4.75], "texture": "#body"},
+				"east": {"uv": [11, 5, 13, 5.75], "texture": "#body"},
+				"south": {"uv": [9, 5, 13, 5.75], "texture": "#body", "cullface": "north"},
+				"west": {"uv": [11, 5, 13, 5.75], "texture": "#body"},
+				"up": {"uv": [9, 6, 13, 8], "texture": "#body"},
+				"down": {"uv": [9, 8, 13, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail 1",
+			"from": [0, 12.5, 11],
+			"to": [16, 13.5, 16.025],
+			"faces": {
+				"north": {"uv": [13, 4, 9, 4.5], "texture": "#body"},
+				"east": {"uv": [9, 5, 11, 5.5], "texture": "#body"},
+				"south": {"uv": [9, 5, 13, 5.5], "texture": "#body", "cullface": "north"},
+				"west": {"uv": [9, 5, 11, 5.5], "texture": "#body"},
+				"up": {"uv": [9, 6, 13, 8], "texture": "#body"},
+				"down": {"uv": [9, 8, 13, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail 2",
+			"from": [0, 13.5, 11.75],
+			"to": [16, 14, 13.75],
+			"faces": {
+				"north": {"uv": [13, 4.75, 9, 5], "texture": "#body"},
+				"east": {"uv": [9, 5.75, 9.75, 6], "texture": "#body"},
+				"south": {"uv": [9, 5.75, 13, 6], "texture": "#body", "cullface": "north"},
+				"west": {"uv": [9, 5.75, 9.75, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "handrail",
+			"from": [0, 14, 11.25],
+			"to": [16, 15, 14.25],
+			"faces": {
+				"north": {"uv": [12, 0, 14, 16], "rotation": 90, "texture": "#handrail"},
+				"east": {"uv": [2, 15.5, 6, 16], "texture": "#handrail"},
+				"south": {"uv": [6, 0, 8, 16], "rotation": 270, "texture": "#handrail", "cullface": "north"},
+				"west": {"uv": [2, 0, 6, 0.5], "texture": "#handrail"},
+				"up": {"uv": [12, 16, 8, 0], "rotation": 90, "texture": "#handrail"},
+				"down": {"uv": [2, 16, 6.5, 0], "rotation": 90, "texture": "#handrail"}
+			}
+		}
+	]
+}
