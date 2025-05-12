@@ -7,7 +7,7 @@ import org.mtr.mod.generated.lang.TranslationProvider;
 import javax.annotation.Nonnull;
 import java.util.List;
 
-public class BlockEscalatorWideSide extends BlockEscalatorWideBase {
+public class BlockEscalatorWideSide extends BlockEscalatorWide {
     @Nonnull
     @Override
     public BlockState getStateForNeighborUpdate2(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
@@ -63,7 +63,7 @@ public class BlockEscalatorWideSide extends BlockEscalatorWideBase {
         final boolean isBottom = orientation == EnumEscalatorWideOrientation.LANDING_BOTTOM;
         final boolean isTop = orientation == EnumEscalatorWideOrientation.LANDING_TOP;
         final boolean isRight = IBlock.getStatePropertySafe(state, SIDE) == EnumSide.RIGHT;
-        return IBlock.getVoxelShapeByDirection(isRight ? 12 : 0, 0, isTop ? 8 : 0, isRight ? 16 : 4, 16, isBottom ? 8 : 16, IBlock.getStatePropertySafe(state, FACING));
+        return IBlock.getVoxelShapeByDirection(isRight ? 12 : 0, -8, 0, isRight ? 16 : 4, 20, 16, IBlock.getStatePropertySafe(state, FACING));
     }
 
     @Override

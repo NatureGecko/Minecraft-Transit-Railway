@@ -1,0 +1,7 @@
+{
+	"parent": "mtr:block/escalator_wide/bases/wooden_base_transition_top_right",
+	"ambientocclusion": false,
+	"textures": {
+		"body": "mtr:block/escalator_wide/body_wooden"
+	}
+}

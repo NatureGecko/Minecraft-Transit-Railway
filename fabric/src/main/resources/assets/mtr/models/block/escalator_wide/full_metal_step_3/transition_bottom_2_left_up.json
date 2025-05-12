@@ -1,0 +1,8 @@
+{
+	"parent": "mtr:block/escalator_wide/bases/full_metal_step_transition_bottom_2_left",
+	"ambientocclusion": false,
+	"textures": {
+		"step": "mtr:block/escalator_wide/step_up_3",
+		"body": "mtr:block/escalator_wide/body_full_metal"
+	}
+}

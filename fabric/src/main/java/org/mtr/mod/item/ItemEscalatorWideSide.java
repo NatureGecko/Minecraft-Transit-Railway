@@ -2,8 +2,7 @@ package org.mtr.mod.item;
 
 import org.mtr.mapping.holder.*;
 import org.mtr.mapping.mapper.ItemExtension;
-import org.mtr.mod.Blocks;
-import org.mtr.mod.block.BlockEscalatorWideBase;
+import org.mtr.mod.block.BlockEscalatorWide;
 import org.mtr.mod.block.BlockEscalatorWideSide;
 import org.mtr.mod.block.IBlock;
 
@@ -31,8 +30,8 @@ public class ItemEscalatorWideSide extends ItemExtension implements IBlock {
         BlockPos pos2 = pos1.offset(playerFacing.rotateYClockwise());
 
         final BlockState frontState = world.getBlockState(pos1.offset(playerFacing));
-        if (frontState.getBlock().data instanceof BlockEscalatorWideBase) {
-            if (IBlock.getStatePropertySafe(frontState, BlockEscalatorWideBase.FACING) == playerFacing.getOpposite()) {
+        if (frontState.getBlock().data instanceof BlockEscalatorWide) {
+            if (IBlock.getStatePropertySafe(frontState, BlockEscalatorWide.FACING) == playerFacing.getOpposite()) {
                 playerFacing = playerFacing.getOpposite();
                 final BlockPos pos3 = pos1;
                 pos1 = pos2;

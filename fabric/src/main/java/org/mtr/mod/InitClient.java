@@ -144,6 +144,7 @@ public final class InitClient {
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_SIDE_FM_RED);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_SIDE_FM_WHITE);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_SIDE_FM_YELLOW);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_SIDE_FM_RAINBOW);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_SIDE_GL_BLACK);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_SIDE_GL_BLUE);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_SIDE_GL_BROWN);
@@ -160,6 +161,7 @@ public final class InitClient {
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_SIDE_GL_RED);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_SIDE_GL_WHITE);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_SIDE_GL_YELLOW);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_SIDE_GL_RAINBOW);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_STEP_WD_1);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_STEP_WD_2);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_STEP_WD_3);
@@ -180,6 +182,7 @@ public final class InitClient {
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_SIDE_WD_RED);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_SIDE_WD_WHITE);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_SIDE_WD_YELLOW);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_WIDE_SIDE_WD_RAINBOW);
 
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_STEP_FM_1);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_STEP_FM_2);
@@ -201,6 +204,7 @@ public final class InitClient {
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_SIDE_FM_RED);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_SIDE_FM_WHITE);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_SIDE_FM_YELLOW);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_SIDE_FM_RAINBOW);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_SIDE_GL_BLACK);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_SIDE_GL_BLUE);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_SIDE_GL_BROWN);
@@ -217,6 +221,7 @@ public final class InitClient {
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_SIDE_GL_RED);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_SIDE_GL_WHITE);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_SIDE_GL_YELLOW);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_SIDE_GL_RAINBOW);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_STEP_WD_1);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_STEP_WD_2);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_STEP_WD_3);
@@ -237,6 +242,7 @@ public final class InitClient {
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_SIDE_WD_RED);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_SIDE_WD_WHITE);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_SIDE_WD_YELLOW);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_NARROW_SIDE_WD_RAINBOW);
 
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_STEP_FM_1);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_STEP_FM_2);
@@ -260,6 +266,7 @@ public final class InitClient {
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_FM_RED);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_FM_WHITE);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_FM_YELLOW);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_FM_RAINBOW);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_GL_BLACK);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_GL_BLUE);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_GL_BROWN);
@@ -276,6 +283,7 @@ public final class InitClient {
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_GL_RED);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_GL_WHITE);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_GL_YELLOW);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_GL_RAINBOW);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_STEP_WD_1);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_STEP_WD_2);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_STEP_WD_3);
@@ -298,6 +306,7 @@ public final class InitClient {
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_WD_RED);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_WD_WHITE);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_WD_YELLOW);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_WD_RAINBOW);
 
         REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.LIFT_BUTTONS_1, RenderLiftButtons::new);
         REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.LIFT_PANEL_EVEN_1, dispatcher -> new RenderLiftPanel<>(dispatcher, false, false));

@@ -2,7 +2,7 @@
 	"parent": "mtr:block/escalator_wide/bases/glass_side_flat_left",
 	"ambientocclusion": false,
 	"textures": {
-		"handrail": "mtr:block/escalator_wide/handrail_red_forward",
+		"handrail": "mtr:block/escalator_handrails/handrail_red_forward",
 		"body": "mtr:block/escalator_wide/body_glass"
 	}
 }

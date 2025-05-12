@@ -1,5 +1,5 @@
 {
-	"parent": "mtr:block/escalator_narrow/bases/full_metal_step_landing_top",
+	"parent": "mtr:block/escalator_narrow/bases/full_metal_step_landing_bottom",
 	"ambientocclusion": false,
 	"textures": {
 		"body": "mtr:block/escalator_narrow/body_wooden"

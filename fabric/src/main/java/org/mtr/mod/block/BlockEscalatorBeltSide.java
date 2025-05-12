@@ -7,7 +7,7 @@ import org.mtr.mod.generated.lang.TranslationProvider;
 import javax.annotation.Nonnull;
 import java.util.List;
 
-public class BlockEscalatorBeltSide extends BlockEscalatorBeltBase {
+public class BlockEscalatorBeltSide extends BlockEscalatorBelt {
     @Nonnull
     @Override
     public BlockState getStateForNeighborUpdate2(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {

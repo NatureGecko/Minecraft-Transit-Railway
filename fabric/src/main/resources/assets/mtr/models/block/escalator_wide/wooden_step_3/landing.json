@@ -1,7 +1,0 @@
-{
-	"parent": "mtr:block/escalator_wide/bases/wooden_step_landing",
-	"ambientocclusion": false,
-	"textures": {
-		"body": "mtr:block/escalator_wide/body_wooden"
-	}
-}

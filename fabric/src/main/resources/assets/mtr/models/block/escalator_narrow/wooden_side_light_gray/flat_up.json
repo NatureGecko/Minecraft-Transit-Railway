@@ -1,8 +1,8 @@
 {
-	"parent": "mtr:block/escalator_narrow/bases/full_metal_side_flat",
+	"parent": "mtr:block/escalator_narrow/bases/wooden_side_flat",
 	"ambientocclusion": false,
 	"textures": {
-		"handrail": "mtr:block/escalator_narrow/handrail_light_gray_forward",
+		"handrail": "mtr:block/escalator_handrails/handrail_light_gray_forward",
 		"body": "mtr:block/escalator_narrow/body_wooden"
 	}
 }

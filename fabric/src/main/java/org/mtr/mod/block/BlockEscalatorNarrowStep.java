@@ -6,7 +6,7 @@ import org.mtr.mapping.tool.HolderBase;
 import javax.annotation.Nonnull;
 import java.util.List;
 
-public class BlockEscalatorNarrowStep extends BlockEscalatorNarrowBase {
+public class BlockEscalatorNarrowStep extends BlockEscalatorNarrow {
     @Nonnull
     @Override
     public BlockState getStateForNeighborUpdate2(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
@@ -23,20 +23,24 @@ public class BlockEscalatorNarrowStep extends BlockEscalatorNarrowBase {
     @Nonnull
     @Override
     public VoxelShape getCollisionShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        final EnumEscalatorNarrowOrientation orientation = IBlock.getStatePropertySafe(state, new Property<>(ORIENTATION.data));
-        if (orientation == EnumEscalatorNarrowOrientation.FLAT || orientation == EnumEscalatorNarrowOrientation.TRANSITION_BOTTOM) {
+        final BlockEscalatorNarrow.EnumEscalatorNarrowOrientation orientation = IBlock.getStatePropertySafe(state, new Property<>(ORIENTATION.data));
+        if (orientation == BlockEscalatorNarrow.EnumEscalatorNarrowOrientation.FLAT || orientation == BlockEscalatorNarrow.EnumEscalatorNarrowOrientation.TRANSITION_BOTTOM_1) {
             return Block.createCuboidShape(0, 0, 0, 16, 15, 16);
-        } else {
-            return VoxelShapes.combine(Block.createCuboidShape(1, 0, 1, 15, 16, 15), super.getCollisionShape2(state, world, pos, context), BooleanBiFunction.getAndMapped());
         }
+        return VoxelShapes.union(Block.createCuboidShape(0, 0, 0, 16, 8, 16), IBlock.getVoxelShapeByDirection(0, 8, 0, 16, 15, 8, IBlock.getStatePropertySafe(state, FACING)));
     }
 
     @Override
     public void onEntityCollision2(BlockState state, World world, BlockPos pos, Entity entity) {
         super.onEntityCollision2(state, world, pos, entity);
         final Direction facing = IBlock.getStatePropertySafe(state, FACING);
+        final EnumEscalatorNarrowOrientation orientation = IBlock.getStatePropertySafe(state, ORIENTATION);
         final EnumEscalatorNarrowStepDirection direction = IBlock.getStatePropertySafe(state, STEP_DIRECTION);
         final float speed = 0.1F;
+
+        if (orientation == EnumEscalatorNarrowOrientation.LANDING_BOTTOM || orientation == EnumEscalatorNarrowOrientation.LANDING_TOP) {
+            return;
+        }
 
         if (IBlock.getStatePropertySafe(state, STEP_DIRECTION) != EnumEscalatorNarrowStepDirection.STOP) {
             switch (facing) {

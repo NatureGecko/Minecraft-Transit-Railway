@@ -2,7 +2,7 @@
 	"parent": "mtr:block/escalator_wide/bases/wooden_side_slope_left",
 	"ambientocclusion": false,
 	"textures": {
-		"handrail": "mtr:block/escalator_wide/handrail_yellow_backward",
+		"handrail": "mtr:block/escalator_handrails/handrail_yellow_backward",
 		"body": "mtr:block/escalator_wide/body_wooden"
 	}
 }

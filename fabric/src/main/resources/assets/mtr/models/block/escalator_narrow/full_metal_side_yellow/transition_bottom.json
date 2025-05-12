@@ -1,8 +1,0 @@
-{
-	"parent": "mtr:block/escalator_narrow/bases/full_metal_side_transition_bottom",
-	"ambientocclusion": false,
-	"textures": {
-		"handrail": "mtr:block/escalator_narrow/handrail_yellow_stop",
-		"body": "mtr:block/escalator_narrow/body_full_metal"
-	}
-}

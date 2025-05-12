@@ -1,0 +1,51 @@
+{
+	"credit": "MTR - Escalator Update, Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"body": "mtr:block/escalator_wide/body_full_metal",
+		"particle": "mtr:block/escalator_wide/particle"
+	},
+	"elements": [
+		{
+			"name": "base 1",
+			"from": [0, 16, 0],
+			"to": [16, 16, 15.95],
+			"faces": {
+				"up": {"uv": [8, 0, 4, 4], "rotation": 90, "texture": "#body"}
+			}
+		},
+		{
+			"name": "base 2",
+			"from": [16, -7.95, 0],
+			"to": [16, 16, 15.95],
+			"faces": {
+				"east": {"uv": [0, 0, 4, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base 3",
+			"from": [0, -7.95, 15.95],
+			"to": [16, 16, 15.95],
+			"faces": {
+				"south": {"uv": [4, 0, 0, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base 4",
+			"from": [0.025, -7.95, 0],
+			"to": [0.025, 16, 15.95],
+			"faces": {
+				"west": {"uv": [4, 0, 0, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base 5",
+			"from": [0, -7.95, 0],
+			"to": [16, -7.95, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0.05, 0]},
+			"faces": {
+				"down": {"uv": [4, 6, 0, 10], "texture": "#body"}
+			}
+		}
+	]
+}

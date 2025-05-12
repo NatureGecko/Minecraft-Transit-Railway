@@ -3,21 +3,57 @@
 	"parent": "minecraft:block/block",
 	"ambientocclusion": false,
 	"textures": {
-		"particle": "mtr:block/metal"
+		"body": "mtr:block/escalator_narrow/body_full_metal"
 	},
 	"elements": [
 		{
-			"name": "base",
-			"from": [0, 0, 0],
+			"name": "base 1",
+			"from": [0, 16, 0],
 			"to": [16, 16, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 16, 8]},
 			"faces": {
-				"north": {"uv": [7.75, 4.5, 11.75, 8.5], "texture": "#base"},
-				"east": {"uv": [7.75, 4.5, 11.75, 8.5], "texture": "#base"},
-				"south": {"uv": [7.75, 4.5, 11.75, 8.5], "texture": "#base"},
-				"west": {"uv": [7.75, 4.5, 11.75, 8.5], "texture": "#base"},
-				"up": {"uv": [0, 6.25, 4, 10.25], "texture": "#base"},
-				"down": {"uv": [7.75, 4.5, 11.75, 8.5], "texture": "#base"}
+				"up": {"uv": [4, 4, 8, 0], "rotation": 90, "texture": "#body"}
+			}
+		},
+		{
+			"name": "base 2",
+			"from": [0, -7.95, 0.05],
+			"to": [0, 16, 15.95],
+			"faces": {
+				"west": {"uv": [4, 0, 0, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base 3",
+			"from": [0, -7.95, 15.95],
+			"to": [16, 16, 15.95],
+			"faces": {
+				"south": {"uv": [0, 0, 4, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base 4",
+			"from": [15.975, -7.95, 0],
+			"to": [15.975, 16, 16],
+			"faces": {
+				"east": {"uv": [0, 0, 4, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base 5",
+			"from": [0, -7.95, 0],
+			"to": [16, -7.95, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0.05, 0]},
+			"faces": {
+				"down": {"uv": [0, 6, 4, 10], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base 6",
+			"from": [0, -7.95, 0.05],
+			"to": [16, 16, 0.05],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 16]},
+			"faces": {
+				"north": {"uv": [4, 0, 0, 6], "texture": "#body"}
 			}
 		}
 	]

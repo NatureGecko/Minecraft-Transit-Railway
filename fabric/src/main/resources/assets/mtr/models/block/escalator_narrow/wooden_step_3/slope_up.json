@@ -1,5 +1,5 @@
 {
-	"parent": "mtr:block/escalator_narrow/bases/full_metal_step_slope",
+	"parent": "mtr:block/escalator_narrow/bases/wooden_step_slope",
 	"ambientocclusion": false,
 	"textures": {
 		"step": "mtr:block/escalator_narrow/step_up_3",

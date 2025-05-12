@@ -4,9 +4,11 @@ import org.mtr.mapping.holder.*;
 import org.mtr.mapping.tool.HolderBase;
 
 import javax.annotation.Nonnull;
+import java.sql.Array;
+import java.util.ArrayList;
 import java.util.List;
 
-public class BlockEscalatorWideStep extends BlockEscalatorWideBase {
+public class BlockEscalatorWideStep extends BlockEscalatorWide {
     @Nonnull
     @Override
     public BlockState getStateForNeighborUpdate2(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
@@ -25,21 +27,31 @@ public class BlockEscalatorWideStep extends BlockEscalatorWideBase {
 
     @Nonnull
     @Override
+    public VoxelShape getOutlineShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        return Block.createCuboidShape(0, -8, 0, 16, 16, 16);
+    }
+
+    @Nonnull
+    @Override
     public VoxelShape getCollisionShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         final EnumEscalatorWideOrientation orientation = IBlock.getStatePropertySafe(state, new Property<>(ORIENTATION.data));
-        if (orientation == EnumEscalatorWideOrientation.FLAT || orientation == EnumEscalatorWideOrientation.TRANSITION_BOTTOM) {
+        if (orientation == EnumEscalatorWideOrientation.FLAT || orientation == EnumEscalatorWideOrientation.TRANSITION_BOTTOM_1) {
             return Block.createCuboidShape(0, 0, 0, 16, 15, 16);
-        } else {
-            return VoxelShapes.combine(Block.createCuboidShape(1, 0, 1, 15, 16, 15), super.getCollisionShape2(state, world, pos, context), BooleanBiFunction.getAndMapped());
         }
+        return VoxelShapes.union(Block.createCuboidShape(0, 0, 0, 16, 8, 16), IBlock.getVoxelShapeByDirection(0, 8, 0, 16, 15, 8, IBlock.getStatePropertySafe(state, FACING)));
     }
 
     @Override
     public void onEntityCollision2(BlockState state, World world, BlockPos pos, Entity entity) {
         super.onEntityCollision2(state, world, pos, entity);
         final Direction facing = IBlock.getStatePropertySafe(state, FACING);
+        final EnumEscalatorWideOrientation orientation = IBlock.getStatePropertySafe(state, ORIENTATION);
         final EnumEscalatorWideStepDirection direction = IBlock.getStatePropertySafe(state, STEP_DIRECTION);
         final float speed = 0.1F;
+
+        if (orientation == EnumEscalatorWideOrientation.LANDING_BOTTOM || orientation == EnumEscalatorWideOrientation.LANDING_TOP) {
+            return;
+        }
 
         if (IBlock.getStatePropertySafe(state, STEP_DIRECTION) != EnumEscalatorWideStepDirection.STOP) {
             switch (facing) {
@@ -78,6 +90,10 @@ public class BlockEscalatorWideStep extends BlockEscalatorWideBase {
             update(world, pos, blockFacing.getOpposite(), newDirection);
 
             final BlockPos sidePos = pos.offset(IBlock.getSideDirection(state));
+            final BlockPos basePos = pos.offset(IBlock.getSideDirection(state));
+            if (isStep(world, basePos)) {
+
+            }
             if (isStep(world, sidePos)) {
                 final BlockEscalatorWideStep block = (BlockEscalatorWideStep) world.getBlockState(sidePos).getBlock().data;
                 block.update(world, sidePos, blockFacing, newDirection);
@@ -111,6 +127,11 @@ public class BlockEscalatorWideStep extends BlockEscalatorWideBase {
     }
 
     private boolean isSide(World world, BlockPos pos) {
+        final Block block = world.getBlockState(pos).getBlock();
+        return block.data instanceof BlockEscalatorWideSide;
+    }
+
+    private boolean isBase(World world, BlockPos pos) {
         final Block block = world.getBlockState(pos).getBlock();
         return block.data instanceof BlockEscalatorWideSide;
     }

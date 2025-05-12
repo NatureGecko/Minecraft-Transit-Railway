@@ -1,8 +1,0 @@
-{
-	"parent": "mtr:block/escalator_narrow/bases/full_metal_step_transition_bottom",
-	"ambientocclusion": false,
-	"textures": {
-		"step": "mtr:block/escalator_narrow/step_down_3",
-		"body": "mtr:block/escalator_narrow/body_full_metal"
-	}
-}

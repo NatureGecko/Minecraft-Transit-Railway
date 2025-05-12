@@ -2,7 +2,7 @@
 	"parent": "mtr:block/escalator_wide/bases/full_metal_side_transition_top_right",
 	"ambientocclusion": false,
 	"textures": {
-		"handrail": "mtr:block/escalator_wide/handrail_light_blue_backward",
+		"handrail": "mtr:block/escalator_handrails/handrail_light_blue_backward",
 		"body": "mtr:block/escalator_wide/body_full_metal"
 	}
 }

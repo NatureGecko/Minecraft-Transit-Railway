@@ -1,32 +1,34 @@
 {
 	"variants": {
 		"facing=west,orientation=landing_bottom,step_direction=stop": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom",
-			"y": 90
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom"
 		},
 		"facing=north,orientation=landing_bottom,step_direction=stop": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom"
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom",
+			"y": 90
 		},
 		"facing=east,orientation=landing_bottom,step_direction=stop": {
 			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom",
-			"y": 90
+			"y": 180
 		},
 		"facing=south,orientation=landing_bottom,step_direction=stop": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom"
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom",
+			"y": 270
 		},
 		"facing=west,orientation=landing_top,step_direction=stop": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top",
-			"y": 90
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top"
 		},
 		"facing=north,orientation=landing_top,step_direction=stop": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top"
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top",
+			"y": 90
 		},
 		"facing=east,orientation=landing_top,step_direction=stop": {
 			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top",
-			"y": 90
+			"y": 180
 		},
 		"facing=south,orientation=landing_top,step_direction=stop": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top"
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top",
+			"y": 270
 		},
 		"facing=west,orientation=flat,step_direction=stop": {
 			"model": "mtr:block/escalator_narrow/wooden_step_1/flat"
@@ -58,19 +60,34 @@
 			"model": "mtr:block/escalator_narrow/wooden_step_1/slope",
 			"y": 270
 		},
-		"facing=west,orientation=transition_bottom,step_direction=stop": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom"
+		"facing=west,orientation=transition_bottom_1,step_direction=stop": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_1"
 		},
-		"facing=north,orientation=transition_bottom,step_direction=stop": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom",
+		"facing=north,orientation=transition_bottom_1,step_direction=stop": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_1",
 			"y": 90
 		},
-		"facing=east,orientation=transition_bottom,step_direction=stop": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom",
+		"facing=east,orientation=transition_bottom_1,step_direction=stop": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_1",
 			"y": 180
 		},
-		"facing=south,orientation=transition_bottom,step_direction=stop": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom",
+		"facing=south,orientation=transition_bottom_1,step_direction=stop": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_1",
+			"y": 270
+		},
+		"facing=west,orientation=transition_bottom_2,step_direction=stop": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_2"
+		},
+		"facing=north,orientation=transition_bottom_2,step_direction=stop": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_2",
+			"y": 90
+		},
+		"facing=east,orientation=transition_bottom_2,step_direction=stop": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_2",
+			"y": 180
+		},
+		"facing=south,orientation=transition_bottom_2,step_direction=stop": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_2",
 			"y": 270
 		},
 		"facing=west,orientation=transition_top,step_direction=stop": {
@@ -89,32 +106,34 @@
 			"y": 270
 		},
 		"facing=west,orientation=landing_bottom,step_direction=forward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom",
-			"y": 90
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom"
 		},
 		"facing=north,orientation=landing_bottom,step_direction=forward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom"
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom",
+			"y": 90
 		},
 		"facing=east,orientation=landing_bottom,step_direction=forward": {
 			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom",
-			"y": 90
+			"y": 180
 		},
 		"facing=south,orientation=landing_bottom,step_direction=forward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom"
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom",
+			"y": 270
 		},
 		"facing=west,orientation=landing_top,step_direction=forward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top",
-			"y": 90
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top"
 		},
 		"facing=north,orientation=landing_top,step_direction=forward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top"
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top",
+			"y": 90
 		},
 		"facing=east,orientation=landing_top,step_direction=forward": {
 			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top",
-			"y": 90
+			"y": 180
 		},
 		"facing=south,orientation=landing_top,step_direction=forward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top"
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top",
+			"y": 270
 		},
 		"facing=west,orientation=flat,step_direction=forward": {
 			"model": "mtr:block/escalator_narrow/wooden_step_1/flat_up"
@@ -146,19 +165,34 @@
 			"model": "mtr:block/escalator_narrow/wooden_step_1/slope_up",
 			"y": 270
 		},
-		"facing=west,orientation=transition_bottom,step_direction=forward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_up"
+		"facing=west,orientation=transition_bottom_1,step_direction=forward": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_1_up"
 		},
-		"facing=north,orientation=transition_bottom,step_direction=forward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_up",
+		"facing=north,orientation=transition_bottom_1,step_direction=forward": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_1_up",
 			"y": 90
 		},
-		"facing=east,orientation=transition_bottom,step_direction=forward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_up",
+		"facing=east,orientation=transition_bottom_1,step_direction=forward": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_1_up",
 			"y": 180
 		},
-		"facing=south,orientation=transition_bottom,step_direction=forward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_up",
+		"facing=south,orientation=transition_bottom_1,step_direction=forward": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_1_up",
+			"y": 270
+		},
+		"facing=west,orientation=transition_bottom_2,step_direction=forward": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_2_up"
+		},
+		"facing=north,orientation=transition_bottom_2,step_direction=forward": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_2_up",
+			"y": 90
+		},
+		"facing=east,orientation=transition_bottom_2,step_direction=forward": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_2_up",
+			"y": 180
+		},
+		"facing=south,orientation=transition_bottom_2,step_direction=forward": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_2_up",
 			"y": 270
 		},
 		"facing=west,orientation=transition_top,step_direction=forward": {
@@ -177,32 +211,34 @@
 			"y": 270
 		},
 		"facing=west,orientation=landing_bottom,step_direction=backward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom",
-			"y": 90
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom"
 		},
 		"facing=north,orientation=landing_bottom,step_direction=backward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom"
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom",
+			"y": 90
 		},
 		"facing=east,orientation=landing_bottom,step_direction=backward": {
 			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom",
-			"y": 90
+			"y": 180
 		},
 		"facing=south,orientation=landing_bottom,step_direction=backward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom"
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_bottom",
+			"y": 270
 		},
 		"facing=west,orientation=landing_top,step_direction=backward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top",
-			"y": 90
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top"
 		},
 		"facing=north,orientation=landing_top,step_direction=backward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top"
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top",
+			"y": 90
 		},
 		"facing=east,orientation=landing_top,step_direction=backward": {
 			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top",
-			"y": 90
+			"y": 180
 		},
 		"facing=south,orientation=landing_top,step_direction=backward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top"
+			"model": "mtr:block/escalator_narrow/wooden_step_1/landing_top",
+			"y": 270
 		},
 		"facing=west,orientation=flat,step_direction=backward": {
 			"model": "mtr:block/escalator_narrow/wooden_step_1/flat_down"
@@ -234,19 +270,34 @@
 			"model": "mtr:block/escalator_narrow/wooden_step_1/slope_down",
 			"y": 270
 		},
-		"facing=west,orientation=transition_bottom,step_direction=backward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_down"
+		"facing=west,orientation=transition_bottom_1,step_direction=backward": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_1_down"
 		},
-		"facing=north,orientation=transition_bottom,step_direction=backward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_down",
+		"facing=north,orientation=transition_bottom_1,step_direction=backward": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_1_down",
 			"y": 90
 		},
-		"facing=east,orientation=transition_bottom,step_direction=backward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_down",
+		"facing=east,orientation=transition_bottom_1,step_direction=backward": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_1_down",
 			"y": 180
 		},
-		"facing=south,orientation=transition_bottom,step_direction=backward": {
-			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_down",
+		"facing=south,orientation=transition_bottom_1,step_direction=backward": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_1_down",
+			"y": 270
+		},
+		"facing=west,orientation=transition_bottom_2,step_direction=backward": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_2_down"
+		},
+		"facing=north,orientation=transition_bottom_2,step_direction=backward": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_2_down",
+			"y": 90
+		},
+		"facing=east,orientation=transition_bottom_2,step_direction=backward": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_2_down",
+			"y": 180
+		},
+		"facing=south,orientation=transition_bottom_2,step_direction=backward": {
+			"model": "mtr:block/escalator_narrow/wooden_step_1/transition_bottom_2_down",
 			"y": 270
 		},
 		"facing=west,orientation=transition_top,step_direction=backward": {

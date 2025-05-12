@@ -85,6 +85,7 @@ public final class Blocks {
         ESCALATOR_WIDE_SIDE_FM_RED = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_side_fm_red"), () -> new Block(new BlockEscalatorWideSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_WIDE_SIDE_FM_WHITE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_side_fm_white"), () -> new Block(new BlockEscalatorWideSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_WIDE_SIDE_FM_YELLOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_side_fm_yellow"), () -> new Block(new BlockEscalatorWideSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_WIDE_SIDE_FM_RAINBOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_side_fm_rainbow"), () -> new Block(new BlockEscalatorWideSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_WIDE_SIDE_GL_BLACK = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_side_gl_black"), () -> new Block(new BlockEscalatorWideSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_WIDE_SIDE_GL_BLUE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_side_gl_blue"), () -> new Block(new BlockEscalatorWideSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_WIDE_SIDE_GL_BROWN = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_side_gl_brown"), () -> new Block(new BlockEscalatorWideSide()), CreativeModeTabs.ESCALATORS_LIFTS);
@@ -101,6 +102,7 @@ public final class Blocks {
         ESCALATOR_WIDE_SIDE_GL_RED = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_side_gl_red"), () -> new Block(new BlockEscalatorWideSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_WIDE_SIDE_GL_WHITE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_side_gl_white"), () -> new Block(new BlockEscalatorWideSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_WIDE_SIDE_GL_YELLOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_side_gl_yellow"), () -> new Block(new BlockEscalatorWideSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_WIDE_SIDE_GL_RAINBOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_side_gl_rainbow"), () -> new Block(new BlockEscalatorWideSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_WIDE_STEP_WD_1 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_step_wd_1"), () -> new Block(new BlockEscalatorWideStep()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_WIDE_STEP_WD_2 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_step_wd_2"), () -> new Block(new BlockEscalatorWideStep()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_WIDE_STEP_WD_3 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_step_wd_3"), () -> new Block(new BlockEscalatorWideStep()), CreativeModeTabs.ESCALATORS_LIFTS);
@@ -121,6 +123,7 @@ public final class Blocks {
         ESCALATOR_WIDE_SIDE_WD_RED = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_side_wd_red"), () -> new Block(new BlockEscalatorWideSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_WIDE_SIDE_WD_WHITE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_side_wd_white"), () -> new Block(new BlockEscalatorWideSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_WIDE_SIDE_WD_YELLOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_side_wd_yellow"), () -> new Block(new BlockEscalatorWideSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_WIDE_SIDE_WD_RAINBOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_side_wd_rainbow"), () -> new Block(new BlockEscalatorWideSide()), CreativeModeTabs.ESCALATORS_LIFTS);
 
         ESCALATOR_NARROW_STEP_FM_1 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_step_fm_1"), () -> new Block(new BlockEscalatorNarrowStep()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_NARROW_STEP_FM_2 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_step_fm_2"), () -> new Block(new BlockEscalatorNarrowStep()), CreativeModeTabs.ESCALATORS_LIFTS);
@@ -142,6 +145,7 @@ public final class Blocks {
         ESCALATOR_NARROW_SIDE_FM_RED = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_fm_red"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_NARROW_SIDE_FM_WHITE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_fm_white"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_NARROW_SIDE_FM_YELLOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_fm_yellow"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_NARROW_SIDE_FM_RAINBOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_fm_rainbow"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_NARROW_SIDE_GL_BLACK = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_gl_black"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_NARROW_SIDE_GL_BLUE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_gl_blue"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_NARROW_SIDE_GL_BROWN = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_gl_brown"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
@@ -158,6 +162,7 @@ public final class Blocks {
         ESCALATOR_NARROW_SIDE_GL_RED = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_gl_red"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_NARROW_SIDE_GL_WHITE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_gl_white"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_NARROW_SIDE_GL_YELLOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_gl_yellow"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_NARROW_SIDE_GL_RAINBOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_gl_rainbow"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_NARROW_STEP_WD_1 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_step_wd_1"), () -> new Block(new BlockEscalatorNarrowStep()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_NARROW_STEP_WD_2 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_step_wd_2"), () -> new Block(new BlockEscalatorNarrowStep()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_NARROW_STEP_WD_3 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_step_wd_3"), () -> new Block(new BlockEscalatorNarrowStep()), CreativeModeTabs.ESCALATORS_LIFTS);
@@ -178,6 +183,7 @@ public final class Blocks {
         ESCALATOR_NARROW_SIDE_WD_RED = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_wd_red"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_NARROW_SIDE_WD_WHITE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_wd_white"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_NARROW_SIDE_WD_YELLOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_wd_yellow"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_NARROW_SIDE_WD_RAINBOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_narrow_side_wd_rainbow"), () -> new Block(new BlockEscalatorNarrowSide()), CreativeModeTabs.ESCALATORS_LIFTS);
 
         ESCALATOR_BELT_STEP_FM_1 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_step_fm_1"), () -> new Block(new BlockEscalatorBeltStep()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_BELT_STEP_FM_2 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_step_fm_2"), () -> new Block(new BlockEscalatorBeltStep()), CreativeModeTabs.ESCALATORS_LIFTS);
@@ -201,6 +207,7 @@ public final class Blocks {
         ESCALATOR_BELT_SIDE_FM_RED = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_fm_red"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_BELT_SIDE_FM_WHITE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_fm_white"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_BELT_SIDE_FM_YELLOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_fm_yellow"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_BELT_SIDE_FM_RAINBOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_fm_rainbow"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_BELT_SIDE_GL_BLACK = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_gl_black"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_BELT_SIDE_GL_BLUE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_gl_blue"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_BELT_SIDE_GL_BROWN = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_gl_brown"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
@@ -217,6 +224,7 @@ public final class Blocks {
         ESCALATOR_BELT_SIDE_GL_RED = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_gl_red"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_BELT_SIDE_GL_WHITE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_gl_white"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_BELT_SIDE_GL_YELLOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_gl_yellow"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_BELT_SIDE_GL_RAINBOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_gl_rainbow"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_BELT_STEP_WD_1 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_step_wd_1"), () -> new Block(new BlockEscalatorBeltStep()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_BELT_STEP_WD_2 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_step_wd_2"), () -> new Block(new BlockEscalatorBeltStep()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_BELT_STEP_WD_3 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_step_wd_3"), () -> new Block(new BlockEscalatorBeltStep()), CreativeModeTabs.ESCALATORS_LIFTS);
@@ -239,6 +247,7 @@ public final class Blocks {
         ESCALATOR_BELT_SIDE_WD_RED = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_wd_red"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_BELT_SIDE_WD_WHITE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_wd_white"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_BELT_SIDE_WD_YELLOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_wd_yellow"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_BELT_SIDE_WD_RAINBOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_wd_rainbow"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
 
         // PIDS projectors
         PIDS_1 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "pids_1"), () -> new Block(new BlockPIDSHorizontal1()), CreativeModeTabs.RAILWAY_FACILITIES);
@@ -467,6 +476,7 @@ public final class Blocks {
     public static final BlockRegistryObject ESCALATOR_WIDE_SIDE_FM_RED;
     public static final BlockRegistryObject ESCALATOR_WIDE_SIDE_FM_WHITE;
     public static final BlockRegistryObject ESCALATOR_WIDE_SIDE_FM_YELLOW;
+    public static final BlockRegistryObject ESCALATOR_WIDE_SIDE_FM_RAINBOW;
     public static final BlockRegistryObject ESCALATOR_WIDE_SIDE_GL_BLACK;
     public static final BlockRegistryObject ESCALATOR_WIDE_SIDE_GL_BLUE;
     public static final BlockRegistryObject ESCALATOR_WIDE_SIDE_GL_BROWN;
@@ -483,6 +493,7 @@ public final class Blocks {
     public static final BlockRegistryObject ESCALATOR_WIDE_SIDE_GL_RED;
     public static final BlockRegistryObject ESCALATOR_WIDE_SIDE_GL_WHITE;
     public static final BlockRegistryObject ESCALATOR_WIDE_SIDE_GL_YELLOW;
+    public static final BlockRegistryObject ESCALATOR_WIDE_SIDE_GL_RAINBOW;
     public static final BlockRegistryObject ESCALATOR_WIDE_STEP_WD_1;
     public static final BlockRegistryObject ESCALATOR_WIDE_STEP_WD_2;
     public static final BlockRegistryObject ESCALATOR_WIDE_STEP_WD_3;
@@ -503,6 +514,7 @@ public final class Blocks {
     public static final BlockRegistryObject ESCALATOR_WIDE_SIDE_WD_RED;
     public static final BlockRegistryObject ESCALATOR_WIDE_SIDE_WD_WHITE;
     public static final BlockRegistryObject ESCALATOR_WIDE_SIDE_WD_YELLOW;
+    public static final BlockRegistryObject ESCALATOR_WIDE_SIDE_WD_RAINBOW;
 
     public static final BlockRegistryObject ESCALATOR_NARROW_STEP_FM_1;
     public static final BlockRegistryObject ESCALATOR_NARROW_STEP_FM_2;
@@ -524,6 +536,7 @@ public final class Blocks {
     public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_FM_RED;
     public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_FM_WHITE;
     public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_FM_YELLOW;
+    public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_FM_RAINBOW;
     public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_GL_BLACK;
     public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_GL_BLUE;
     public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_GL_BROWN;
@@ -540,6 +553,7 @@ public final class Blocks {
     public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_GL_RED;
     public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_GL_WHITE;
     public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_GL_YELLOW;
+    public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_GL_RAINBOW;
     public static final BlockRegistryObject ESCALATOR_NARROW_STEP_WD_1;
     public static final BlockRegistryObject ESCALATOR_NARROW_STEP_WD_2;
     public static final BlockRegistryObject ESCALATOR_NARROW_STEP_WD_3;
@@ -560,6 +574,7 @@ public final class Blocks {
     public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_WD_RED;
     public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_WD_WHITE;
     public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_WD_YELLOW;
+    public static final BlockRegistryObject ESCALATOR_NARROW_SIDE_WD_RAINBOW;
 
     public static final BlockRegistryObject ESCALATOR_BELT_STEP_FM_1;
     public static final BlockRegistryObject ESCALATOR_BELT_STEP_FM_2;
@@ -583,6 +598,7 @@ public final class Blocks {
     public static final BlockRegistryObject ESCALATOR_BELT_SIDE_FM_RED;
     public static final BlockRegistryObject ESCALATOR_BELT_SIDE_FM_WHITE;
     public static final BlockRegistryObject ESCALATOR_BELT_SIDE_FM_YELLOW;
+    public static final BlockRegistryObject ESCALATOR_BELT_SIDE_FM_RAINBOW;
     public static final BlockRegistryObject ESCALATOR_BELT_SIDE_GL_BLACK;
     public static final BlockRegistryObject ESCALATOR_BELT_SIDE_GL_BLUE;
     public static final BlockRegistryObject ESCALATOR_BELT_SIDE_GL_BROWN;
@@ -599,6 +615,7 @@ public final class Blocks {
     public static final BlockRegistryObject ESCALATOR_BELT_SIDE_GL_RED;
     public static final BlockRegistryObject ESCALATOR_BELT_SIDE_GL_WHITE;
     public static final BlockRegistryObject ESCALATOR_BELT_SIDE_GL_YELLOW;
+    public static final BlockRegistryObject ESCALATOR_BELT_SIDE_GL_RAINBOW;
     public static final BlockRegistryObject ESCALATOR_BELT_STEP_WD_1;
     public static final BlockRegistryObject ESCALATOR_BELT_STEP_WD_2;
     public static final BlockRegistryObject ESCALATOR_BELT_STEP_WD_3;
@@ -621,6 +638,7 @@ public final class Blocks {
     public static final BlockRegistryObject ESCALATOR_BELT_SIDE_WD_RED;
     public static final BlockRegistryObject ESCALATOR_BELT_SIDE_WD_WHITE;
     public static final BlockRegistryObject ESCALATOR_BELT_SIDE_WD_YELLOW;
+    public static final BlockRegistryObject ESCALATOR_BELT_SIDE_WD_RAINBOW;
 
     public static final BlockRegistryObject GLASS_FENCE_CIO;
     public static final BlockRegistryObject GLASS_FENCE_CKT;
