@@ -1,0 +1,107 @@
+{
+	"credit": "MTR - Escalator Update, Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"body": "mtr:block/escalator_narrow/body_wooden",
+		"particle": "mtr:block/escalator_narrow/particle"
+	},
+	"elements": [
+		{
+			"name": "rail lc1",
+			"from": [0, 13, 0],
+			"to": [16, 13, 16],
+			"faces": {
+				"up": {"uv": [8, 13.5, 12, 9.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail lc2",
+			"from": [11, 12, 0],
+			"to": [15.775, 12, 16],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [16, 0, 0]},
+			"faces": {
+				"up": {"uv": [8, 13.5, 9, 9.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail lc3",
+			"from": [11.2, 11, 0],
+			"to": [16, 11, 16],
+			"rotation": {"angle": -45, "axis": "z", "origin": [16, 0, 0]},
+			"faces": {
+				"up": {"uv": [9, 13.5, 10, 9.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base la1",
+			"from": [0, 0, 0.05],
+			"to": [13, 3, 15.95],
+			"faces": {
+				"north": {"uv": [16, 0, 12, 0.75], "texture": "#body"},
+				"south": {"uv": [12.75, 1.75, 16, 2.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base la2",
+			"from": [13, 0, 0.05],
+			"to": [17.275, 3, 15.95],
+			"faces": {
+				"north": {"uv": [12.375, 0, 12, 0.75], "texture": "#body"},
+				"south": {"uv": [12, 1.75, 13.125, 2.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base la3",
+			"from": [14.75, 0, 0.025],
+			"to": [16, 3, 15.975],
+			"rotation": {"angle": -45, "axis": "z", "origin": [16, 0, 0]},
+			"faces": {
+				"north": {"uv": [12.75, 0, 12.375, 0.75], "texture": "#body"},
+				"south": {"uv": [12.375, 1.75, 12.75, 2.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "wall 1",
+			"from": [0, 3, 0.05],
+			"to": [16, 13, 15.95],
+			"faces": {
+				"north": {"uv": [12, 4, 8, 6.75], "texture": "#body"},
+				"south": {"uv": [8, 6.75, 12, 9.5], "texture": "#body"},
+				"west": {"uv": [13, 4, 12, 6.75], "texture": "#body"}
+			}
+		},
+		{
+			"name": "wall 2",
+			"from": [11.025, 2.275, 0.051],
+			"to": [15.8, 12, 15.931],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [16, 0, 0]},
+			"faces": {
+				"north": {"uv": [9, 4, 8, 6.75], "texture": "#body"},
+				"east": {"uv": [8.25, 14, 9.25, 16], "texture": "#body"},
+				"south": {"uv": [8, 6.75, 9, 9.5], "texture": "#body"},
+				"west": {"uv": [9.25, 11, 8.25, 13], "texture": "#body"}
+			}
+		},
+		{
+			"name": "wall 4",
+			"from": [15.775, 2.275, 0.051],
+			"to": [16.825, 4, 15.931],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [16, 0, 0]},
+			"faces": {
+				"north": {"uv": [8.5, 6.25, 8, 6.75], "texture": "#body"},
+				"south": {"uv": [8, 9, 8.5, 9.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "wall 3",
+			"from": [11.2, 3, 0.025],
+			"to": [16, 11, 15.975],
+			"rotation": {"angle": -45, "axis": "z", "origin": [16, 0, 0]},
+			"faces": {
+				"north": {"uv": [10, 4, 9, 6.75], "texture": "#body"},
+				"east": {"uv": [12, 6.75, 13, 9.5], "texture": "#body"},
+				"south": {"uv": [9, 6.75, 10, 9.5], "texture": "#body"}
+			}
+		}
+	]
+}

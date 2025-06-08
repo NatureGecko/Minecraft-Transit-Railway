@@ -1,0 +1,90 @@
+{
+	"credit": "MTR - Escalator Update, Made with Blockbench",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"body": "mtr:block/escalator_narrow/body_full_metal",
+		"particle": "mtr:block/escalator_narrow/particle"
+	},
+	"elements": [
+		{
+			"name": "base la",
+			"from": [0, -7.95, 15.95],
+			"to": [16, 16, 15.95],
+			"faces": {
+				"south": {"uv": [0, 0, 4, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base lb",
+			"from": [-8, -7.95, 15.95],
+			"to": [0, 16, 15.95],
+			"faces": {
+				"south": {"uv": [2, 0, 4, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base ra",
+			"from": [0, -7.95, 0.05],
+			"to": [16, 16, 0.05],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 16]},
+			"faces": {
+				"north": {"uv": [4, 0, 0, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base rb",
+			"from": [-8, -7.95, 0.05],
+			"to": [0, 16, 0.05],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 16]},
+			"faces": {
+				"north": {"uv": [4, 0, 2, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "bottom a",
+			"from": [0, -7.95, 0],
+			"to": [16, -7.95, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0.05, 0]},
+			"faces": {
+				"down": {"uv": [0, 6, 4, 10], "texture": "#body"}
+			}
+		},
+		{
+			"name": "bottom b",
+			"from": [-8.05, -7.95, 0],
+			"to": [0, -7.95, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0.05, 0]},
+			"faces": {
+				"down": {"uv": [2, 6, 4, 10], "texture": "#body"}
+			}
+		},
+		{
+			"name": "bottom c",
+			"from": [-14, 6, 0],
+			"to": [-6.05, 6, 16],
+			"rotation": {"angle": -45, "axis": "z", "origin": [-20, 8, 8], "rescale": true},
+			"faces": {
+				"down": {"uv": [0, 6, 2, 10], "texture": "#body"}
+			}
+		},
+		{
+			"name": "top a",
+			"from": [0, 16, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0.05, 0]},
+			"faces": {
+				"up": {"uv": [0, 6, 4, 10], "texture": "#body"}
+			}
+		},
+		{
+			"name": "top b",
+			"from": [-8.05, 16, 0],
+			"to": [0, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0.05, 0]},
+			"faces": {
+				"up": {"uv": [2, 6, 4, 10], "texture": "#body"}
+			}
+		}
+	]
+}
