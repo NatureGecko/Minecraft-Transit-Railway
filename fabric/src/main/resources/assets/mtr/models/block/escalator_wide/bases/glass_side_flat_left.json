@@ -8,12 +8,19 @@
 	},
 	"elements": [
 		{
-			"name": "base",
+			"name": "rail mb1",
 			"from": [0, 0, 11.025],
 			"to": [16, 3, 15.95],
 			"faces": {
 				"north": {"uv": [16, 0, 12, 0.75], "texture": "#body"},
-				"south": {"uv": [12, 1.75, 16, 2.5], "texture": "#body"},
+				"south": {"uv": [12, 1.75, 16, 2.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail mt1",
+			"from": [0, 3, 11],
+			"to": [16, 3, 16],
+			"faces": {
 				"up": {"uv": [12, 0.75, 16, 1.75], "texture": "#body"}
 			}
 		},

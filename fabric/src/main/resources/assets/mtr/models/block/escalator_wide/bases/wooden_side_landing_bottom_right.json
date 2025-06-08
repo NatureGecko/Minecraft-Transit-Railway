@@ -7,38 +7,60 @@
 	},
 	"elements": [
 		{
-			"name": "base a",
-			"from": [0, 0, 0.05],
+			"name": "deco b1",
+			"from": [9, 0, 0.05],
 			"to": [16, 0.1, 16],
 			"faces": {
-				"north": {"uv": [4.125, 4, 4, 0], "rotation": 90, "texture": "#body"},
-				"east": {"uv": [8, 3.875, 4, 4], "texture": "#body"},
-				"south": {"uv": [7.875, 4, 8, 0], "rotation": 90, "texture": "#body"},
-				"west": {"uv": [8, 0.125, 4, 0], "texture": "#body"},
-				"up": {"uv": [4, 4, 8, 0], "rotation": 90, "texture": "#body"}
+				"north": {"uv": [4.1125, 4, 3.9875, 2.25], "rotation": 90, "texture": "#body"},
+				"east": {"uv": [7.9875, 3.875, 3.9875, 4], "texture": "#body"},
+				"south": {"uv": [7.875, 4, 8, 2.25], "rotation": 90, "texture": "#body"},
+				"west": {"uv": [8, 0.125, 4, 0], "texture": "#body"}
 			}
 		},
 		{
-			"name": "base a1",
-			"from": [-3, 0, 5],
-			"to": [0, 0.1, 16.175],
+			"name": "deco t1",
+			"from": [9, 0, 0],
+			"to": [16, 0.1, 16],
+			"faces": {
+				"up": {"uv": [4, 4, 8, 2.25], "rotation": 90, "texture": "#body"}
+			}
+		},
+		{
+			"name": "deco t2",
+			"from": [0, 0, 5],
+			"to": [9, 0.1, 16],
+			"faces": {
+				"up": {"uv": [5.25, 2.25, 8, 0], "rotation": 90, "texture": "#body"}
+			}
+		},
+		{
+			"name": "deco 2",
+			"from": [-2, 0, 5],
+			"to": [0, 0.075, 16.1],
 			"faces": {
 				"up": {"uv": [16, 3.25, 12, 4], "rotation": 270, "texture": "#body"}
 			}
 		},
 		{
-			"name": "rail 1",
-			"from": [0, 0.1, 0.05],
+			"name": "rail mb1",
+			"from": [0, 0, 0.05],
 			"to": [9, 3, 4.975],
 			"faces": {
 				"north": {"uv": [14.25, 1.75, 12, 2.5], "texture": "#body"},
-				"east": {"uv": [13, 2.5, 12, 3.25], "texture": "#body"},
 				"south": {"uv": [12, 0, 14.25, 0.75], "texture": "#body"},
 				"up": {"uv": [12, 1.75, 14.25, 0.75], "texture": "#body"}
 			}
 		},
 		{
-			"name": "rail 2",
+			"name": "rail me1",
+			"from": [9, 0.1, 0],
+			"to": [9, 2.6, 5],
+			"faces": {
+				"east": {"uv": [13.25, 2.5, 12, 3.25], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail m2",
 			"from": [8.3, -3.2, 1.6],
 			"to": [10, -1.025, 4.95],
 			"rotation": {"angle": 22.5, "axis": "z", "origin": [0, 0, 0]},

@@ -7,38 +7,60 @@
 	},
 	"elements": [
 		{
-			"name": "base a",
-			"from": [0, 0, 0],
+			"name": "deco b1",
+			"from": [9, 0, 0],
 			"to": [16, 0.1, 15.95],
 			"faces": {
-				"north": {"uv": [7.875, 0, 8, 4], "rotation": 90, "texture": "#body"},
-				"east": {"uv": [4, 3.875, 8, 4], "texture": "#body"},
-				"south": {"uv": [4.125, 0, 4, 4], "rotation": 90, "texture": "#body"},
-				"west": {"uv": [4, 0.125, 8, 0], "texture": "#body"},
-				"up": {"uv": [8, 4, 4, 0], "rotation": 90, "texture": "#body"}
+				"north": {"uv": [7.875, 2.25, 8, 4], "rotation": 90, "texture": "#body"},
+				"east": {"uv": [3.9875, 3.875, 7.9875, 4], "texture": "#body"},
+				"south": {"uv": [4.1125, 2.25, 3.9875, 4], "rotation": 90, "texture": "#body"},
+				"west": {"uv": [4, 0.125, 8, 0], "texture": "#body"}
 			}
 		},
 		{
-			"name": "base a1",
-			"from": [-3, 0, -0.175],
-			"to": [0, 0.1, 11],
+			"name": "deco t1",
+			"from": [9, 0, 0],
+			"to": [16, 0.1, 16],
+			"faces": {
+				"up": {"uv": [8, 4, 4, 2.25], "rotation": 90, "texture": "#body"}
+			}
+		},
+		{
+			"name": "deco t2",
+			"from": [0, 0, 0],
+			"to": [9, 0.1, 11],
+			"faces": {
+				"up": {"uv": [8, 2.25, 5.25, 0], "rotation": 90, "texture": "#body"}
+			}
+		},
+		{
+			"name": "deco 2",
+			"from": [-2, 0, -0.1],
+			"to": [0, 0.075, 11],
 			"faces": {
 				"up": {"uv": [12, 3.25, 16, 4], "rotation": 270, "texture": "#body"}
 			}
 		},
 		{
-			"name": "rail 1",
-			"from": [0, 0.1, 11.025],
+			"name": "rail mb1",
+			"from": [0, 0, 11.025],
 			"to": [9, 3, 15.95],
 			"faces": {
 				"north": {"uv": [14.25, 0, 12, 0.75], "texture": "#body"},
-				"east": {"uv": [12, 2.5, 13, 3.25], "texture": "#body"},
 				"south": {"uv": [12, 1.75, 14.25, 2.5], "texture": "#body"},
 				"up": {"uv": [12, 0.75, 14.25, 1.75], "texture": "#body"}
 			}
 		},
 		{
-			"name": "rail 2",
+			"name": "rail me1",
+			"from": [9, 0.1, 11],
+			"to": [9, 2.6, 16],
+			"faces": {
+				"east": {"uv": [12, 2.5, 13.25, 3.25], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail m2",
 			"from": [8.3, -3.2, 11.05],
 			"to": [10, -1.025, 14.4],
 			"rotation": {"angle": 22.5, "axis": "z", "origin": [0, 0, 0]},

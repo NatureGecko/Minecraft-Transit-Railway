@@ -2,30 +2,46 @@
 	"credit": "MTR - Escalator Update, Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"particle": "mtr:block/escalator_narrow/particle",
 		"body": "mtr:block/escalator_narrow/body_glass",
-		"handrail": "mtr:block/escalator_handrails/handrail_black_forward"
+		"handrail": "mtr:block/escalator_handrails/handrail_black_forward",
+		"particle": "mtr:block/escalator_narrow/particle"
 	},
 	"elements": [
 		{
-			"name": "base l",
+			"name": "rail lmb1",
 			"from": [0, 0, 13],
 			"to": [22.6272, 3, 15.975],
 			"rotation": {"angle": -45, "axis": "z", "origin": [0, 0, 0]},
 			"faces": {
 				"north": {"uv": [16, 1.75, 12, 2.5], "texture": "#body"},
-				"south": {"uv": [12, 0, 16, 0.75], "texture": "#body"},
+				"south": {"uv": [12, 0, 16, 0.75], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail lmt1",
+			"from": [0, 3, 13],
+			"to": [22.6272, 3, 16],
+			"rotation": {"angle": -45, "axis": "z", "origin": [0, 0, 0]},
+			"faces": {
 				"up": {"uv": [12, 0.75, 16, 1.75], "texture": "#body"}
 			}
 		},
 		{
-			"name": "base r",
+			"name": "rail rmb1",
 			"from": [0, 0, 0.025],
 			"to": [22.6272, 3, 3],
-			"rotation": {"angle": -45, "axis": "z", "origin": [0, 0, 16]},
+			"rotation": {"angle": -45, "axis": "z", "origin": [0, 0, 0]},
 			"faces": {
 				"north": {"uv": [16, 0, 12, 0.75], "texture": "#body"},
-				"south": {"uv": [12, 1.75, 16, 2.5], "texture": "#body"},
+				"south": {"uv": [12, 1.75, 16, 2.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail rmt1",
+			"from": [0, 3, 0],
+			"to": [22.6272, 3, 3],
+			"rotation": {"angle": -45, "axis": "z", "origin": [0, 0, 0]},
+			"faces": {
 				"up": {"uv": [12, 1.75, 16, 0.75], "texture": "#body"}
 			}
 		},
@@ -46,7 +62,7 @@
 			"name": "rail ra1",
 			"from": [0, 10, 1.025],
 			"to": [22.6272, 11, 2.975],
-			"rotation": {"angle": -45, "axis": "z", "origin": [0, 0, 16]},
+			"rotation": {"angle": -45, "axis": "z", "origin": [0, 0, 0]},
 			"faces": {
 				"north": {"uv": [12, 1.25, 8, 1.75], "texture": "#body"},
 				"east": {"uv": [13.25, 2.625, 12, 3.125], "texture": "#body"},
@@ -71,7 +87,7 @@
 			"name": "rail rb1",
 			"from": [0, 11, 1.5],
 			"to": [22.6272, 12, 2.5],
-			"rotation": {"angle": -45, "axis": "z", "origin": [0, 0, 16]},
+			"rotation": {"angle": -45, "axis": "z", "origin": [0, 0, 0]},
 			"faces": {
 				"north": {"uv": [12, 3.5, 8, 4], "texture": "#body"},
 				"east": {"uv": [13.125, 2.625, 12.125, 3.125], "texture": "#body"},
@@ -92,7 +108,7 @@
 			"name": "rail rc1",
 			"from": [0, 11, 1],
 			"to": [22.6272, 11, 3],
-			"rotation": {"angle": -45, "axis": "z", "origin": [0, 0, 16]},
+			"rotation": {"angle": -45, "axis": "z", "origin": [0, 0, 0]},
 			"faces": {
 				"up": {"uv": [8, 0, 12, 1.25], "texture": "#body"}
 			}
@@ -101,11 +117,11 @@
 			"name": "handrail l1",
 			"from": [3.3, 20, 13.25],
 			"to": [14.625, 21, 15.25],
-			"rotation": {"angle": -45, "axis": "z", "origin": [-8, 8, 12]},
+			"rotation": {"angle": -45, "axis": "z", "origin": [-8, 8, 0]},
 			"faces": {
 				"north": {"uv": [12, 8, 14, 16], "rotation": 90, "texture": "#handrail"},
 				"south": {"uv": [6, 8, 8, 16], "rotation": 270, "texture": "#handrail"},
-				"up": {"uv": [8, 8, 12, 16], "rotation": 270, "texture": "#handrail", "cullface": "up"},
+				"up": {"uv": [8, 8, 12, 16], "rotation": 270, "texture": "#handrail"},
 				"down": {"uv": [2, 8, 6, 16], "rotation": 270, "texture": "#handrail"}
 			}
 		},
@@ -113,11 +129,11 @@
 			"name": "handrail r1",
 			"from": [3.3, 20, 0.75],
 			"to": [14.625, 21, 2.75],
-			"rotation": {"angle": -45, "axis": "z", "origin": [-8, 8, 4]},
+			"rotation": {"angle": -45, "axis": "z", "origin": [-8, 8, 0]},
 			"faces": {
 				"north": {"uv": [6, 16, 8, 8], "rotation": 270, "texture": "#handrail"},
 				"south": {"uv": [12, 16, 14, 8], "rotation": 90, "texture": "#handrail"},
-				"up": {"uv": [12, 8, 8, 16], "rotation": 270, "texture": "#handrail", "cullface": "up"},
+				"up": {"uv": [12, 8, 8, 16], "rotation": 270, "texture": "#handrail"},
 				"down": {"uv": [6, 8, 2, 16], "rotation": 270, "texture": "#handrail"}
 			}
 		},
@@ -125,11 +141,11 @@
 			"name": "handrail l2",
 			"from": [14.61371, 20, 13.25],
 			"to": [25.93871, 21, 15.25],
-			"rotation": {"angle": -45, "axis": "z", "origin": [-8, 8, 12]},
+			"rotation": {"angle": -45, "axis": "z", "origin": [-8, 8, 0]},
 			"faces": {
 				"north": {"uv": [12, 0, 14, 8], "rotation": 90, "texture": "#handrail"},
 				"south": {"uv": [6, 0, 8, 8], "rotation": 270, "texture": "#handrail"},
-				"up": {"uv": [8, 0, 12, 8], "rotation": 270, "texture": "#handrail", "cullface": "up"},
+				"up": {"uv": [8, 0, 12, 8], "rotation": 270, "texture": "#handrail"},
 				"down": {"uv": [2, 0, 6, 8], "rotation": 270, "texture": "#handrail"}
 			}
 		},
@@ -137,11 +153,11 @@
 			"name": "handrail r2",
 			"from": [14.61371, 20, 0.75],
 			"to": [25.93871, 21, 2.75],
-			"rotation": {"angle": -45, "axis": "z", "origin": [-8, 8, 4]},
+			"rotation": {"angle": -45, "axis": "z", "origin": [-8, 8, 0]},
 			"faces": {
 				"north": {"uv": [6, 8, 8, 0], "rotation": 270, "texture": "#handrail"},
 				"south": {"uv": [12, 8, 14, 0], "rotation": 90, "texture": "#handrail"},
-				"up": {"uv": [12, 0, 8, 8], "rotation": 270, "texture": "#handrail", "cullface": "up"},
+				"up": {"uv": [12, 0, 8, 8], "rotation": 270, "texture": "#handrail"},
 				"down": {"uv": [6, 0, 2, 8], "rotation": 270, "texture": "#handrail"}
 			}
 		}

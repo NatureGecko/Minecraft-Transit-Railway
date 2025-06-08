@@ -1,0 +1,47 @@
+{
+	"credit": "MTR : 4.0.0 Colorful Station Update",
+	"parent": "minecraft:block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"body": "mtr:block/escalator_narrow/body_wooden",
+		"particle": "mtr:block/escalator_narrow/particle"
+	},
+	"elements": [
+		{
+			"name": "top",
+			"from": [-4, 12, 0],
+			"to": [12, 12, 16.05],
+			"rotation": {"angle": -45, "axis": "z", "origin": [0, 8, 8], "rescale": true},
+			"faces": {
+				"up": {"uv": [0, 6, 4, 10], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base bottom",
+			"from": [-4, -4, 0],
+			"to": [12, -4, 16.05],
+			"rotation": {"angle": -45, "axis": "z", "origin": [0, 8, 8], "rescale": true},
+			"faces": {
+				"down": {"uv": [0, 6, 4, 10], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base l",
+			"from": [-12, -4, 15.975],
+			"to": [4, 12, 15.975],
+			"rotation": {"angle": 45, "axis": "z", "origin": [0, 8, 8], "rescale": true},
+			"faces": {
+				"south": {"uv": [0, 0, 4, 6], "rotation": 90, "texture": "#body"}
+			}
+		},
+		{
+			"name": "base r",
+			"from": [-12, -4, 0.025],
+			"to": [4, 12, 0.025],
+			"rotation": {"angle": 45, "axis": "z", "origin": [0, 8, 8], "rescale": true},
+			"faces": {
+				"north": {"uv": [0, 6, 4, 0], "rotation": 90, "texture": "#body"}
+			}
+		}
+	]
+}

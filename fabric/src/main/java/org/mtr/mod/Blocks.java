@@ -11,7 +11,6 @@ import org.mtr.mapping.mapper.BlockItemExtension;
 import org.mtr.mapping.mapper.SlabBlockExtension;
 import org.mtr.mapping.registry.BlockRegistryObject;
 import org.mtr.mapping.registry.CreativeModeTabHolder;
-import org.mtr.mapping.registry.ItemRegistryObject;
 import org.mtr.mod.block.*;
 import org.mtr.mod.item.ItemBlockEnchanted;
 
@@ -50,8 +49,8 @@ public final class Blocks {
         PSD_TOP = registerBlock(new Identifier(Init.MOD_ID, "psd_top"), () -> new Block(new BlockPSDTop()));
 
         // Escalators lifts
-        ESCALATOR_SIDE = registerBlock(new Identifier(Init.MOD_ID, "escalator_side"), () -> new Block(new BlockEscalatorSide()));
-        ESCALATOR_STEP = registerBlock(new Identifier(Init.MOD_ID, "escalator_step"), () -> new Block(new BlockEscalatorStep()));
+        ESCALATOR_SIDE = registerBlock(new Identifier(Init.MOD_ID, "escalator_side"), () -> new Block(new BlockEscalatorLegacySide()));
+        ESCALATOR_STEP = registerBlock(new Identifier(Init.MOD_ID, "escalator_step"), () -> new Block(new BlockEscalatorLegacyStep()));
         LIFT_BUTTONS_1 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "lift_buttons_1"), () -> new Block(new BlockLiftButtons()), CreativeModeTabs.ESCALATORS_LIFTS);
         LIFT_PANEL_EVEN_1 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "lift_panel_even_1"), () -> new Block(new BlockLiftPanelEven1()), CreativeModeTabs.ESCALATORS_LIFTS);
         LIFT_PANEL_ODD_1 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "lift_panel_odd_1"), () -> new Block(new BlockLiftPanelOdd1()), CreativeModeTabs.ESCALATORS_LIFTS);
@@ -248,6 +247,19 @@ public final class Blocks {
         ESCALATOR_BELT_SIDE_WD_WHITE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_wd_white"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_BELT_SIDE_WD_YELLOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_wd_yellow"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_BELT_SIDE_WD_RAINBOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_belt_side_wd_rainbow"), () -> new Block(new BlockEscalatorBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+
+
+        ESCALATOR_MEDIAN_STAIR_STEP_FM = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_median_stair_step_fm"), () -> new Block(new BlockEscalatorMedianStairStep()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_MEDIAN_STAIR_STEP_WD = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_median_stair_step_wd"), () -> new Block(new BlockEscalatorMedianStairStep()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_MEDIAN_STAIR_SIDE_FM = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_median_stair_side_fm"), () -> new Block(new BlockEscalatorMedianStairSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_MEDIAN_STAIR_SIDE_GL = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_median_stair_side_gl"), () -> new Block(new BlockEscalatorMedianStairSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_MEDIAN_STAIR_SIDE_WD = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_median_stair_side_wd"), () -> new Block(new BlockEscalatorMedianStairSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_MEDIAN_BELT_STEP_FM = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_median_belt_step_fm"), () -> new Block(new BlockEscalatorMedianBeltStep()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_MEDIAN_BELT_STEP_WD = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_median_belt_step_wd"), () -> new Block(new BlockEscalatorMedianBeltStep()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_MEDIAN_BELT_SIDE_FM = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_median_belt_side_fm"), () -> new Block(new BlockEscalatorMedianBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_MEDIAN_BELT_SIDE_GL = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_median_belt_side_gl"), () -> new Block(new BlockEscalatorMedianBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_MEDIAN_BELT_SIDE_WD = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_median_belt_side_wd"), () -> new Block(new BlockEscalatorMedianBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+
 
         // PIDS projectors
         PIDS_1 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "pids_1"), () -> new Block(new BlockPIDSHorizontal1()), CreativeModeTabs.RAILWAY_FACILITIES);
@@ -579,7 +591,8 @@ public final class Blocks {
     public static final BlockRegistryObject ESCALATOR_BELT_STEP_FM_1;
     public static final BlockRegistryObject ESCALATOR_BELT_STEP_FM_2;
     public static final BlockRegistryObject ESCALATOR_BELT_STEP_FM_3;
-    public static final BlockRegistryObject ESCALATOR_BELT_STEP_FM_4;;
+    public static final BlockRegistryObject ESCALATOR_BELT_STEP_FM_4;
+    ;
     public static final BlockRegistryObject ESCALATOR_BELT_STEP_FM_5;
     public static final BlockRegistryObject ESCALATOR_BELT_STEP_FM_6;
     public static final BlockRegistryObject ESCALATOR_BELT_SIDE_FM_BLACK;
@@ -639,6 +652,17 @@ public final class Blocks {
     public static final BlockRegistryObject ESCALATOR_BELT_SIDE_WD_WHITE;
     public static final BlockRegistryObject ESCALATOR_BELT_SIDE_WD_YELLOW;
     public static final BlockRegistryObject ESCALATOR_BELT_SIDE_WD_RAINBOW;
+
+    public static final BlockRegistryObject ESCALATOR_MEDIAN_STAIR_STEP_FM;
+    public static final BlockRegistryObject ESCALATOR_MEDIAN_STAIR_STEP_WD;
+    public static final BlockRegistryObject ESCALATOR_MEDIAN_STAIR_SIDE_FM;
+    public static final BlockRegistryObject ESCALATOR_MEDIAN_STAIR_SIDE_GL;
+    public static final BlockRegistryObject ESCALATOR_MEDIAN_STAIR_SIDE_WD;
+    public static final BlockRegistryObject ESCALATOR_MEDIAN_BELT_STEP_FM;
+    public static final BlockRegistryObject ESCALATOR_MEDIAN_BELT_STEP_WD;
+    public static final BlockRegistryObject ESCALATOR_MEDIAN_BELT_SIDE_FM;
+    public static final BlockRegistryObject ESCALATOR_MEDIAN_BELT_SIDE_GL;
+    public static final BlockRegistryObject ESCALATOR_MEDIAN_BELT_SIDE_WD;
 
     public static final BlockRegistryObject GLASS_FENCE_CIO;
     public static final BlockRegistryObject GLASS_FENCE_CKT;

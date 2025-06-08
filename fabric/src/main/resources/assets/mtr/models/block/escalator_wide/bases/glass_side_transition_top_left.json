@@ -31,9 +31,9 @@
 		},
 		{
 			"name": "rail a3",
-			"from": [12.54556, 9.54315, 11.035],
-			"to": [17.08556, 10.54315, 13.935],
-			"rotation": {"angle": -45, "axis": "z", "origin": [17.1, 1.1, 6]},
+			"from": [11.425, 10, 11.025],
+			"to": [16, 11, 13.975],
+			"rotation": {"angle": -45, "axis": "z", "origin": [16, 0, 0]},
 			"faces": {
 				"north": {"uv": [10, 1.25, 9, 1.75], "texture": "#body"},
 				"east": {"uv": [12, 2.625, 13.25, 3.125], "texture": "#body"},
@@ -63,9 +63,9 @@
 		},
 		{
 			"name": "rail b3",
-			"from": [21.25, 11.925, 11.5],
-			"to": [25.94, 12.925, 13.5],
-			"rotation": {"angle": -45, "axis": "z", "origin": [19.875, 12.475, 6]},
+			"from": [11.275, 11, 11.5],
+			"to": [16, 12, 13.5],
+			"rotation": {"angle": -45, "axis": "z", "origin": [16, 0, 0]},
 			"faces": {
 				"north": {"uv": [10.625, 3, 9, 3.5], "texture": "#body"},
 				"east": {"uv": [12.125, 2.625, 13.125, 3.125], "texture": "#body"},
@@ -99,33 +99,55 @@
 			}
 		},
 		{
-			"name": "base a1",
+			"name": "rail mb1",
 			"from": [0, 0, 11.025],
 			"to": [13, 3, 15.95],
 			"faces": {
 				"north": {"uv": [16, 0, 12, 0.75], "texture": "#body"},
-				"south": {"uv": [12.75, 1.75, 16, 2.5], "texture": "#body"},
+				"south": {"uv": [12.75, 1.75, 16, 2.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail mt1",
+			"from": [0, 3, 11.025],
+			"to": [13, 3, 16.025],
+			"faces": {
 				"up": {"uv": [12, 0.75, 16, 1.75], "texture": "#body"}
 			}
 		},
 		{
-			"name": "base a2",
+			"name": "rail mb2",
 			"from": [13, 0, 11.025],
-			"to": [17.275, 3, 15.95],
+			"to": [17.25, 3, 15.95],
 			"faces": {
 				"north": {"uv": [13.125, 0, 12, 0.75], "texture": "#body"},
-				"south": {"uv": [12, 1.75, 13.125, 2.5], "texture": "#body"},
+				"south": {"uv": [12, 1.75, 13.125, 2.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail mt2",
+			"from": [13, 3, 11.025],
+			"to": [17.25, 3, 16.025],
+			"faces": {
 				"up": {"uv": [12, 0.75, 12.375, 1.75], "texture": "#body"}
 			}
 		},
 		{
-			"name": "base a3",
-			"from": [14.475, 0.7, 11],
-			"to": [15.725, 3.725, 15.975],
-			"rotation": {"angle": -45, "axis": "z", "origin": [15, 0, 0]},
+			"name": "rail mb3",
+			"from": [14.75, 0, 11],
+			"to": [16, 3, 15.975],
+			"rotation": {"angle": -45, "axis": "z", "origin": [16, 0, 0]},
 			"faces": {
 				"north": {"uv": [12.75, 0, 12.375, 0.75], "texture": "#body"},
-				"south": {"uv": [12.375, 1.75, 12.75, 2.5], "texture": "#body"},
+				"south": {"uv": [12.375, 1.75, 12.75, 2.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail mt3",
+			"from": [14.75, 3, 11],
+			"to": [16, 3, 16],
+			"rotation": {"angle": -45, "axis": "z", "origin": [16, 0, 0]},
+			"faces": {
 				"up": {"uv": [12.375, 0.75, 12.75, 1.75], "texture": "#body"}
 			}
 		},

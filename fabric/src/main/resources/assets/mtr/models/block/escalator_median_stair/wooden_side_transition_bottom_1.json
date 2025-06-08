@@ -1,0 +1,40 @@
+{
+	"credit": "MTR - Escalator Update, Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"body": "mtr:block/escalator_narrow/body_wooden",
+		"particle": "mtr:block/escalator_narrow/particle"
+	},
+	"elements": [
+		{
+			"name": "base",
+			"from": [0, 0, 0.05],
+			"to": [16, 3, 15.95],
+			"faces": {
+				"north": {"uv": [16, 0, 12, 0.75], "texture": "#body"},
+				"east": {"uv": [12, 2.5, 13, 3.25], "texture": "#body"},
+				"south": {"uv": [12, 1.75, 16, 2.5], "texture": "#body"},
+				"west": {"uv": [12, 2.5, 13, 3.25], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail c",
+			"from": [6.275, 13, 0],
+			"to": [16, 13, 16],
+			"faces": {
+				"up": {"uv": [9.5, 13.5, 12, 9.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "wall",
+			"from": [0, 3, 0.05],
+			"to": [16, 13, 15.95],
+			"faces": {
+				"north": {"uv": [12, 4, 8, 6.75], "texture": "#body"},
+				"east": {"uv": [12, 6.75, 13, 9.5], "texture": "#body"},
+				"south": {"uv": [8, 6.75, 12, 9.5], "texture": "#body"},
+				"west": {"uv": [13, 4, 12, 6.75], "texture": "#body"}
+			}
+		}
+	]
+}

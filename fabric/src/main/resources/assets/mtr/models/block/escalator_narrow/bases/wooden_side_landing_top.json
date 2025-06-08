@@ -8,48 +8,73 @@
 	},
 	"elements": [
 		{
-			"name": "base a",
-			"from": [0, 0, 0.05],
-			"to": [16, 0.1, 15.95],
-			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
+			"name": "deco b1",
+			"from": [0, 0, 0],
+			"to": [7, 0.1, 15.95],
 			"faces": {
-				"north": {"uv": [7.875, 4, 8, 0], "rotation": 90, "texture": "#body"},
+				"north": {"uv": [7.875, 4, 8, 2.25], "rotation": 90, "texture": "#body"},
 				"east": {"uv": [8, 0.125, 4, 0], "texture": "#body"},
-				"south": {"uv": [4.125, 4, 4, 0], "rotation": 90, "texture": "#body"},
-				"west": {"uv": [8, 3.875, 4, 4], "texture": "#body"},
-				"up": {"uv": [8, 0, 4, 4], "rotation": 90, "texture": "#body"}
+				"south": {"uv": [4.1125, 4, 3.9875, 2.25], "rotation": 90, "texture": "#body"},
+				"west": {"uv": [7.9875, 3.875, 3.9875, 4], "texture": "#body"}
 			}
 		},
 		{
-			"name": "base a1",
-			"from": [16, 0, 2.575],
-			"to": [19, 0.1, 13],
-			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
+			"name": "deco t1",
+			"from": [0, 0, 0],
+			"to": [7, 0.1, 16],
+			"faces": {
+				"up": {"uv": [8, 2.25, 4, 4], "rotation": 90, "texture": "#body"}
+			}
+		},
+		{
+			"name": "deco t2",
+			"from": [7, 0, 3],
+			"to": [16, 0.1, 13],
+			"faces": {
+				"up": {"uv": [7.25, 0, 4.75, 2.25], "rotation": 90, "texture": "#body"}
+			}
+		},
+		{
+			"name": "deco 2",
+			"from": [16, 0, 2.75],
+			"to": [19, 0.075, 13],
 			"faces": {
 				"up": {"uv": [12, 4, 16, 3.25], "rotation": 270, "texture": "#body"}
 			}
 		},
 		{
-			"name": "rail l1",
-			"from": [7, 0.1, 13.025],
+			"name": "rail lme1",
+			"from": [7, 0.1, 13],
+			"to": [7, 3, 16],
+			"faces": {
+				"west": {"uv": [13, 2.5, 12, 3.25], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail rme1",
+			"from": [7, 0.1, 0],
+			"to": [7, 3, 3],
+			"faces": {
+				"west": {"uv": [12, 2.5, 13, 3.25], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail lmb1",
+			"from": [7, 0, 13.025],
 			"to": [16, 3, 15.95],
-			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
 			"faces": {
 				"north": {"uv": [12, 0, 14.25, 0.75], "texture": "#body"},
 				"south": {"uv": [14.25, 1.75, 12, 2.5], "texture": "#body"},
-				"west": {"uv": [13, 2.5, 12, 3.25], "texture": "#body"},
 				"up": {"uv": [14.25, 0.75, 12, 1.75], "texture": "#body"}
 			}
 		},
 		{
-			"name": "rail r1",
-			"from": [7, 0.1, 0.05],
+			"name": "rail rmb1",
+			"from": [7, 0, 0.05],
 			"to": [16, 3, 2.975],
-			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 16]},
 			"faces": {
 				"north": {"uv": [12, 1.75, 14.25, 2.5], "texture": "#body"},
 				"south": {"uv": [14.25, 0, 12, 0.75], "texture": "#body"},
-				"west": {"uv": [12, 2.5, 13, 3.25], "texture": "#body"},
 				"up": {"uv": [14.25, 1.75, 12, 0.75], "texture": "#body"}
 			}
 		},

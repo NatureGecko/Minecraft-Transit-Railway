@@ -2,9 +2,9 @@
 	"credit": "MTR - Escalator Update, Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"particle": "mtr:block/escalator_narrow/particle",
 		"body": "mtr:block/escalator_narrow/body_wooden",
-		"handrail": "mtr:block/escalator_handrails/handrail_black_forward"
+		"handrail": "mtr:block/escalator_handrails/handrail_black_forward",
+		"particle": "mtr:block/escalator_narrow/particle"
 	},
 	"elements": [
 		{
@@ -129,7 +129,7 @@
 			"faces": {
 				"north": {"uv": [12, 8, 14, 16], "rotation": 90, "texture": "#handrail"},
 				"south": {"uv": [6, 8, 8, 16], "rotation": 270, "texture": "#handrail"},
-				"up": {"uv": [8, 8, 12, 16], "rotation": 270, "texture": "#handrail", "cullface": "up"},
+				"up": {"uv": [8, 8, 12, 16], "rotation": 270, "texture": "#handrail"},
 				"down": {"uv": [2, 8, 6, 16], "rotation": 270, "texture": "#handrail"}
 			}
 		},
@@ -141,7 +141,7 @@
 			"faces": {
 				"north": {"uv": [6, 16, 8, 8], "rotation": 270, "texture": "#handrail"},
 				"south": {"uv": [12, 16, 14, 8], "rotation": 90, "texture": "#handrail"},
-				"up": {"uv": [12, 8, 8, 16], "rotation": 270, "texture": "#handrail", "cullface": "up"},
+				"up": {"uv": [12, 8, 8, 16], "rotation": 270, "texture": "#handrail"},
 				"down": {"uv": [6, 8, 2, 16], "rotation": 270, "texture": "#handrail"}
 			}
 		},
@@ -153,7 +153,7 @@
 			"faces": {
 				"north": {"uv": [12, 0, 14, 8], "rotation": 90, "texture": "#handrail"},
 				"south": {"uv": [6, 0, 8, 8], "rotation": 270, "texture": "#handrail"},
-				"up": {"uv": [8, 0, 12, 8], "rotation": 270, "texture": "#handrail", "cullface": "up"},
+				"up": {"uv": [8, 0, 12, 8], "rotation": 270, "texture": "#handrail"},
 				"down": {"uv": [2, 0, 6, 8], "rotation": 270, "texture": "#handrail"}
 			}
 		},
@@ -165,7 +165,7 @@
 			"faces": {
 				"north": {"uv": [6, 8, 8, 0], "rotation": 270, "texture": "#handrail"},
 				"south": {"uv": [12, 8, 14, 0], "rotation": 90, "texture": "#handrail"},
-				"up": {"uv": [12, 0, 8, 8], "rotation": 270, "texture": "#handrail", "cullface": "up"},
+				"up": {"uv": [12, 0, 8, 8], "rotation": 270, "texture": "#handrail"},
 				"down": {"uv": [6, 0, 2, 8], "rotation": 270, "texture": "#handrail"}
 			}
 		}

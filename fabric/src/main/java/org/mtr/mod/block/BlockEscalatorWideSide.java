@@ -59,9 +59,9 @@ public class BlockEscalatorWideSide extends BlockEscalatorWide {
     @Nonnull
     @Override
     public VoxelShape getOutlineShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        final EnumEscalatorWideOrientation orientation = getOrientation(world, pos, state);
-        final boolean isBottom = orientation == EnumEscalatorWideOrientation.LANDING_BOTTOM;
-        final boolean isTop = orientation == EnumEscalatorWideOrientation.LANDING_TOP;
+        final EnumEscalatorOrientation orientation = getOrientation(world, pos, state);
+        final boolean isBottom = orientation == EnumEscalatorOrientation.LANDING_BOTTOM;
+        final boolean isTop = orientation == EnumEscalatorOrientation.LANDING_TOP;
         final boolean isRight = IBlock.getStatePropertySafe(state, SIDE) == EnumSide.RIGHT;
         return IBlock.getVoxelShapeByDirection(isRight ? 12 : 0, -8, 0, isRight ? 16 : 4, 20, 16, IBlock.getStatePropertySafe(state, FACING));
     }

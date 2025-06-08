@@ -4,8 +4,6 @@ import org.mtr.mapping.holder.*;
 import org.mtr.mapping.tool.HolderBase;
 
 import javax.annotation.Nonnull;
-import java.sql.Array;
-import java.util.ArrayList;
 import java.util.List;
 
 public class BlockEscalatorWideStep extends BlockEscalatorWide {
@@ -34,8 +32,8 @@ public class BlockEscalatorWideStep extends BlockEscalatorWide {
     @Nonnull
     @Override
     public VoxelShape getCollisionShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        final EnumEscalatorWideOrientation orientation = IBlock.getStatePropertySafe(state, new Property<>(ORIENTATION.data));
-        if (orientation == EnumEscalatorWideOrientation.FLAT || orientation == EnumEscalatorWideOrientation.TRANSITION_BOTTOM_1) {
+        final EnumEscalatorOrientation orientation = IBlock.getStatePropertySafe(state, new Property<>(ORIENTATION.data));
+        if (orientation == EnumEscalatorOrientation.FLAT || orientation == EnumEscalatorOrientation.TRANSITION_BOTTOM_1) {
             return Block.createCuboidShape(0, 0, 0, 16, 15, 16);
         }
         return VoxelShapes.union(Block.createCuboidShape(0, 0, 0, 16, 8, 16), IBlock.getVoxelShapeByDirection(0, 8, 0, 16, 15, 8, IBlock.getStatePropertySafe(state, FACING)));
@@ -45,27 +43,27 @@ public class BlockEscalatorWideStep extends BlockEscalatorWide {
     public void onEntityCollision2(BlockState state, World world, BlockPos pos, Entity entity) {
         super.onEntityCollision2(state, world, pos, entity);
         final Direction facing = IBlock.getStatePropertySafe(state, FACING);
-        final EnumEscalatorWideOrientation orientation = IBlock.getStatePropertySafe(state, ORIENTATION);
-        final EnumEscalatorWideStepDirection direction = IBlock.getStatePropertySafe(state, STEP_DIRECTION);
+        final EnumEscalatorOrientation orientation = IBlock.getStatePropertySafe(state, ORIENTATION);
+        final EnumEscalatorStepDirection direction = IBlock.getStatePropertySafe(state, STEP_DIRECTION);
         final float speed = 0.1F;
 
-        if (orientation == EnumEscalatorWideOrientation.LANDING_BOTTOM || orientation == EnumEscalatorWideOrientation.LANDING_TOP) {
+        if (orientation == EnumEscalatorOrientation.LANDING_BOTTOM || orientation == EnumEscalatorOrientation.LANDING_TOP) {
             return;
         }
 
-        if (IBlock.getStatePropertySafe(state, STEP_DIRECTION) != EnumEscalatorWideStepDirection.STOP) {
+        if (IBlock.getStatePropertySafe(state, STEP_DIRECTION) != EnumEscalatorStepDirection.STOP) {
             switch (facing) {
                 case NORTH:
-                    entity.addVelocity(0, 0, direction == EnumEscalatorWideStepDirection.FORWARD ? -speed : speed);
+                    entity.addVelocity(0, 0, direction == EnumEscalatorStepDirection.FORWARD ? -speed : speed);
                     break;
                 case EAST:
-                    entity.addVelocity(direction == EnumEscalatorWideStepDirection.FORWARD ? speed : -speed, 0, 0);
+                    entity.addVelocity(direction == EnumEscalatorStepDirection.FORWARD ? speed : -speed, 0, 0);
                     break;
                 case SOUTH:
-                    entity.addVelocity(0, 0, direction == EnumEscalatorWideStepDirection.FORWARD ? speed : -speed);
+                    entity.addVelocity(0, 0, direction == EnumEscalatorStepDirection.FORWARD ? speed : -speed);
                     break;
                 case WEST:
-                    entity.addVelocity(direction == EnumEscalatorWideStepDirection.FORWARD ? -speed : speed, 0, 0);
+                    entity.addVelocity(direction == EnumEscalatorStepDirection.FORWARD ? -speed : speed, 0, 0);
                     break;
                 default:
                     break;
@@ -77,13 +75,13 @@ public class BlockEscalatorWideStep extends BlockEscalatorWide {
     @Override
     public ActionResult onUse2(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         return IBlock.checkHoldingBrush(world, player, () -> {
-            final EnumEscalatorWideStepDirection direction = IBlock.getStatePropertySafe(state, STEP_DIRECTION);
+            final EnumEscalatorStepDirection direction = IBlock.getStatePropertySafe(state, STEP_DIRECTION);
             final Direction blockFacing = IBlock.getStatePropertySafe(state, FACING);
 
-            final EnumEscalatorWideStepDirection newDirection = switch (direction) {
-                case STOP -> EnumEscalatorWideStepDirection.FORWARD;
-                case FORWARD -> EnumEscalatorWideStepDirection.BACKWARD;
-                default -> EnumEscalatorWideStepDirection.STOP;
+            final EnumEscalatorStepDirection newDirection = switch (direction) {
+                case STOP -> EnumEscalatorStepDirection.FORWARD;
+                case FORWARD -> EnumEscalatorStepDirection.BACKWARD;
+                default -> EnumEscalatorStepDirection.STOP;
             };
 
             update(world, pos, blockFacing, newDirection);
@@ -110,7 +108,7 @@ public class BlockEscalatorWideStep extends BlockEscalatorWide {
         properties.add(SIDE);
     }
 
-    private void update(World world, BlockPos pos, Direction offset, EnumEscalatorWideStepDirection direction) {
+    private void update(World world, BlockPos pos, Direction offset, EnumEscalatorStepDirection direction) {
         world.setBlockState(pos, world.getBlockState(pos).with(new Property<>(STEP_DIRECTION.data), direction));
         final BlockPos offsetPos = pos.offset(offset);
         if (isStep(world, pos)) {

@@ -37,7 +37,7 @@ public class ItemEscalatorWideStep extends ItemExtension implements IBlock {
             }
         }
 
-        final BlockState sideState = variant.getDefaultState().with(new Property<>(BlockEscalatorSide.FACING.data), playerFacing.data);
+        final BlockState sideState = variant.getDefaultState().with(new Property<>(BlockEscalatorLegacySide.FACING.data), playerFacing.data);
         world.setBlockState(pos1, sideState.with(new Property<>(SIDE.data), EnumSide.LEFT));
         world.setBlockState(pos2, sideState.with(new Property<>(SIDE.data), EnumSide.RIGHT));
 

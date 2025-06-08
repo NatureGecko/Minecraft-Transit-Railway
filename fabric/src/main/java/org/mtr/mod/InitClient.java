@@ -308,6 +308,17 @@ public final class InitClient {
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_WD_YELLOW);
         REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_BELT_SIDE_WD_RAINBOW);
 
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_MEDIAN_STAIR_STEP_FM);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_MEDIAN_STAIR_STEP_WD);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_MEDIAN_STAIR_SIDE_FM);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_MEDIAN_STAIR_SIDE_GL);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_MEDIAN_STAIR_SIDE_WD);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_MEDIAN_BELT_STEP_FM);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_MEDIAN_BELT_STEP_WD);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_MEDIAN_BELT_SIDE_FM);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_MEDIAN_BELT_SIDE_GL);
+        REGISTRY_CLIENT.registerBlockRenderType(RenderLayer.getCutout(), Blocks.ESCALATOR_MEDIAN_BELT_SIDE_WD);
+
         REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.LIFT_BUTTONS_1, RenderLiftButtons::new);
         REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.LIFT_PANEL_EVEN_1, dispatcher -> new RenderLiftPanel<>(dispatcher, false, false));
         REGISTRY_CLIENT.registerBlockEntityRenderer(BlockEntityTypes.LIFT_PANEL_ODD_1, dispatcher -> new RenderLiftPanel<>(dispatcher, true, false));

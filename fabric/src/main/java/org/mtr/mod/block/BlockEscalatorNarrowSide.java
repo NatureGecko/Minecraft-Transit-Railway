@@ -53,9 +53,9 @@ public class BlockEscalatorNarrowSide extends BlockEscalatorNarrow {
     @Nonnull
     @Override
     public VoxelShape getOutlineShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        final EnumEscalatorNarrowOrientation orientation = getOrientation(world, pos, state);
-        final boolean isBottom = orientation == EnumEscalatorNarrowOrientation.LANDING_BOTTOM;
-        final boolean isTop = orientation == EnumEscalatorNarrowOrientation.LANDING_TOP;
+        final EnumEscalatorOrientation orientation = getOrientation(world, pos, state);
+        final boolean isBottom = orientation == EnumEscalatorOrientation.LANDING_BOTTOM;
+        final boolean isTop = orientation == EnumEscalatorOrientation.LANDING_TOP;
         return IBlock.getVoxelShapeByDirection(0, 0, isTop ? 8 : 0, 4, 16, isBottom ? 8 : 16, IBlock.getStatePropertySafe(state, FACING));
     }
 
