@@ -40,7 +40,12 @@ public class BlockEscalatorWideSide extends BlockEscalatorWide {
     @Nonnull
     @Override
     public VoxelShape getCullingShape2(BlockState state, BlockView world, BlockPos pos) {
-        // Prevents culling optimization mods from culling our see-through escalator side
+        return VoxelShapes.empty();
+    }
+
+    @Nonnull
+    @Override
+    public VoxelShape getCameraCollisionShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return VoxelShapes.empty();
     }
 
@@ -52,18 +57,20 @@ public class BlockEscalatorWideSide extends BlockEscalatorWide {
 
     @Nonnull
     @Override
-    public VoxelShape getCameraCollisionShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return VoxelShapes.empty();
-    }
-
-    @Nonnull
-    @Override
     public VoxelShape getOutlineShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        final EnumEscalatorOrientation orientation = getOrientation(world, pos, state);
-        final boolean isBottom = orientation == EnumEscalatorOrientation.LANDING_BOTTOM;
-        final boolean isTop = orientation == EnumEscalatorOrientation.LANDING_TOP;
         final boolean isRight = IBlock.getStatePropertySafe(state, SIDE) == EnumSide.RIGHT;
-        return IBlock.getVoxelShapeByDirection(isRight ? 12 : 0, -8, 0, isRight ? 16 : 4, 20, 16, IBlock.getStatePropertySafe(state, FACING));
+        final EnumEscalatorOrientation orientation = IBlock.getStatePropertySafe(state, new Property<>(ORIENTATION.data));
+        final Direction facing = IBlock.getStatePropertySafe(state, FACING);
+
+        if (orientation == EnumEscalatorOrientation.FLAT || orientation == EnumEscalatorOrientation.LANDING_BOTTOM || orientation == EnumEscalatorOrientation.LANDING_TOP) {
+            if (isRight) return IBlock.getVoxelShapeByDirection(12.7, 0, 0, 15.9, 16, 16, facing);
+            return IBlock.getVoxelShapeByDirection(0.1, 0, 0, 3.7, 16, 16, facing);
+        }
+
+        if (isRight) {
+            return VoxelShapes.union(IBlock.getVoxelShapeByDirection(12.7, -8, 8, 15.9, 8, 16, facing), IBlock.getVoxelShapeByDirection(12.7, 0, 0, 15.9, 16, 8, facing));
+        }
+        return VoxelShapes.union(IBlock.getVoxelShapeByDirection(0.1, -8, 8, 3.7, 8, 16, facing), IBlock.getVoxelShapeByDirection(0.1, 0, 0, 3.7, 16, 8, facing));
     }
 
     @Override

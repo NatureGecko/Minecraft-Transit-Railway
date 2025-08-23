@@ -34,7 +34,6 @@ public class BlockEscalatorNarrowSide extends BlockEscalatorNarrow {
     @Nonnull
     @Override
     public VoxelShape getCullingShape2(BlockState state, BlockView world, BlockPos pos) {
-        // Prevents culling optimization mods from culling our see-through escalator side
         return VoxelShapes.empty();
     }
 
@@ -53,10 +52,16 @@ public class BlockEscalatorNarrowSide extends BlockEscalatorNarrow {
     @Nonnull
     @Override
     public VoxelShape getOutlineShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        final EnumEscalatorOrientation orientation = getOrientation(world, pos, state);
-        final boolean isBottom = orientation == EnumEscalatorOrientation.LANDING_BOTTOM;
-        final boolean isTop = orientation == EnumEscalatorOrientation.LANDING_TOP;
-        return IBlock.getVoxelShapeByDirection(0, 0, isTop ? 8 : 0, 4, 16, isBottom ? 8 : 16, IBlock.getStatePropertySafe(state, FACING));
+        final EnumEscalatorOrientation orientation = IBlock.getStatePropertySafe(state, new Property<>(ORIENTATION.data));
+        final Direction facing = IBlock.getStatePropertySafe(state, FACING);
+
+//        if (orientation == EnumEscalatorOrientation.FLAT || orientation == EnumEscalatorOrientation.TRANSITION_BOTTOM_1 || orientation == EnumEscalatorOrientation.LANDING_BOTTOM || orientation == EnumEscalatorOrientation.LANDING_TOP || orientation == EnumEscalatorOrientation.TRANSITION_TOP) {
+//            return VoxelShapes.union(IBlock.getVoxelShapeByDirection(0.1, 0, 0, 1.7, 16, 16, facing), IBlock.getVoxelShapeByDirection(14.7, 0, 0, 15.9, 16, 16, facing));
+//        }
+
+        final VoxelShape shape1 = VoxelShapes.union(IBlock.getVoxelShapeByDirection(0.1, -8, 8, 1.7, 8, 16, facing), IBlock.getVoxelShapeByDirection(14.7, -8, 8, 15.9, 8, 16, facing));
+        final VoxelShape shape2 = VoxelShapes.union(IBlock.getVoxelShapeByDirection(0.1, 0, 0, 1.7, 16, 8, facing), IBlock.getVoxelShapeByDirection(14.7, 0, 0, 15.9, 16, 8, facing));
+        return VoxelShapes.union(shape1, shape2);
     }
 
     @Override

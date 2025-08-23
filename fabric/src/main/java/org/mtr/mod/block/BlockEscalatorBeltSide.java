@@ -40,7 +40,12 @@ public class BlockEscalatorBeltSide extends BlockEscalatorBelt {
     @Nonnull
     @Override
     public VoxelShape getCullingShape2(BlockState state, BlockView world, BlockPos pos) {
-        // Prevents culling optimization mods from culling our see-through escalator side
+        return VoxelShapes.empty();
+    }
+
+    @Nonnull
+    @Override
+    public VoxelShape getCameraCollisionShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return VoxelShapes.empty();
     }
 
@@ -52,18 +57,29 @@ public class BlockEscalatorBeltSide extends BlockEscalatorBelt {
 
     @Nonnull
     @Override
-    public VoxelShape getCameraCollisionShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        return VoxelShapes.empty();
-    }
-
-    @Nonnull
-    @Override
     public VoxelShape getOutlineShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        final EnumEscalatorBeltOrientation orientation = getOrientation(world, pos, state);
-        final boolean isBottom = orientation == EnumEscalatorBeltOrientation.LANDING_BOTTOM;
-        final boolean isTop = orientation == EnumEscalatorBeltOrientation.LANDING_TOP;
         final boolean isRight = IBlock.getStatePropertySafe(state, SIDE) == EnumSide.RIGHT;
-        return IBlock.getVoxelShapeByDirection(isRight ? 12 : 0, 0, isTop ? 8 : 0, isRight ? 16 : 4, 16, isBottom ? 8 : 16, IBlock.getStatePropertySafe(state, FACING));
+        final EnumEscalatorBeltOrientation orientation = IBlock.getStatePropertySafe(state, new Property<>(ORIENTATION.data));
+        final Direction facing = IBlock.getStatePropertySafe(state, FACING);
+
+        double heightBase = 16;
+        double lowBase = 0;
+
+        if (orientation == EnumEscalatorBeltOrientation.SLOPE_1) {
+            heightBase = 2.95;
+            lowBase = -8;
+        } else if (orientation == EnumEscalatorBeltOrientation.SLOPE_2) {
+            heightBase = 6.95;
+            lowBase = -6;
+        } else if (orientation == EnumEscalatorBeltOrientation.SLOPE_3) {
+            heightBase = 10.95;
+            lowBase = -4;
+        } else if (orientation == EnumEscalatorBeltOrientation.SLOPE_4) {
+            heightBase = 14.95;
+            lowBase = -2;
+        }
+
+        return IBlock.getVoxelShapeByDirection(isRight ? 12 : 0.1, lowBase, 0, isRight ? 15.9 : 4, heightBase, 16, facing);
     }
 
     @Override

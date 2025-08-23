@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.6",
 	"credit": "MTR - Escalator Update, Made with Blockbench",
 	"parent": "block/block",
 	"ambientocclusion": false,
@@ -8,39 +9,29 @@
 	},
 	"elements": [
 		{
-			"name": "top",
-			"from": [0, 16, 0],
-			"to": [16, 16, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [0, 16, 0]},
-			"faces": {
-				"up": {"uv": [0, 6, 4, 10], "texture": "#body"}
-			}
-		},
-		{
 			"name": "bottom",
-			"from": [0, -7.95, 0],
-			"to": [16, -7.95, 16],
+			"from": [0, 0, 0],
+			"to": [16, 0, 16],
 			"faces": {
-				"down": {"uv": [0, 6, 4, 10], "texture": "#body", "cullface": "down"}
+				"down": {"uv": [0, 8, 4, 12], "texture": "#body", "cullface": "down"}
 			}
 		},
 		{
-			"name": "base l",
-			"from": [0, -7.95, 15.95],
+			"name": "base",
+			"from": [0, 0, 0.05],
 			"to": [16, 16, 15.95],
 			"faces": {
-				"south": {"uv": [0, 0, 4, 6], "texture": "#body"},
-				"up": {"uv": [0, 15.25, 4, 16], "texture": "#body"}
+				"north": {"uv": [4, 4, 0, 8], "texture": "#body"},
+				"south": {"uv": [0, 4, 4, 8], "texture": "#body"},
+				"up": {"uv": [4, 11.5, 8, 10.5], "texture": "#body"}
 			}
 		},
 		{
-			"name": "base r",
-			"from": [0, -7.95, 0.05],
-			"to": [16, 16, 0.05],
-			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 16]},
+			"name": "panel top",
+			"from": [0, 16, 0.05],
+			"to": [16, 16, 15.95],
 			"faces": {
-				"north": {"uv": [4, 0, 0, 6], "texture": "#body"},
-				"up": {"uv": [0, 16, 4, 15.25], "texture": "#body"}
+				"up": {"uv": [12, 4, 16, 8], "texture": "#body"}
 			}
 		}
 	]

@@ -1,8 +1,8 @@
 {
+	"format_version": "1.21.6",
 	"credit": "MTR - Escalator Update, Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"handrail": "mtr:block/escalator_handrails/handrail_rainbow_forward",
 		"body": "mtr:block/escalator_wide/body_full_metal",
 		"particle": "mtr:block/escalator_wide/particle"
 	},
@@ -13,18 +13,22 @@
 			"to": [16, 3, 15.95],
 			"faces": {
 				"north": {"uv": [16, 0, 12, 0.75], "texture": "#body"},
-				"south": {"uv": [12, 1.75, 16, 2.5], "texture": "#body"},
-				"up": {"uv": [12, 0.75, 16, 1.75], "texture": "#body"}
+				"east": {"uv": [13.25, 2.5, 14.5, 3.25], "texture": "#body", "cullface": "east"},
+				"south": {"uv": [0, 2.75, 4, 3.5], "texture": "#body"},
+				"west": {"uv": [14.5, 2.5, 13.25, 3.25], "texture": "#body", "cullface": "west"},
+				"up": {"uv": [8, 0, 12, 1.25], "texture": "#body"}
 			}
 		},
 		{
 			"name": "rail a",
 			"from": [0, 12, 11.025],
-			"to": [16, 13, 12],
+			"to": [16, 13, 11.5],
 			"faces": {
 				"north": {"uv": [12, 1.25, 8, 1.75], "texture": "#body"},
-				"up": {"uv": [8, 1.25, 12, 1], "texture": "#body"},
-				"down": {"uv": [8, 2.75, 12, 3], "texture": "#body"}
+				"east": {"uv": [13.25, 2.5, 14.5, 3.25], "texture": "#body", "cullface": "east"},
+				"west": {"uv": [14.5, 2.5, 13.25, 3.25], "texture": "#body", "cullface": "west"},
+				"up": {"uv": [8, 1.25, 12, 1.125], "texture": "#body"},
+				"down": {"uv": [8, 2.875, 12, 3], "texture": "#body"}
 			}
 		},
 		{
@@ -32,27 +36,29 @@
 			"from": [0, 13, 11.5],
 			"to": [16, 14, 13.5],
 			"faces": {
-				"north": {"uv": [12, 3, 8, 3.5], "texture": "#body"},
-				"south": {"uv": [8, 3.5, 12, 4], "texture": "#body"}
+				"north": {"uv": [12, 4, 8, 3.5], "texture": "#body"},
+				"east": {"uv": [13.25, 2.5, 14.5, 3.25], "texture": "#body", "cullface": "east"},
+				"south": {"uv": [8, 4, 12, 3.5], "texture": "#body"},
+				"west": {"uv": [14.5, 2.5, 13.25, 3.25], "texture": "#body", "cullface": "west"}
 			}
 		},
 		{
 			"name": "rail c",
-			"from": [0, 13, 12],
+			"from": [0, 13, 11.5],
 			"to": [16, 13, 16],
 			"faces": {
-				"up": {"uv": [8, 1, 12, 0], "texture": "#body"}
+				"up": {"uv": [8, 1.125, 12, 0], "texture": "#body"}
 			}
 		},
 		{
 			"name": "wall",
-			"from": [0, 3, 12],
+			"from": [0, 3, 11.5],
 			"to": [16, 13, 15.95],
 			"faces": {
-				"north": {"uv": [12, 4, 8, 6.75], "texture": "#body"},
-				"east": {"uv": [12, 6.75, 13, 9.5], "texture": "#body"},
-				"south": {"uv": [8, 6.75, 12, 9.5], "texture": "#body"},
-				"west": {"uv": [13, 4, 12, 6.75], "texture": "#body"}
+				"north": {"uv": [4, 0, 0, 2.75], "texture": "#body"},
+				"east": {"uv": [8, 6.75, 9, 9.5], "texture": "#body"},
+				"south": {"uv": [0, 0, 4, 2.75], "texture": "#body"},
+				"west": {"uv": [9, 4, 8, 6.75], "texture": "#body"}
 			}
 		},
 		{
@@ -61,7 +67,9 @@
 			"to": [16, 15, 14.25],
 			"faces": {
 				"north": {"uv": [12, 0, 14, 16], "rotation": 90, "texture": "#handrail"},
+				"east": {"uv": [13.25, 2.5, 14.5, 3.25], "texture": "#body", "cullface": "east"},
 				"south": {"uv": [6, 0, 8, 16], "rotation": 270, "texture": "#handrail"},
+				"west": {"uv": [14.5, 2.5, 13.25, 3.25], "texture": "#body", "cullface": "west"},
 				"up": {"uv": [8, 0, 12, 16], "rotation": 270, "texture": "#handrail"},
 				"down": {"uv": [2, 0, 6, 16], "rotation": 270, "texture": "#handrail"}
 			}

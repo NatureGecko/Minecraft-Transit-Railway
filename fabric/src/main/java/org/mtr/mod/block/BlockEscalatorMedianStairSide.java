@@ -56,7 +56,11 @@ public class BlockEscalatorMedianStairSide extends BlockEscalatorMedianStair {
         final EnumEscalatorOrientation orientation = getOrientation(world, pos, state);
         final boolean isBottom = orientation == EnumEscalatorOrientation.LANDING_BOTTOM;
         final boolean isTop = orientation == EnumEscalatorOrientation.LANDING_TOP;
-        return IBlock.getVoxelShapeByDirection(0, 0, isTop ? 8 : 0, 4, 16, isBottom ? 8 : 16, IBlock.getStatePropertySafe(state, FACING));
+        final Direction facing =  IBlock.getStatePropertySafe(state, FACING);
+        return IBlock.getVoxelShapeByDirection(0, 0, 0, 16, 16, 16, facing);
+//        return IBlock.getVoxelShapeByDirection(0, 0, isTop ? 8 : 0, 4, 16, isBottom ? 8 : 16, IBlock.getStatePropertySafe(state, FACING));
+
+//        return VoxelShapes.union(IBlock.getVoxelShapeByDirection(0.1, -8, 8, 1.7, 8, 16, facing), IBlock.getVoxelShapeByDirection(14.7, -8, 8, 15.9, 8, 16, facing));
     }
 
     @Override

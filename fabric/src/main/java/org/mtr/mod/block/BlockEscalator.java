@@ -3,8 +3,11 @@ package org.mtr.mod.block;
 import org.mtr.mapping.holder.*;
 import org.mtr.mapping.mapper.BlockExtension;
 import org.mtr.mapping.mapper.DirectionHelper;
+import org.mtr.mod.generated.lang.TranslationProvider;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+import java.util.List;
 
 // !INFO
 // Escalator Base - A parent class for the following features
@@ -62,25 +65,21 @@ public class BlockEscalator extends BlockExtension implements IBlock, DirectionH
         final boolean isAheadUp = state.isOf(world.getBlockState(posAhead.up()).getBlock());
 
         final boolean isBehind = state.isOf(world.getBlockState(posBehind).getBlock());
-        final boolean isBehindDown1 = state.isOf(world.getBlockState(pos.offset(facing, -1).down()).getBlock());
-        final boolean isBehindDown2 = state.isOf(world.getBlockState(pos.offset(facing, -2).down()).getBlock());
+        final boolean isBehindDown = state.isOf(world.getBlockState(pos.offset(facing, -1).down()).getBlock());
 
-        if ((isAhead || isAheadUp) && isBehind) {
-            if (isAheadUp) return EnumEscalatorOrientation.TRANSITION_BOTTOM_1;
-            if (isBehindDown2) return EnumEscalatorOrientation.TRANSITION_TOP;
-            return EnumEscalatorOrientation.FLAT;
-        } else if (isBehindDown1) {
-            if (isBehindDown2) return EnumEscalatorOrientation.TRANSITION_BOTTOM_2;
-            return EnumEscalatorOrientation.SLOPE;
-        } else if (isBehind) {
+        if (isBehind) {
+            if (isAhead) return EnumEscalatorOrientation.FLAT;
+            if (isAheadUp) return EnumEscalatorOrientation.TRANSITION_BOTTOM;
             return EnumEscalatorOrientation.LANDING_TOP;
-        } else {
-            return EnumEscalatorOrientation.LANDING_BOTTOM;
+        } else if (isBehindDown) {
+            if (isAheadUp) return EnumEscalatorOrientation.SLOPE;
+            if (isAhead) return EnumEscalatorOrientation.TRANSITION_TOP;
         }
+        return EnumEscalatorOrientation.LANDING_BOTTOM;
     }
 
     public enum EnumEscalatorOrientation implements StringIdentifiable {
-        LANDING_BOTTOM("landing_bottom"), LANDING_TOP("landing_top"), FLAT("flat"), SLOPE("slope"), TRANSITION_BOTTOM_1("transition_bottom_1"), TRANSITION_BOTTOM_2("transition_bottom_2"), TRANSITION_TOP("transition_top");
+        LANDING_BOTTOM("landing_bottom"), LANDING_TOP("landing_top"), FLAT("flat"), SLOPE("slope"), TRANSITION_BOTTOM("transition_bottom"), TRANSITION_TOP("transition_top");
         private final String name;
 
         EnumEscalatorOrientation(String nameIn) {

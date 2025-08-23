@@ -60,34 +60,19 @@
 			"model": "mtr:block/escalator_median_stair/full_metal_side_slope",
 			"y": 270
 		},
-		"facing=west,orientation=transition_bottom_1": {
-			"model": "mtr:block/escalator_median_stair/full_metal_side_transition_bottom_1"
+		"facing=west,orientation=transition_bottom": {
+			"model": "mtr:block/escalator_median_stair/full_metal_side_transition_bottom"
 		},
-		"facing=north,orientation=transition_bottom_1": {
-			"model": "mtr:block/escalator_median_stair/full_metal_side_transition_bottom_1",
+		"facing=north,orientation=transition_bottom": {
+			"model": "mtr:block/escalator_median_stair/full_metal_side_transition_bottom",
 			"y": 90
 		},
-		"facing=east,orientation=transition_bottom_1": {
-			"model": "mtr:block/escalator_median_stair/full_metal_side_transition_bottom_1",
+		"facing=east,orientation=transition_bottom": {
+			"model": "mtr:block/escalator_median_stair/full_metal_side_transition_bottom",
 			"y": 180
 		},
-		"facing=south,orientation=transition_bottom_1": {
-			"model": "mtr:block/escalator_median_stair/full_metal_side_transition_bottom_1",
-			"y": 270
-		},
-		"facing=west,orientation=transition_bottom_2": {
-			"model": "mtr:block/escalator_median_stair/full_metal_side_transition_bottom_2"
-		},
-		"facing=north,orientation=transition_bottom_2": {
-			"model": "mtr:block/escalator_median_stair/full_metal_side_transition_bottom_2",
-			"y": 90
-		},
-		"facing=east,orientation=transition_bottom_2": {
-			"model": "mtr:block/escalator_median_stair/full_metal_side_transition_bottom_2",
-			"y": 180
-		},
-		"facing=south,orientation=transition_bottom_2": {
-			"model": "mtr:block/escalator_median_stair/full_metal_side_transition_bottom_2",
+		"facing=south,orientation=transition_bottom": {
+			"model": "mtr:block/escalator_median_stair/full_metal_side_transition_bottom",
 			"y": 270
 		},
 		"facing=west,orientation=transition_top": {

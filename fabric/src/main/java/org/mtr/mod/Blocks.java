@@ -12,6 +12,7 @@ import org.mtr.mapping.mapper.SlabBlockExtension;
 import org.mtr.mapping.registry.BlockRegistryObject;
 import org.mtr.mapping.registry.CreativeModeTabHolder;
 import org.mtr.mod.block.*;
+import org.mtr.mod.generated.lang.TranslationProvider;
 import org.mtr.mod.item.ItemBlockEnchanted;
 
 import java.nio.charset.StandardCharsets;
@@ -252,6 +253,11 @@ public final class Blocks {
         // NTE
         EYE_CANDY = registerBlockWithBlockItem(new Identifier(Init.MOD_ID_NTE, "eye_candy"), () -> new Block(new BlockEyeCandy()), CreativeModeTabs.STATION_BUILDING_BLOCKS);
 
+        ESCALATOR_GATE_METAL = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_gate_metal"), () -> new Block(new BlockEscalatorGate()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_GATE_POLE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_gate_pole"), () -> new Block(new BlockEscalatorGate()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_GATE_QUEUE_LINE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_gate_queue_line"), () -> new Block(new BlockEscalatorGate()), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_GATE_CLASSIC = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_gate_classic"), () -> new Block(new BlockEscalatorGate()), CreativeModeTabs.ESCALATORS_LIFTS);
+
         // 4.x Escalators Update
         ESCALATOR_WIDE_STEP_FM_1 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_step_fm_1"), () -> new Block(new BlockEscalatorWideStep()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_WIDE_STEP_FM_2 = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_wide_step_fm_2"), () -> new Block(new BlockEscalatorWideStep()), CreativeModeTabs.ESCALATORS_LIFTS);
@@ -468,6 +474,11 @@ public final class Blocks {
     public static final BlockRegistryObject DRIVER_KEY_DISPENSER;
     public static final BlockRegistryObject ESCALATOR_SIDE;
     public static final BlockRegistryObject ESCALATOR_STEP;
+
+    public static final BlockRegistryObject ESCALATOR_GATE_METAL;
+    public static final BlockRegistryObject ESCALATOR_GATE_POLE;
+    public static final BlockRegistryObject ESCALATOR_GATE_QUEUE_LINE;
+    public static final BlockRegistryObject ESCALATOR_GATE_CLASSIC;
 
     public static final BlockRegistryObject ESCALATOR_WIDE_STEP_FM_1;
     public static final BlockRegistryObject ESCALATOR_WIDE_STEP_FM_2;

@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.6",
 	"credit": "MTR : 4.0.0 Colorful Station Update",
 	"parent": "minecraft:block/block",
 	"ambientocclusion": false,
@@ -9,56 +10,52 @@
 	"elements": [
 		{
 			"name": "base 1",
-			"from": [0, 16, 0],
-			"to": [16, 16, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
+			"from": [0, 16, 0.05],
+			"to": [16, 16, 15.95],
 			"faces": {
-				"up": {"uv": [4, 6, 0, 10], "rotation": 90, "texture": "#body"}
+				"up": {"uv": [12, 4, 16, 8], "rotation": 90, "texture": "#body"}
 			}
 		},
 		{
 			"name": "base 2",
-			"from": [16, -7.95, 0.05],
+			"from": [16, 0, 0.05],
 			"to": [16, 16, 15.95],
-			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
 			"faces": {
-				"east": {"uv": [0, 0, 4, 6], "texture": "#body"}
+				"east": {"uv": [0, 4, 4, 8], "texture": "#body"}
 			}
 		},
 		{
 			"name": "base 3",
-			"from": [0, -7.95, 15.95],
+			"from": [0, 0, 15.95],
 			"to": [16, 16, 15.95],
-			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
 			"faces": {
-				"south": {"uv": [4, 0, 0, 6], "texture": "#body"}
+				"south": {"uv": [8, 12, 4, 16], "texture": "#body"}
 			}
 		},
 		{
 			"name": "base 4",
-			"from": [0.025, -7.95, 0],
-			"to": [0.025, 16, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 0]},
+			"from": [0, 0, 0],
+			"to": [0, 16, 16],
 			"faces": {
-				"west": {"uv": [4, 0, 0, 6], "texture": "#body"}
+				"west": {"uv": [4, 4, 0, 8], "texture": "#body"}
 			}
 		},
 		{
 			"name": "base 5",
-			"from": [0, -7.95, 0],
-			"to": [16, -7.95, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0.05, 0]},
+			"from": [0, 0, 0],
+			"to": [16, 0, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0.05, 0]},
 			"faces": {
-				"down": {"uv": [4, 6, 0, 10], "texture": "#body"}
+				"down": {"uv": [4, 8, 0, 12], "texture": "#body"}
 			}
 		},
 		{
 			"name": "base 6",
-			"from": [0, -7.95, 0.05],
+			"from": [0, 0, 0.05],
 			"to": [16, 16, 0.05],
-			"rotation": {"angle": 0, "axis": "y", "origin": [16, 0, 16]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 16]},
 			"faces": {
-				"north": {"uv": [0, 0, 4, 6], "texture": "#body"}
+				"north": {"uv": [4, 12, 8, 16], "texture": "#body"}
 			}
 		}
 	]

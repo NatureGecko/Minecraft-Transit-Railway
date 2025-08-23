@@ -1,4 +1,5 @@
 {
+	"format_version": "1.21.6",
 	"credit": "MTR - Escalator Update, Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
@@ -31,7 +32,7 @@
 			"from": [0, 3, 0],
 			"to": [9, 3, 16],
 			"faces": {
-				"up": {"uv": [8, 9.5, 10.25, 13.5], "texture": "#body"}
+				"up": {"uv": [13.75, 4, 16, 8], "texture": "#body"}
 			}
 		},
 		{
@@ -39,8 +40,8 @@
 			"from": [0, 0, 0.05],
 			"to": [9, 3, 15.95],
 			"faces": {
-				"north": {"uv": [14.25, 0, 12, 0.75], "texture": "#body"},
-				"south": {"uv": [12, 1.75, 14.25, 2.5], "texture": "#body"}
+				"north": {"uv": [10.25, 15.25, 8, 16], "texture": "#body"},
+				"south": {"uv": [8, 15.25, 10.25, 16], "texture": "#body"}
 			}
 		},
 		{
@@ -48,7 +49,7 @@
 			"from": [9, 0, 0],
 			"to": [9, 3, 16],
 			"faces": {
-				"east": {"uv": [12, 2.5, 13, 3.25], "texture": "#body"}
+				"east": {"uv": [0, 2.75, 4, 3.5], "texture": "#body"}
 			}
 		}
 	]

@@ -7,6 +7,7 @@ import org.mtr.mod.generated.lang.TranslationProvider;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import java.util.List;
 
 public abstract class BlockEscalatorBelt extends BlockExtension implements IBlock, DirectionHelper {
     public static final EnumProperty<EnumEscalatorBeltOrientation> ORIENTATION = EnumProperty.of("orientation", EnumEscalatorBeltOrientation.class);
@@ -25,6 +26,7 @@ public abstract class BlockEscalatorBelt extends BlockExtension implements IBloc
             return state.with(new Property<>(ORIENTATION.data), getOrientation(BlockView.cast(world), pos, state));
         }
     }
+
 
     @Override
     public void onPlaced2(World world, BlockPos pos, BlockState state, @Nullable LivingEntity placer, ItemStack itemStack) {
@@ -78,21 +80,10 @@ public abstract class BlockEscalatorBelt extends BlockExtension implements IBloc
     protected final EnumEscalatorBeltOrientation getOrientation(BlockView world, BlockPos pos, BlockState state) {
         final Direction facing = IBlock.getStatePropertySafe(state, FACING);
 
-//        final BlockPos posAhead = pos.offset(facing);
-//        final BlockPos posBehind = pos.offset(facing, -1);
-
-//        final boolean isAhead = state.isOf(world.getBlockState(posAhead).getBlock());
-//        final boolean isAheadUp = state.isOf(world.getBlockState(posAhead.up()).getBlock());
-//
-//        final boolean isBehind = state.isOf(world.getBlockState(posBehind).getBlock());
-//        final boolean isBehindDown = state.isOf(world.getBlockState(posBehind.down()).getBlock());
-
         final boolean isBehindDown1 = state.isOf(world.getBlockState(pos.offset(facing, -1).down()).getBlock());
         final boolean isBehindDown2 = state.isOf(world.getBlockState(pos.offset(facing, -2).down()).getBlock());
         final boolean isBehindDown3 = state.isOf(world.getBlockState(pos.offset(facing, -3).down()).getBlock());
         final boolean isBehindDown4 = state.isOf(world.getBlockState(pos.offset(facing, -4).down()).getBlock());
-//        final boolean isBehindDown5 = state.isOf(world.getBlockState(pos.offset(facing, -5).down()).getBlock());
-//        final boolean isBehindDownEnd = state.isOf(world.getBlockState(pos.offset(facing, -5).down().down()).getBlock());
 
         final boolean isBehind1 = state.isOf(world.getBlockState(pos.offset(facing, -1)).getBlock());
         final boolean isBehind2 = state.isOf(world.getBlockState(pos.offset(facing, -2)).getBlock());
@@ -100,25 +91,17 @@ public abstract class BlockEscalatorBelt extends BlockExtension implements IBloc
         final boolean isBehind4 = state.isOf(world.getBlockState(pos.offset(facing, -4)).getBlock());
 
         final boolean isBehindUp1 = state.isOf(world.getBlockState(pos.offset(facing, -1).up()).getBlock());
-//        final boolean isBehindUp2 = state.isOf(world.getBlockState(pos.offset(facing, -2).up()).getBlock());
-//        final boolean isBehindUp3 = state.isOf(world.getBlockState(pos.offset(facing, -3).up()).getBlock());
-//        final boolean isBehindUp4 = state.isOf(world.getBlockState(pos.offset(facing, -4).up()).getBlock());
 
         final boolean isForwardDown1 = state.isOf(world.getBlockState(pos.offset(facing, 1).down()).getBlock());
-//        final boolean isForwardDown2 = state.isOf(world.getBlockState(pos.offset(facing, 2).down()).getBlock());
-//        final boolean isForwardDown3 = state.isOf(world.getBlockState(pos.offset(facing, 3).down()).getBlock());
-//        final boolean isForwardDown4 = state.isOf(world.getBlockState(pos.offset(facing, 4).down()).getBlock());
 
         final boolean isForward1 = state.isOf(world.getBlockState(pos.offset(facing, 1)).getBlock());
         final boolean isForward2 = state.isOf(world.getBlockState(pos.offset(facing, 2)).getBlock());
         final boolean isForward3 = state.isOf(world.getBlockState(pos.offset(facing, 3)).getBlock());
-//        final boolean isForward4 = state.isOf(world.getBlockState(pos.offset(facing, 4)).getBlock());
 
         final boolean isForwardUp1 = state.isOf(world.getBlockState(pos.offset(facing, 1).up()).getBlock());
         final boolean isForwardUp2 = state.isOf(world.getBlockState(pos.offset(facing, 2).up()).getBlock());
         final boolean isForwardUp3 = state.isOf(world.getBlockState(pos.offset(facing, 3).up()).getBlock());
         final boolean isForwardUp4 = state.isOf(world.getBlockState(pos.offset(facing, 4).up()).getBlock());
-//        final boolean isForwardUpEnd = state.isOf(world.getBlockState(pos.offset(facing, 5).up()).getBlock());
 
         if (!isForward1 && !isForwardDown1 && !isForwardUp1 && (isBehind1 || isBehindDown1)) {
             return EnumEscalatorBeltOrientation.LANDING_TOP;

@@ -1,0 +1,9 @@
+{
+	"parent": "mtr:block/escalator_gate/bases/escalator_gate_classic_double",
+	"ambientocclusion": false,
+	"textures": {
+		"led": "mtr:block/escalator_gate/panel_backward",
+		"body": "mtr:block/escalator_gate/escalator_gate_classic",
+		"particle": "mtr:block/escalator_gate/particle"
+	}
+}

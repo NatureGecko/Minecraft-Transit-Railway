@@ -24,11 +24,24 @@ public class BlockEscalatorNarrowStep extends BlockEscalatorNarrow {
     @Override
     public VoxelShape getCollisionShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         final EnumEscalatorOrientation orientation = IBlock.getStatePropertySafe(state, new Property<>(ORIENTATION.data));
-        if (orientation == EnumEscalatorOrientation.FLAT || orientation == EnumEscalatorOrientation.TRANSITION_BOTTOM_1) {
-            return Block.createCuboidShape(0, 0, 0, 16, 15, 16);
+        final Direction facing = IBlock.getStatePropertySafe(state, FACING);
+        final EnumEscalatorStepDirection stepDirection = IBlock.getStatePropertySafe(state, new Property<>(STEP_DIRECTION.data));
+
+        if (orientation == EnumEscalatorOrientation.FLAT || orientation == EnumEscalatorOrientation.TRANSITION_BOTTOM || orientation == EnumEscalatorOrientation.LANDING_BOTTOM || orientation == EnumEscalatorOrientation.LANDING_TOP || orientation == EnumEscalatorOrientation.TRANSITION_TOP) {
+            return Block.createCuboidShape(0, -8, 0, 16, 15, 16);
         }
-        return VoxelShapes.union(Block.createCuboidShape(0, 0, 0, 16, 8, 16), IBlock.getVoxelShapeByDirection(0, 8, 0, 16, 15, 8, IBlock.getStatePropertySafe(state, FACING)));
+
+        if (stepDirection != EnumEscalatorStepDirection.STOP) {
+            final VoxelShape shape1 = VoxelShapes.union(IBlock.getVoxelShapeByDirection(0, -16, 14, 16, 1, 16, facing), IBlock.getVoxelShapeByDirection(0, -14, 12, 16, 3, 14, facing));
+            final VoxelShape shape2 = VoxelShapes.union(IBlock.getVoxelShapeByDirection(0, -12, 10, 16, 5, 12, facing), IBlock.getVoxelShapeByDirection(0, -10, 8, 16, 7, 10, facing));
+            final VoxelShape shape3 = VoxelShapes.union(IBlock.getVoxelShapeByDirection(0, -8, 6, 16, 9, 8, facing), IBlock.getVoxelShapeByDirection(0, -6, 4, 16, 11, 6, facing));
+            final VoxelShape shape4 = VoxelShapes.union(IBlock.getVoxelShapeByDirection(0, -4, 2, 16, 13, 4, facing), IBlock.getVoxelShapeByDirection(0, -2, 0, 16, 15, 2, facing));
+            return VoxelShapes.union(VoxelShapes.union(shape1, shape2), VoxelShapes.union(shape3, shape4));
+        }
+        return VoxelShapes.union(IBlock.getVoxelShapeByDirection(0, -8, 8, 16, 1, 16, facing), IBlock.getVoxelShapeByDirection(0, 0, 0, 16, 9, 8, facing));
+
     }
+
 
     @Override
     public void onEntityCollision2(BlockState state, World world, BlockPos pos, Entity entity) {
@@ -36,7 +49,7 @@ public class BlockEscalatorNarrowStep extends BlockEscalatorNarrow {
         final Direction facing = IBlock.getStatePropertySafe(state, FACING);
         final EnumEscalatorOrientation orientation = IBlock.getStatePropertySafe(state, ORIENTATION);
         final EnumEscalatorStepDirection direction = IBlock.getStatePropertySafe(state, STEP_DIRECTION);
-        final float speed = 0.1F;
+        final float speed = 0.024F;
 
         if (orientation == EnumEscalatorOrientation.LANDING_BOTTOM || orientation == EnumEscalatorOrientation.LANDING_TOP) {
             return;
