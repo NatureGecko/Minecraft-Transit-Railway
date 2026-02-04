@@ -1,0 +1,53 @@
+{
+	"format_version": "1.21.6",
+	"credit": "MTR - Escalator Update, Made with Blockbench",
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "mtr:block/metal"
+	},
+	"elements": [
+		{
+			"name": "bottom",
+			"from": [0, 0, 0],
+			"to": [16, 0, 16],
+			"faces": {
+				"down": {"uv": [0, 8, 4, 12], "texture": "#body", "cullface": "down"}
+			}
+		},
+		{
+			"name": "base r",
+			"from": [0, 0, 0.05],
+			"to": [16, 16, 3],
+			"faces": {
+				"north": {"uv": [4, 4, 0, 8], "texture": "#body"},
+				"up": {"uv": [4, 11.5, 8, 10.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base l",
+			"from": [0, 0, 13],
+			"to": [16, 16, 15.95],
+			"faces": {
+				"south": {"uv": [0, 4, 4, 8], "texture": "#body"},
+				"up": {"uv": [4, 10.5, 8, 11.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "step 1",
+			"from": [8, 16, 3],
+			"to": [16, 16, 13],
+			"faces": {
+				"up": {"uv": [14, 0, 16, 3], "rotation": 180, "texture": "#step"}
+			}
+		},
+		{
+			"name": "step 2",
+			"from": [0, 16, 3],
+			"to": [8, 16, 13],
+			"faces": {
+				"up": {"uv": [14, 0, 16, 3], "rotation": 180, "texture": "#step"}
+			}
+		}
+	]
+}

@@ -1,0 +1,70 @@
+{
+	"format_version": "1.21.6",
+	"credit": "MTR - Escalator Update, Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"body": "mtr:block/escalator_narrow/body_glass",
+		"particle": "mtr:block/escalator_narrow/particle"
+	},
+	"elements": [
+		{
+			"name": "base 1",
+			"from": [0, 0, 0.05],
+			"to": [9.225, 3, 15.95],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 16]},
+			"faces": {
+				"north": {"uv": [2.375, 2.75, 0, 3.5], "texture": "#body"},
+				"south": {"uv": [0, 2.75, 2.375, 3.5], "texture": "#body"},
+				"west": {"uv": [4, 2.75, 0, 3.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base 2",
+			"from": [6.725, 0, 0.025],
+			"to": [8, 3, 15.975],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 0, 16]},
+			"faces": {
+				"north": {"uv": [2, 2.75, 1.75, 3.25], "texture": "#body"},
+				"south": {"uv": [1.75, 2.75, 2, 3.25], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base 3",
+			"from": [8, 0, 0.025],
+			"to": [17.625, 3, 15.975],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 0, 16]},
+			"faces": {
+				"north": {"uv": [1.70312, 2.75, 0, 3.5], "texture": "#body"},
+				"east": {"uv": [13.25, 2.5, 12, 3.25], "texture": "#body"},
+				"south": {"uv": [0, 2.75, 1.7031, 3.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "top panel 1",
+			"from": [0, 3, 0],
+			"to": [9.225, 3, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 16]},
+			"faces": {
+				"up": {"uv": [12, 4, 14, 8], "texture": "#body"}
+			}
+		},
+		{
+			"name": "top panel 2",
+			"from": [6.725, 3, 0],
+			"to": [8, 3, 16],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 0, 16]},
+			"faces": {
+				"up": {"uv": [15.75, 4, 16, 8], "texture": "#body"}
+			}
+		},
+		{
+			"name": "top panel 3",
+			"from": [8, 3, 0],
+			"to": [17.625, 3, 16],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 0, 16]},
+			"faces": {
+				"up": {"uv": [12, 4, 13.7031, 8], "texture": "#body"}
+			}
+		}
+	]
+}

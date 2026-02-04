@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "mtr:item/escalator_belt/side_wooden",
+		"layer1": "mtr:item/escalator_belt/handrail_orange"
+	}
+}

@@ -1,0 +1,139 @@
+{
+	"variants": {
+		"facing=west,orientation=double,step_direction=stop": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_double_stop"
+		},
+		"facing=north,orientation=double,step_direction=stop": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_double_stop",
+			"y": 90
+		},
+		"facing=east,orientation=double,step_direction=stop": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_double_stop",
+			"y": 180
+		},
+		"facing=south,orientation=double,step_direction=stop": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_double_stop",
+			"y": 270
+		},
+		"facing=west,orientation=double,step_direction=forward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_double_forward"
+		},
+		"facing=north,orientation=double,step_direction=forward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_double_forward",
+			"y": 90
+		},
+		"facing=east,orientation=double,step_direction=forward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_double_forward",
+			"y": 180
+		},
+		"facing=south,orientation=double,step_direction=forward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_double_forward",
+			"y": 270
+		},
+		"facing=west,orientation=double,step_direction=backward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_double_backward"
+		},
+		"facing=north,orientation=double,step_direction=backward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_double_backward",
+			"y": 90
+		},
+		"facing=east,orientation=double,step_direction=backward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_double_backward",
+			"y": 180
+		},
+		"facing=south,orientation=double,step_direction=backward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_double_backward",
+			"y": 270
+		},
+		"facing=west,orientation=left,step_direction=stop": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_left_stop"
+		},
+		"facing=north,orientation=left,step_direction=stop": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_left_stop",
+			"y": 90
+		},
+		"facing=east,orientation=left,step_direction=stop": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_left_stop",
+			"y": 180
+		},
+		"facing=south,orientation=left,step_direction=stop": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_left_stop",
+			"y": 270
+		},
+		"facing=west,orientation=left,step_direction=forward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_left_forward"
+		},
+		"facing=north,orientation=left,step_direction=forward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_left_forward",
+			"y": 90
+		},
+		"facing=east,orientation=left,step_direction=forward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_left_forward",
+			"y": 180
+		},
+		"facing=south,orientation=left,step_direction=forward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_left_forward",
+			"y": 270
+		},
+		"facing=west,orientation=left,step_direction=backward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_left_backward"
+		},
+		"facing=north,orientation=left,step_direction=backward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_left_backward",
+			"y": 90
+		},
+		"facing=east,orientation=left,step_direction=backward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_left_backward",
+			"y": 180
+		},
+		"facing=south,orientation=left,step_direction=backward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_left_backward",
+			"y": 270
+		},
+		"facing=west,orientation=right,step_direction=stop": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_right_stop"
+		},
+		"facing=north,orientation=right,step_direction=stop": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_right_stop",
+			"y": 90
+		},
+		"facing=east,orientation=right,step_direction=stop": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_right_stop",
+			"y": 180
+		},
+		"facing=south,orientation=right,step_direction=stop": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_right_stop",
+			"y": 270
+		},
+		"facing=west,orientation=right,step_direction=forward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_right_forward"
+		},
+		"facing=north,orientation=right,step_direction=forward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_right_forward",
+			"y": 90
+		},
+		"facing=east,orientation=right,step_direction=forward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_right_forward",
+			"y": 180
+		},
+		"facing=south,orientation=right,step_direction=forward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_right_forward",
+			"y": 270
+		},
+		"facing=west,orientation=right,step_direction=backward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_right_backward"
+		},
+		"facing=north,orientation=right,step_direction=backward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_right_backward",
+			"y": 90
+		},
+		"facing=east,orientation=right,step_direction=backward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_right_backward",
+			"y": 180
+		},
+		"facing=south,orientation=right,step_direction=backward": {
+			"model": "mtr:block/escalator_gate/escalator_gate_classic_right_backward",
+			"y": 270
+		}
+	}
+}

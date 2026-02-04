@@ -1,0 +1,10 @@
+{
+	"parent": "mtr:block/escalator_gate/bases/escalator_gate_pole_right",
+	"ambientocclusion": false,
+	"textures": {
+		"led": "mtr:block/escalator_gate/panel_forward",
+		"body": "mtr:block/escalator_gate/escalator_gate_pole",
+		"sign": "mtr:block/escalator_gate/enry_warning",
+		"particle": "mtr:block/escalator_gate/particle"
+	}
+}

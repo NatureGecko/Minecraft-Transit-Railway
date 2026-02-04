@@ -1,0 +1,117 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "mtr:block/escalator_gate/escalator_gate_pole"
+	},
+	"elements": [
+		{
+			"name": "Pole",
+			"from": [12, 0, 12.75],
+			"to": [15, 16, 15.75],
+			"faces": {
+				"north": {"uv": [7, 0, 3, 13], "texture": "#body"},
+				"east": {"uv": [0, 0, 3, 13], "texture": "#body"},
+				"south": {"uv": [3, 0, 7, 13], "texture": "#body"},
+				"west": {"uv": [7, 0, 10, 13], "texture": "#body"},
+				"up": {"uv": [10, 0, 14, 3], "texture": "#body"},
+				"down": {"uv": [10, 3, 14, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "Sensor 1",
+			"from": [13, 2, 12.7],
+			"to": [13.75, 3.5, 12.7],
+			"faces": {
+				"north": {"uv": [14, 0, 15.375, 1.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "Sensor 2",
+			"from": [13, 7, 12.7],
+			"to": [13.75, 8.5, 12.7],
+			"faces": {
+				"north": {"uv": [14, 0, 15.375, 1.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "led",
+			"from": [15.075, 12.775, 13.125],
+			"to": [15.075, 15.55, 15.375],
+			"faces": {
+				"east": {"uv": [8, 8, 16, 16], "texture": "#led"}
+			}
+		},
+		{
+			"name": "Bar v2",
+			"from": [8, 0, 14],
+			"to": [9, 13, 15],
+			"faces": {
+				"north": {"uv": [0, 15, 8, 16], "rotation": 270, "texture": "#body"},
+				"east": {"uv": [0, 15, 8, 16], "rotation": 270, "texture": "#body"},
+				"south": {"uv": [0, 15, 8, 16], "rotation": 270, "texture": "#body"},
+				"west": {"uv": [0, 15, 8, 16], "rotation": 270, "texture": "#body"}
+			}
+		},
+		{
+			"name": "Bar v1",
+			"from": [2, 0, 14],
+			"to": [3, 13, 15],
+			"faces": {
+				"north": {"uv": [0, 15, 8, 16], "rotation": 270, "texture": "#body"},
+				"east": {"uv": [0, 15, 8, 16], "rotation": 270, "texture": "#body"},
+				"south": {"uv": [0, 15, 8, 16], "rotation": 270, "texture": "#body"},
+				"west": {"uv": [0, 15, 8, 16], "rotation": 270, "texture": "#body"}
+			}
+		},
+		{
+			"name": "Bar h2",
+			"from": [3, 13, 14],
+			"to": [8, 14, 15],
+			"faces": {
+				"north": {"uv": [0, 13, 6, 14], "texture": "#body"},
+				"south": {"uv": [0, 13, 6, 14], "texture": "#body"},
+				"up": {"uv": [0, 13, 6, 14], "texture": "#body"},
+				"down": {"uv": [0, 13, 6, 14], "texture": "#body"}
+			}
+		},
+		{
+			"name": "Cornor ue",
+			"from": [7.585, 12, 13.995],
+			"to": [9, 13, 15.005],
+			"rotation": {"angle": -45, "axis": "z", "origin": [9, 13, 15]},
+			"faces": {
+				"north": {"uv": [14.375, 14, 13, 13], "texture": "#body"},
+				"south": {"uv": [14.375, 14, 13, 13], "texture": "#body"},
+				"up": {"uv": [14.375, 14, 13, 13], "texture": "#body"},
+				"down": {"uv": [14.375, 14, 13, 13], "texture": "#body"}
+			}
+		},
+		{
+			"name": "Cornor uw",
+			"from": [2, 12, 13.995],
+			"to": [3.415, 13, 15.005],
+			"rotation": {"angle": 45, "axis": "z", "origin": [2, 13, 15]},
+			"faces": {
+				"north": {"uv": [13, 14, 14.375, 13], "texture": "#body"},
+				"south": {"uv": [13, 14, 14.375, 13], "texture": "#body"},
+				"up": {"uv": [13, 14, 14.375, 13], "texture": "#body"},
+				"down": {"uv": [13, 14, 14.375, 13], "texture": "#body"}
+			}
+		},
+		{
+			"name": "Sign",
+			"from": [15.075, 1.25, 13.25],
+			"to": [15.075, 11.5, 15.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.075, 0, 0]},
+			"faces": {
+				"north": {"uv": [7, 0, 3, 13], "texture": "#sign"},
+				"east": {"uv": [0, 0, 3.25, 16], "texture": "#sign"},
+				"south": {"uv": [3, 0, 7, 13], "texture": "#sign"},
+				"west": {"uv": [7, 0, 10, 13], "texture": "#sign"},
+				"up": {"uv": [10, 0, 14, 3], "texture": "#sign"},
+				"down": {"uv": [10, 3, 14, 6], "texture": "#sign"}
+			}
+		}
+	]
+}
