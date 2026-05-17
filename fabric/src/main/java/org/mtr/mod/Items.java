@@ -11,6 +11,11 @@ import org.mtr.mod.item.*;
 public final class Items {
 
     static {
+        // Ingedients 
+        ESCALATOR_HANDRAIL_COMPOND = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "escalator_handrail_compound"), itemSettings -> new Item(new ItemIngredient(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_PART = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "escalator_handrail_part"), itemSettings -> new Item(new ItemIngredient(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_STEP_PART = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "escalator_step_part"), itemSettings -> new Item(new ItemIngredient(itemSettings)), CreativeModeTabs.ESCALATORS_LIFTS);
+        
         // Brush and dashboards
         BRUSH = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "brush"), itemSettings -> new Item(new ItemBrush(itemSettings)), CreativeModeTabs.CORE);
         RAILWAY_DASHBOARD = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "dashboard"), itemSettings -> new Item(new ItemDashboard(TransportMode.TRAIN, itemSettings)), CreativeModeTabs.CORE);
@@ -139,6 +144,10 @@ public final class Items {
         TUNNEL_WALL_CREATOR_6_7 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "tunnel_wall_creator_6_7"), itemSettings -> new Item(new ItemTunnelWallCreator(6, 7, itemSettings)), CreativeModeTabs.CORE);
         TUNNEL_WALL_CREATOR_6_9 = Init.REGISTRY.registerItem(new Identifier(Init.MOD_ID, "tunnel_wall_creator_6_9"), itemSettings -> new Item(new ItemTunnelWallCreator(6, 9, itemSettings)), CreativeModeTabs.CORE);
     }
+
+    public static final ItemRegistryObject ESCALATOR_HANDRAIL_COMPOND;
+    public static final ItemRegistryObject ESCALATOR_HANDRAIL_PART;
+    public static final ItemRegistryObject ESCALATOR_STEP_PART;
 
     public static final ItemRegistryObject BRUSH;
     public static final ItemRegistryObject AIRPLANE_DASHBOARD;

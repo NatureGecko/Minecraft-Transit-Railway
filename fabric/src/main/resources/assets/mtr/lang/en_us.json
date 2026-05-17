@@ -816,7 +816,7 @@
 	"tooltip.mtr.station_color": "Colour depends on the station",
 	"tooltip.mtr.station_color_name": "Colour and text depend on the station",
 
-	"tooltip.mtr.escalator_belt_placement_tip": "To make a slope, place 4 walkway per block high.",
+	"tooltip.mtr.escalator_belt_placement_tip": "To make a slope, place 4 walkways in a row per 1 block high. \n| - - - - - - - - - - - ■ ■ ■ ■ ■ > |\n| - - - - - - - ■ ■ ■ ■ - - - - - - |\n| - - - ■ ■ ■ ■ - - - - - - - - - - |\n| > ■ ■ - - - - - - - - - - - - - - |",
 	"tooltip.mtr.escalator_wide_placement_warn": "You need one empty space on your right to place an escalator.",
 	"tooltip.mtr.escalator_wide_placement_warn_below": "You need a block below to place a handrail.",
 	"tooltip.mtr.escalator_gate_placement_tip": "Facing toward an escalator.",

@@ -27,7 +27,7 @@ public class BlockEscalatorNarrowStep extends BlockEscalatorNarrow {
         final Direction facing = IBlock.getStatePropertySafe(state, FACING);
         final EnumEscalatorStepDirection stepDirection = IBlock.getStatePropertySafe(state, new Property<>(STEP_DIRECTION.data));
 
-        if (orientation == EnumEscalatorOrientation.FLAT || orientation == EnumEscalatorOrientation.TRANSITION_BOTTOM || orientation == EnumEscalatorOrientation.LANDING_BOTTOM || orientation == EnumEscalatorOrientation.LANDING_TOP || orientation == EnumEscalatorOrientation.TRANSITION_TOP) {
+        if (orientation == EnumEscalatorOrientation.FLAT || orientation == EnumEscalatorOrientation.TRANSITION_BOTTOM || orientation == EnumEscalatorOrientation.LANDING_BOTTOM || orientation == EnumEscalatorOrientation.LANDING_TOP) {
             return Block.createCuboidShape(0, -8, 0, 16, 15, 16);
         }
 

@@ -1,6 +1,7 @@
 package org.mtr.mod.block;
 
 import org.mtr.mapping.holder.*;
+import org.mtr.mapping.mapper.TextHelper;
 import org.mtr.mapping.tool.HolderBase;
 import org.mtr.mod.generated.lang.TranslationProvider;
 
@@ -17,7 +18,10 @@ public class BlockEscalatorBeltStep extends BlockEscalatorBelt {
 
     @Override
     public void addTooltips(ItemStack stack, @Nullable BlockView world, List<MutableText> tooltip, TooltipContext options) {
-        tooltip.add(TranslationProvider.TOOLTIP_MTR_ESCALATOR_BELT_PLACEMENT_TIP.getMutableText().formatted(TextFormatting.GRAY));
+        final String[] textStrings = TranslationProvider.TOOLTIP_MTR_ESCALATOR_BELT_PLACEMENT_TIP.getString().split("\n");
+        for (final String text : textStrings) {
+            tooltip.add(TextHelper.literal(text).formatted(TextFormatting.GRAY));
+        }
     }
 
     @Override

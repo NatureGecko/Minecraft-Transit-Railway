@@ -3,11 +3,8 @@ package org.mtr.mod.block;
 import org.mtr.mapping.holder.*;
 import org.mtr.mapping.mapper.BlockExtension;
 import org.mtr.mapping.mapper.DirectionHelper;
-import org.mtr.mod.generated.lang.TranslationProvider;
 
 import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
-import java.util.List;
 
 // !INFO
 // Escalator Base - A parent class for the following features

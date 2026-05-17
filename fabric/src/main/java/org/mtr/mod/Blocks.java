@@ -453,6 +453,24 @@ public final class Blocks {
         ESCALATOR_MEDIAN_BELT_SIDE_FM = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_median_belt_side_fm"), () -> new Block(new BlockEscalatorMedianBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_MEDIAN_BELT_SIDE_GL = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_median_belt_side_gl"), () -> new Block(new BlockEscalatorMedianBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
         ESCALATOR_MEDIAN_BELT_SIDE_WD = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_median_belt_side_wd"), () -> new Block(new BlockEscalatorMedianBeltSide()), CreativeModeTabs.ESCALATORS_LIFTS);
+
+        ESCALATOR_HANDRAIL_BLOCK_BLACK = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_black"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_BLOCK_BLUE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_blue"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_BLOCK_BROWN = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_brown"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_BLOCK_CYAN = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_cyan"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_BLOCK_GRAY = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_gray"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_BLOCK_GREEN = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_green"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_BLOCK_LIGHT_BLUE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_light_blue"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_BLOCK_LIGHT_GRAY = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_light_gray"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_BLOCK_LIME = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_lime"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_BLOCK_MAGENTA = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_magenta"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_BLOCK_ORANGE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_orange"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_BLOCK_PINK = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_pink"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_BLOCK_PURPLE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_purple"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_BLOCK_RED = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_red"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_BLOCK_WHITE = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_white"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_BLOCK_YELLOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_yellow"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
+        ESCALATOR_HANDRAIL_BLOCK_RAINBOW = registerBlockWithBlockItem(new Identifier(Init.MOD_ID, "escalator_handrail_block_rainbow"), () -> new Block(new BlockExtension(createDefaultBlockSettings(false))), CreativeModeTabs.ESCALATORS_LIFTS);
     }
 
     public static final BlockRegistryObject AIRPLANE_NODE;
@@ -675,6 +693,24 @@ public final class Blocks {
     public static final BlockRegistryObject ESCALATOR_MEDIAN_BELT_SIDE_FM;
     public static final BlockRegistryObject ESCALATOR_MEDIAN_BELT_SIDE_GL;
     public static final BlockRegistryObject ESCALATOR_MEDIAN_BELT_SIDE_WD;
+
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_BLACK;
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_BLUE;
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_BROWN;
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_CYAN;
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_GRAY;
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_GREEN;
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_LIGHT_BLUE;
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_LIGHT_GRAY;
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_LIME;
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_MAGENTA;
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_ORANGE;
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_PINK;
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_PURPLE;
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_RED;
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_WHITE;
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_YELLOW;
+    public static final BlockRegistryObject ESCALATOR_HANDRAIL_BLOCK_RAINBOW;
 
     public static final BlockRegistryObject GLASS_FENCE_CIO;
     public static final BlockRegistryObject GLASS_FENCE_CKT;
