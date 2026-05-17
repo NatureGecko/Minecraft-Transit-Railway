@@ -1,0 +1,89 @@
+{
+	"credit": "MTR - Escalator Update, Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"body": "mtr:block/escalator_belt/body_wooden",
+		"particle": "mtr:block/escalator_wide/particle"
+	},
+	"elements": [
+		{
+			"name": "base t1",
+			"from": [0, 18, 0],
+			"to": [4, 18, 16],
+			"faces": {
+				"up": {"uv": [16, 1, 13, 0], "rotation": 90, "texture": "#body"},
+				"down": {"uv": [9, 8, 9.5, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base b1",
+			"from": [0, 16, 0.05],
+			"to": [4, 18, 15.95],
+			"faces": {
+				"north": {"uv": [2, 1.25, 1, 1.75], "texture": "#body"},
+				"south": {"uv": [1, 1.25, 2, 1.75], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base e1",
+			"from": [4, 17, 0],
+			"to": [4, 18, 16],
+			"faces": {
+				"east": {"uv": [13, 0.875, 16, 1.125], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base t2",
+			"from": [4, 17, 0],
+			"to": [8, 17, 16],
+			"faces": {
+				"up": {"uv": [16, 2, 13, 1], "rotation": 90, "texture": "#body"},
+				"down": {"uv": [9, 8, 9.5, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base b2",
+			"from": [4, 16, 0.05],
+			"to": [8, 17, 15.95],
+			"faces": {
+				"north": {"uv": [3, 1.25, 2, 1.5], "texture": "#body"},
+				"south": {"uv": [2, 1.25, 3, 1.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base e2",
+			"from": [8, 16, 0],
+			"to": [8, 17, 16],
+			"faces": {
+				"east": {"uv": [13, 1.875, 16, 2.125], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base t3",
+			"from": [8, 16, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"up": {"uv": [16, 4, 13, 2], "rotation": 90, "texture": "#body"}
+			}
+		},
+		{
+			"name": "base b3",
+			"from": [0, 0, 0.05],
+			"to": [16, 16, 15.95],
+			"faces": {
+				"north": {"uv": [5, 6.25, 1, 10.5], "texture": "#body"},
+				"east": {"uv": [13, 0, 16, 4], "texture": "#body"},
+				"south": {"uv": [1, 6.25, 5, 10.5], "texture": "#body"},
+				"west": {"uv": [16, 0, 13, 4], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base l3",
+			"from": [0, 0, 0],
+			"to": [16, 0, 16],
+			"faces": {
+				"down": {"uv": [5, 9.25, 9, 5.25], "texture": "#body"}
+			}
+		}
+	]
+}

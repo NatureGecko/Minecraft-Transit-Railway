@@ -1,0 +1,94 @@
+{
+	"variants": {
+		"facing=west,orientation=landing_bottom": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_landing_bottom"
+		},
+		"facing=north,orientation=landing_bottom": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_landing_bottom",
+			"y": 90
+		},
+		"facing=east,orientation=landing_bottom": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_landing_bottom",
+			"y": 180
+		},
+		"facing=south,orientation=landing_bottom": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_landing_bottom",
+			"y": 270
+		},
+		"facing=west,orientation=landing_top": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_landing_top"
+		},
+		"facing=north,orientation=landing_top": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_landing_top",
+			"y": 90
+		},
+		"facing=east,orientation=landing_top": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_landing_top",
+			"y": 180
+		},
+		"facing=south,orientation=landing_top": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_landing_top",
+			"y": 270
+		},
+		"facing=west,orientation=flat": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_flat"
+		},
+		"facing=north,orientation=flat": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_flat",
+			"y": 90
+		},
+		"facing=east,orientation=flat": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_flat",
+			"y": 180
+		},
+		"facing=south,orientation=flat": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_flat",
+			"y": 270
+		},
+		"facing=west,orientation=slope": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_slope"
+		},
+		"facing=north,orientation=slope": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_slope",
+			"y": 90
+		},
+		"facing=east,orientation=slope": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_slope",
+			"y": 180
+		},
+		"facing=south,orientation=slope": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_slope",
+			"y": 270
+		},
+		"facing=west,orientation=transition_bottom": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_transition_bottom"
+		},
+		"facing=north,orientation=transition_bottom": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_transition_bottom",
+			"y": 90
+		},
+		"facing=east,orientation=transition_bottom": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_transition_bottom",
+			"y": 180
+		},
+		"facing=south,orientation=transition_bottom": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_transition_bottom",
+			"y": 270
+		},
+		"facing=west,orientation=transition_top": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_transition_top"
+		},
+		"facing=north,orientation=transition_top": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_transition_top",
+			"y": 90
+		},
+		"facing=east,orientation=transition_top": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_transition_top",
+			"y": 180
+		},
+		"facing=south,orientation=transition_top": {
+			"model": "mtr:block/escalator_median_stair/full_metal_step_transition_top",
+			"y": 270
+		}
+	}
+}

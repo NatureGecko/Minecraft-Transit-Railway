@@ -1,0 +1,71 @@
+{
+	"credit": "MTR - Escalator Update, Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"particle": "mtr:block/escalator_wide/particle",
+		"body": "mtr:block/escalator_belt/body_glass"
+	},
+	"elements": [
+		{
+			"name": "deco t1",
+			"from": [0, 0, 8],
+			"to": [7, 0.1, 16],
+			"faces": {
+				"up": {"uv": [11, 2.25, 9, 4], "rotation": 90, "texture": "#body"}
+			}
+		},
+		{
+			"name": "deco b1",
+			"from": [0, 0, 0],
+			"to": [7, 0.1, 15.95],
+			"faces": {
+				"north": {"uv": [12.875, 4, 13, 2.25], "rotation": 90, "texture": "#body"},
+				"east": {"uv": [13, 0.125, 9, 0], "texture": "#body"},
+				"south": {"uv": [9.1125, 4, 8.9875, 2.25], "rotation": 90, "texture": "#body"},
+				"west": {"uv": [12.9875, 3.875, 8.9875, 4], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail mt1",
+			"from": [7, 3, 0],
+			"to": [11, 3, 16],
+			"faces": {
+				"up": {"uv": [13, 4, 16, 2.75], "rotation": 270, "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail mb1",
+			"from": [7, 0, 0],
+			"to": [16, 3, 16],
+			"faces": {
+				"north": {"uv": [10.25, 4, 13, 4.75], "texture": "#body"},
+				"south": {"uv": [13, 5, 10.25, 5.75], "texture": "#body"},
+				"down": {"uv": [13, 8, 10.25, 6], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail mb1",
+			"from": [7, 0.1, 0],
+			"to": [7, 3, 16],
+			"faces": {
+				"west": {"uv": [13, 5, 9, 5.75], "texture": "#body"}
+			}
+		},
+		{
+			"name": "rail mt2",
+			"from": [11, 3, 0],
+			"to": [16, 3, 16],
+			"faces": {
+				"up": {"uv": [13, 1.5, 16, 0], "rotation": 270, "texture": "#body"}
+			}
+		},
+		{
+			"name": "deco t2",
+			"from": [0, 0, 0],
+			"to": [7, 0.1, 8],
+			"faces": {
+				"up": {"uv": [9, 2.25, 11, 4], "rotation": 90, "texture": "#body"}
+			}
+		}
+	]
+}

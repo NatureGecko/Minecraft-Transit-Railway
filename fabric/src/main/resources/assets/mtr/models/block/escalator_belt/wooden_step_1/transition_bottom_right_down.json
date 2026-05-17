@@ -1,0 +1,8 @@
+{
+	"parent": "mtr:block/escalator_belt/bases/wooden_step_transition_bottom_right",
+	"ambientocclusion": false,
+	"textures": {
+		"step": "mtr:block/escalator_belt/step_down_1",
+		"body": "mtr:block/escalator_belt/body_wooden"
+	}
+}

@@ -1,0 +1,44 @@
+{
+	"credit": "MTR - Escalator Update, Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"body": "mtr:block/escalator_belt/body_wooden",
+		"particle": "mtr:block/escalator_wide/particle"
+	},
+	"elements": [
+		{
+			"name": "base t",
+			"from": [0.025, 16, 0],
+			"to": [15.975, 16, 16],
+			"faces": {
+				"up": {"uv": [5, 6.25, 1, 10.5], "texture": "#body", "cullface": "up"}
+			}
+		},
+		{
+			"name": "base b",
+			"from": [0, 0, 0.05],
+			"to": [16, 16, 15.95],
+			"faces": {
+				"north": {"uv": [1, 6.25, 5, 10.5], "texture": "#body"},
+				"east": {"uv": [1, 6.25, 5, 10.5], "texture": "#body", "cullface": "east"},
+				"south": {"uv": [5, 6.25, 1, 10.5], "texture": "#body"}
+			}
+		},
+		{
+			"name": "base l",
+			"from": [0, 0, 0],
+			"to": [16, 0, 16],
+			"faces": {
+				"down": {"uv": [9, 9.25, 5, 5.25], "texture": "#body", "cullface": "down"}
+			}
+		},
+		{
+			"name": "base e",
+			"from": [0, 0, 0],
+			"to": [0, 16, 16],
+			"faces": {
+				"west": {"uv": [5, 6.25, 1, 10.5], "texture": "#body", "cullface": "west"}
+			}
+		}
+	]
+}
