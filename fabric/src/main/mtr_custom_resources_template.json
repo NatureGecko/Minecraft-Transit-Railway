@@ -887,21 +887,21 @@
       		"small": true
     	},
 	    {
-	      "id": "!cross_habour_bus_stop_icon",
-	      "textureResource": "mtr:textures/block/sign/cross_habour_bus_stop.png",
+	      "id": "!cross_harbour_bus_stop_icon",
+	      "textureResource": "mtr:textures/block/sign/cross_harbour_bus_stop.png",
 	      "small": true
 	    },
 	    {
-	      "id": "!cross_habour_bus_stop",
-	      "textureResource": "mtr:textures/block/sign/cross_habour_bus_stop.png",
-	      "customText": "sign.mtr.cross_habour_bus_stop",
+	      "id": "!cross_harbour_bus_stop",
+	      "textureResource": "mtr:textures/block/sign/cross_harbour_bus_stop.png",
+	      "customText": "sign.mtr.cross_harbour_bus_stop",
 	      "small": true,
 	      "flipCustomText": false
 	    },
 	    {
-	      "id": "!cross_habour_bus_stop_flipped",
-	      "textureResource": "mtr:textures/block/sign/cross_habour_bus_stop.png",
-	      "customText": "sign.mtr.cross_habour_bus_stop",
+	      "id": "!cross_harbour_bus_stop_flipped",
+	      "textureResource": "mtr:textures/block/sign/cross_harbour_bus_stop.png",
+	      "customText": "sign.mtr.cross_harbour_bus_stop",
 	      "small": true,
 	      "flipCustomText": true
 	    },

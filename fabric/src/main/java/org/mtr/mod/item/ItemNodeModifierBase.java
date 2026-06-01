@@ -20,9 +20,9 @@ import java.util.function.Consumer;
 
 public abstract class ItemNodeModifierBase extends ItemBlockClickingBase {
 
-	public final boolean forNonContinuousMovementNode;
-	public final boolean forContinuousMovementNode;
-	public final boolean forAirplaneNode;
+	protected final boolean forNonContinuousMovementNode;
+	protected final boolean forContinuousMovementNode;
+	protected final boolean forAirplaneNode;
 	protected final boolean isConnector;
 
 	protected static final String TAG_TRANSPORT_MODE = "transport_mode";
