@@ -253,6 +253,7 @@
 	"gui.mtr.lift_floor_description": "Description",
 	"gui.mtr.lift_floor_number": "Floor Number",
 	"gui.mtr.lift_is_double_sided": "Double-sided",
+	"gui.mtr.lift_min_floors_required": "At least 2 floors are required.",
 	"gui.mtr.lift_should_ding": "Play \"Ding\" Sound",
 	"gui.mtr.lift_style": "Style: %s",
 	"gui.mtr.lift_track_required": "Lift / Elevator Tracks Required",
