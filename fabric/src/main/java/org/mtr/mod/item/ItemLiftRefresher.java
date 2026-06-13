@@ -58,10 +58,12 @@ public class ItemLiftRefresher extends ItemExtension implements DirectionHelper 
 			final ObjectArrayList<LiftFloor> liftFloors = new ObjectArrayList<>();
 			liftFloors.addAll(reverseList(liftFloors1));
 			liftFloors.addAll(liftFloors2);
-			if(liftFloors.size() == 1) {
+
+			if (liftFloors.size() == 1) {
 				playerEntity.sendMessage(TranslationProvider.GUI_MTR_LIFT_MIN_FLOORS_REQUIRED.getText(), true);
 				return ActionResult.getFailMapped();
 			}
+
 			final boolean needsReverse = Utilities.getElement(liftFloors, -1).getPosition().getY() < Utilities.getElement(liftFloors, 0).getPosition().getY();
 			sendUpdate(ServerWorld.cast(world), needsReverse ? reverseList(liftFloors) : liftFloors);
 			Init.REGISTRY.sendPacketToClient(ServerPlayerEntity.cast(playerEntity), new PacketOpenLiftCustomizationScreen(Init.positionToBlockPos(liftFloors.get(0).getPosition())));

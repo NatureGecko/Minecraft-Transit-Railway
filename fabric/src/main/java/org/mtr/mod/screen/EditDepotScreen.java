@@ -344,12 +344,12 @@ public class EditDepotScreen extends EditNameColorScreenBase<Depot> {
 			}
 
 			if (addToList || removeFromList) {
-				LongLinkedOpenHashSet newDepartures = new LongLinkedOpenHashSet();
+				final LongLinkedOpenHashSet newDepartures = new LongLinkedOpenHashSet();
 				for (long i = 0; i < multiple; i++) {
 					final long rawDeparture = (departure + i * interval) % MILLIS_PER_DAY;
 					newDepartures.add(rawDeparture);
 				}
-				if(addToList) {
+				if (addToList) {
 					data.getRealTimeDepartures().addAll(newDepartures);
 				} else {
 					data.getRealTimeDepartures().removeAll(newDepartures);

@@ -32,7 +32,8 @@ public final class WorkerThread extends CustomThread {
 	protected void runTick() {
 		try {
 			Thread.sleep(10); // Give the CPU a little break
-		} catch (InterruptedException e) {}
+		} catch (InterruptedException e) {
+		}
 
 		if (!occlusionQueueVehicle.isEmpty() || !occlusionQueueLift.isEmpty() || !occlusionQueueMisc.isEmpty() || !occlusionQueueRail.isEmpty()) {
 			updateInstance();
@@ -70,7 +71,7 @@ public final class WorkerThread extends CustomThread {
 		}
 	}
 
-	void scheduleMTRRails(Consumer<OcclusionCullingInstance> consumer) {
+	public void scheduleMTRRails(Consumer<OcclusionCullingInstance> consumer) {
 		if (occlusionQueueRail.size() < MAX_QUEUE_SIZE) {
 			occlusionQueueRail.add(consumer);
 		}
